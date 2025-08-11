@@ -153,22 +153,9 @@ N 1250 -390 1310 -390 {
 lab=Vout}
 N 750 -100 750 -80 {
 lab=VSS}
+N 440 -450 470 -450 {
+lab=GND}
 C {opin.sym} 1310 -390 0 0 {name=Vout lab=Vout}
-C {res.sym} 490 -450 0 0 {name=R1
-value=52k
-footprint=1206
-device=resistor
-m=1}
-C {capa.sym} 1040 -390 3 0 {name=C1
-m=1
-value=3p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 1250 -340 0 0 {name=C2
-m=1
-value=3p
-footprint=1206
-device="ceramic capacitor"}
 C {devices/ngspice_get_value.sym} 730 -390 0 1 {name=r18 node=v(@m.$\{path\}xm1.msky130_fd_pr__nfet_01v8[vds])
 descr="vds="}
 C {devices/ngspice_get_value.sym} 730 -350 0 1 {name=r19 node=v(@m.$\{path\}xm1.msky130_fd_pr__nfet_01v8[vgs])
@@ -278,3 +265,11 @@ nf=1 mult=1
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
+C {devices/lab_pin.sym} 440 -450 0 0 {name=l4 sig_type=std_logic lab=GND}
+C {sky130_fd_pr/res_xhigh_po_5p73.sym} 490 -450 0 0 {name=R1
+L=150
+model=res_xhigh_po_5p73
+spiceprefix=X
+mult=1}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1040 -390 3 0 {name=C3 model=cap_mim_m3_1 W=10 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 1250 -340 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=1 MF=1 spiceprefix=X}
