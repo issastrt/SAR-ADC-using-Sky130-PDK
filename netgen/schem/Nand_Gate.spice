@@ -1,0 +1,9 @@
+** sch_path: /foss/designs/layout/Nand_Gate.sch
+.subckt Nand_Gate B A Vout VDD GND
+*.PININFO A:I B:I VDD:I GND:I Vout:O
+XM1 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 Vout B net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM4 net1 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+.end

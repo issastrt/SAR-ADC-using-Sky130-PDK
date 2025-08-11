@@ -1,0 +1,76 @@
+** sch_path: /foss/designs/final-circuits/RING_COUNTER_FINAL.sch
+.subckt RING_COUNTER_FINAL VDD Q2 Q15 Q4 Q5 Q6 Q7 Q1 Q9 Q10 Q11 Q12 Q13 Q14 Q0 Q3 Q8 CLK EN GND
+*.PININFO Q0:O Q1:O Q2:O Q3:O Q4:O Q5:O Q6:O Q7:O Q8:O Q9:O Q10:O Q11:O Q12:O Q13:O Q14:O Q15:O CLK:I EN:I VDD:I GND:I
+x1 VDD net1 Q0 CLK net2 EN GND VDD D_FlipFlop_for_Ring
+x2 EN Q0 Q1 CLK net3 VDD GND VDD D_FlipFlop_for_Ring
+x3 EN Q1 Q2 CLK net4 VDD GND VDD D_FlipFlop_for_Ring
+x4 EN Q2 Q3 CLK net5 VDD GND VDD D_FlipFlop_for_Ring
+x5 EN Q3 Q4 CLK net6 VDD GND VDD D_FlipFlop_for_Ring
+x6 EN Q4 Q5 CLK net7 VDD GND VDD D_FlipFlop_for_Ring
+x7 EN Q5 Q6 CLK net8 VDD GND VDD D_FlipFlop_for_Ring
+x8 EN Q6 Q7 CLK net9 VDD GND VDD D_FlipFlop_for_Ring
+x9 EN Q7 Q8 CLK net10 VDD GND VDD D_FlipFlop_for_Ring
+x10 EN Q8 Q9 CLK net11 VDD GND VDD D_FlipFlop_for_Ring
+x11 EN Q9 Q10 CLK net12 VDD GND VDD D_FlipFlop_for_Ring
+x12 EN Q10 Q11 CLK net13 VDD GND VDD D_FlipFlop_for_Ring
+x13 EN Q11 Q12 CLK net14 VDD GND VDD D_FlipFlop_for_Ring
+x14 EN Q12 Q13 CLK net15 VDD GND VDD D_FlipFlop_for_Ring
+x15 EN Q13 Q14 CLK net16 VDD GND VDD D_FlipFlop_for_Ring
+x16 EN Q14 Q15 CLK net17 VDD GND VDD D_FlipFlop_for_Ring
+x17 EN Q15 net1 CLK net18 VDD GND VDD D_FlipFlop_for_Ring
+.ends
+
+* expanding   symbol:  /foss/designs/final-circuits/D_FlipFlop_for_Ring.sym # of pins=8
+** sym_path: /foss/designs/final-circuits/D_FlipFlop_for_Ring.sym
+** sch_path: /foss/designs/final-circuits/D_FlipFlop_for_Ring.sch
+.subckt D_FlipFlop_for_Ring nPRE D Q CLK Q' nCLR GND VDD
+*.PININFO D:I CLK:I nPRE:I nCLR:I Q:O Q':O VDD:I GND:I
+x1 CLK net6 GND VDD Inverter
+x2 CLK D nCLR net1 GND VDD 3-input-nand
+x3 net4 net6 net7 GND VDD Nand_Gate
+x4 CLK net5 nPRE net2 GND VDD 3-input-nand
+x5 Q net8 nCLR Q' GND VDD 3-input-nand
+x6 Q' net7 nPRE Q GND VDD 3-input-nand
+x7 net3 net6 net8 GND VDD Nand_Gate
+x8 net3 net1 nPRE net4 GND VDD 3-input-nand
+x9 net4 net2 nCLR net3 GND VDD 3-input-nand
+x10 D net5 GND VDD Inverter
+.ends
+
+
+* expanding   symbol:  /foss/designs/final-circuits/Inverter.sym # of pins=4
+** sym_path: /foss/designs/final-circuits/Inverter.sym
+** sch_path: /foss/designs/final-circuits/Inverter.sch
+.subckt Inverter Vin Vout GND VDD
+*.PININFO Vout:O Vin:I VDD:I GND:I
+XM1 Vout Vin VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout Vin GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/final-circuits/3-input-nand.sym # of pins=6
+** sym_path: /foss/designs/final-circuits/3-input-nand.sym
+** sch_path: /foss/designs/final-circuits/3-input-nand.sch
+.subckt 3-input-nand C B A Vout GND VDD
+*.PININFO A:I B:I Vout:O C:I VDD:I GND:I
+XM1 Vout C VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 Vout A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM4 Vout C net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM5 net1 B net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM6 net2 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/final-circuits/Nand_Gate.sym # of pins=5
+** sym_path: /foss/designs/final-circuits/Nand_Gate.sym
+** sch_path: /foss/designs/final-circuits/Nand_Gate.sch
+.subckt Nand_Gate A B Vout GND VDD
+*.PININFO A:I B:I VDD:I GND:I Vout:O
+XM1 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 Vout B net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM4 net1 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+.end

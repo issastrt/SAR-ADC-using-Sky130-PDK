@@ -1,0 +1,20 @@
+* NGSPICE file created from 3-input-nand.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_CY7YBN a_n130_n144# a_72_n144# w_n330_n441# a_n72_n241#
+X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=0.72
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P a_n202_n144# a_n144_n232# a_144_n144#
++ a_n336_n366#
+X0 a_144_n144# a_n144_n232# a_n202_n144# a_n336_n366# sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
+.ends
+
+.subckt x3-input-nand GND VDD A B C Vout
+XXM1 VDD Vout VDD C sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 VDD Vout VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 m1_3159_n1124# C Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 m1_2545_n1124# B m1_3159_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM6 GND A m1_2545_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+

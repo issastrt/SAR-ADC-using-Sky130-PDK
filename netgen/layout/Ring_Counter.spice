@@ -1,0 +1,66 @@
+* NGSPICE file created from Ring_Counter.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_CY7YBN a_n130_n144# a_72_n144# w_n330_n441# a_n72_n241#
+X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=0.72
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P a_n202_n144# a_n144_n232# a_144_n144#
++ a_n336_n366#
+X0 a_144_n144# a_n144_n232# a_n202_n144# a_n336_n366# sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
+.ends
+
+.subckt Inverter VDD Vin Vout GND
+XXM1 VDD Vout VDD Vin sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 GND Vin Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt x3-input-nand GND A C Vout B VDD
+XXM1 VDD Vout VDD C sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 VDD Vout VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 m1_3159_n1124# C Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 m1_2545_n1124# B m1_3159_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM6 GND A m1_2545_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt Nand_Gate GND A B Vout VDD
+XXM1 VDD Vout VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 m1_2428_n226# B Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM4 GND A m1_2428_n226# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt D_FlipFlop nCLR nPRE Q' Q VDD CLK D GND
+XInverter_1 VDD CLK Nand_Gate_1/B GND Inverter
+X3-input-nand_0 GND nCLR CLK 3-input-nand_2/B D VDD x3-input-nand
+XInverter_0 VDD D Inverter_0/Vout GND Inverter
+X3-input-nand_1 GND nPRE CLK 3-input-nand_3/B Inverter_0/Vout VDD x3-input-nand
+X3-input-nand_3 GND nCLR Nand_Gate_0/A Nand_Gate_1/A 3-input-nand_3/B VDD x3-input-nand
+X3-input-nand_2 GND nPRE Nand_Gate_1/A Nand_Gate_0/A 3-input-nand_2/B VDD x3-input-nand
+X3-input-nand_4 GND nPRE Q' Q Nand_Gate_0/Vout VDD x3-input-nand
+X3-input-nand_5 GND nCLR Q Q' Nand_Gate_1/Vout VDD x3-input-nand
+XNand_Gate_0 GND Nand_Gate_0/A Nand_Gate_1/B Nand_Gate_0/Vout VDD Nand_Gate
+XNand_Gate_1 GND Nand_Gate_1/A Nand_Gate_1/B Nand_Gate_1/Vout VDD Nand_Gate
+.ends
+
+.subckt Ring_Counter CLK EN GND Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q12 Q13 Q14
++ Q15 VDD
+XD_FlipFlop_10 VDD EN D_FlipFlop_10/Q' Q10 VDD CLK Q9 GND D_FlipFlop
+XD_FlipFlop_11 VDD EN D_FlipFlop_11/Q' Q11 VDD CLK Q10 GND D_FlipFlop
+XD_FlipFlop_12 VDD EN D_FlipFlop_12/Q' Q12 VDD CLK Q11 GND D_FlipFlop
+XD_FlipFlop_13 VDD EN D_FlipFlop_13/Q' Q13 VDD CLK Q12 GND D_FlipFlop
+XD_FlipFlop_14 VDD EN D_FlipFlop_14/Q' Q14 VDD CLK Q13 GND D_FlipFlop
+XD_FlipFlop_15 VDD EN D_FlipFlop_15/Q' Q15 VDD CLK Q14 GND D_FlipFlop
+XD_FlipFlop_16 VDD EN D_FlipFlop_16/Q' D_FlipFlop_0/D VDD CLK Q15 GND D_FlipFlop
+XD_FlipFlop_0 EN VDD D_FlipFlop_0/Q' Q0 VDD CLK D_FlipFlop_0/D GND D_FlipFlop
+XD_FlipFlop_1 VDD EN D_FlipFlop_1/Q' Q1 VDD CLK Q0 GND D_FlipFlop
+XD_FlipFlop_2 VDD EN D_FlipFlop_2/Q' Q2 VDD CLK Q1 GND D_FlipFlop
+XD_FlipFlop_3 VDD EN D_FlipFlop_3/Q' Q3 VDD CLK Q2 GND D_FlipFlop
+XD_FlipFlop_4 VDD EN D_FlipFlop_4/Q' Q4 VDD CLK Q3 GND D_FlipFlop
+XD_FlipFlop_5 VDD EN D_FlipFlop_5/Q' Q5 VDD CLK Q4 GND D_FlipFlop
+XD_FlipFlop_6 VDD EN D_FlipFlop_6/Q' Q6 VDD CLK Q5 GND D_FlipFlop
+XD_FlipFlop_7 VDD EN D_FlipFlop_7/Q' Q7 VDD CLK Q6 GND D_FlipFlop
+XD_FlipFlop_8 VDD EN D_FlipFlop_8/Q' Q8 VDD CLK Q7 GND D_FlipFlop
+XD_FlipFlop_9 VDD EN D_FlipFlop_9/Q' Q9 VDD CLK Q8 GND D_FlipFlop
+.ends
+

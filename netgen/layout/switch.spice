@@ -1,0 +1,20 @@
+* NGSPICE file created from switch.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_CY7YBN a_n130_n144# a_72_n144# w_n330_n441# a_n72_n241#
+X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=0.72
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P a_n202_n144# a_n144_n232# a_144_n144#
++ a_n336_n366#
+X0 a_144_n144# a_n144_n232# a_n202_n144# a_n336_n366# sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
+.ends
+
+.subckt switch GND VDD Z A B Vref
+XXM1 B Z VDD m1_1636_n741# sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Z Vref B GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM3 Z A VDD Vref sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 A m1_1636_n741# Z GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 VDD m1_1636_n741# VDD Vref sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM6 GND Vref m1_1636_n741# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
