@@ -119,48 +119,6 @@ N -1200 -160 480 -160 {
 lab=VDD}
 N -1200 -140 480 -140 {
 lab=GND}
-C {capa.sym} 560 -390 0 0 {name=C1
-m=1
-value=200f
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 320 -390 0 0 {name=C2
-m=1
-value=400f
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} 80 -390 0 0 {name=C3
-m=1
-value=800f
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} -160 -390 0 0 {name=C8
-m=1
-value=1.6p
-footprint=1206
-device="ceramic capacitor"
-L=0.15
-W=1}
-C {capa.sym} -400 -390 0 0 {name=C4
-m=1
-value=3.2p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} -640 -390 0 0 {name=C5
-m=1
-value=6.4p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} -880 -390 0 0 {name=C6
-m=1
-value=12.8p
-footprint=1206
-device="ceramic capacitor"}
-C {capa.sym} -1120 -390 0 0 {name=C7
-m=1
-value=25.6p
-footprint=1206
-device="ceramic capacitor"}
 C {/foss/designs/schematic_lvs/switch.sym} 580 -200 0 0 {name=x1}
 C {/foss/designs/schematic_lvs/switch.sym} 340 -200 0 0 {name=x2}
 C {/foss/designs/schematic_lvs/switch.sym} 100 -200 0 0 {name=x3}
@@ -184,3 +142,11 @@ C {vdd.sym} 720 -60 0 0 {name=l6 lab=VDD}
 C {vdd.sym} 720 0 0 0 {name=l1 lab=GND}
 C {ipin.sym} -1200 -160 0 0 {name=b8 lab=VDD}
 C {ipin.sym} -1200 -140 0 0 {name=b9 lab=GND}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 560 -390 0 0 {name=C2 model=cap_mim_m3_1 W=42 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 320 -390 0 0 {name=C1 model=cap_mim_m3_1 W=84 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} 80 -390 0 0 {name=C3 model=cap_mim_m3_1 W=168 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -160 -390 0 0 {name=C4 model=cap_mim_m3_1 W=336 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -400 -390 0 0 {name=C5 model=cap_mim_m3_1 W=672 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -640 -390 0 0 {name=C6 model=cap_mim_m3_1 W=1344 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -880 -390 0 0 {name=C7 model=cap_mim_m3_1 W=2688 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_1.sym} -1120 -390 0 0 {name=C8 model=cap_mim_m3_1 W=5376 L=1 MF=1 spiceprefix=X}

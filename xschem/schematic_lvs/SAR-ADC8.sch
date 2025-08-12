@@ -403,18 +403,6 @@ N 1260 170 1260 220 {
 lab=GND}
 N 1260 -240 1260 -190 {
 lab=VDD}
-N 780 450 860 450 {
-lab=#net32}
-N 860 450 860 500 {
-lab=#net32}
-N 860 560 860 590 {
-lab=VDD_Comp}
-N 690 450 780 450 {
-lab=#net32}
-N 690 450 690 590 {
-lab=#net32}
-N 860 570 900 570 {
-lab=VDD_Comp}
 C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 -40 0 0 {name=x2}
 C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 400 0 0 {name=x4}
 C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 620 0 0 {name=x5}
@@ -526,21 +514,8 @@ C {noconn.sym} 2820 970 2 0 {name=l5}
 C {noconn.sym} 2820 750 2 0 {name=l6}
 C {noconn.sym} 2820 1190 2 0 {name=l7}
 C {noconn.sym} 2820 1410 2 0 {name=l8}
-C {lab_wire.sym} 690 650 0 0 {name=p77 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} 780 390 0 0 {name=p78 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 900 570 0 1 {name=p79 sig_type=std_logic lab=VDD_Comp}
-C {devices/ipin.sym} 860 650 2 0 {name=p80 sig_type=std_logic lab=GND}
-C {sky130_fd_pr/diode.sym} 860 530 2 0 {name=D1
-model=diode_pw2nd_05v5
-area=1e12
-perim=4e6
-spiceprefix=X
-}
-C {sky130_fd_pr/diode.sym} 780 420 2 0 {name=D2
-model=diode_pw2nd_05v5
-area=1e12
-perim=4e6
-spiceprefix=X
-}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 690 620 0 0 {name=C3 model=cap_mim_m3_1 W=420 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 860 620 0 0 {name=C2 model=cap_mim_m3_1 W=21 L=1 MF=1 spiceprefix=X}
+C {/foss/designs/schematic_lvs/voltage_doubler.sym} 1050 390 0 0 {name=x28}
+C {lab_wire.sym} 900 370 0 0 {name=p77 sig_type=std_logic lab=VDD}
+C {lab_wire.sym} 900 410 0 0 {name=p78 sig_type=std_logic lab=GND}
+C {lab_wire.sym} 900 390 0 0 {name=p79 sig_type=std_logic lab=CLK}
+C {lab_wire.sym} 1200 370 0 1 {name=p80 sig_type=std_logic lab=VDD_Comp}
