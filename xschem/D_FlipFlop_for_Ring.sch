@@ -165,16 +165,16 @@ C {ipin.sym} -890 -520 0 0 {name=p9 lab=nPRE}
 C {ipin.sym} -890 -20 0 0 {name=p10 lab=nCLR}
 C {opin.sym} -130 -380 0 0 {name=p11 lab=Q}
 C {opin.sym} -150 -180 0 0 {name=p12 lab=Q'}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Inverter.sym} -590 -250 0 0 {name=x1}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -1130 -240 0 0 {name=x2}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} -410 -270 0 0 {name=x3}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -1130 -320 2 1 {name=x4}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -350 -340 2 1 {name=x5}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -350 -220 0 0 {name=x6}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} -410 -290 2 1 {name=x7}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -910 -240 0 0 {name=x8}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/3-input-nand.sym} -910 -320 2 1 {name=x9}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Inverter.sym} -1160 -270 3 1 {name=x10}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym} -590 -250 0 0 {name=x1}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -1130 -240 0 0 {name=x2}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym} -410 -270 0 0 {name=x3}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -1130 -320 2 1 {name=x4}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -350 -340 2 1 {name=x5}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -350 -220 0 0 {name=x6}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym} -410 -290 2 1 {name=x7}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -910 -240 0 0 {name=x8}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -910 -320 2 1 {name=x9}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym} -1160 -270 3 1 {name=x10}
 C {ipin.sym} -1140 -480 0 0 {name=p1 lab=VDD}
 C {ipin.sym} -1140 -460 0 0 {name=p2 lab=GND}
 C {lab_wire.sym} -850 -480 0 0 {name=p3 sig_type=std_logic lab=VDD}

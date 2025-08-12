@@ -9,7 +9,7 @@ N -1330 160 -1330 180 {
 lab=CLK}
 N -420 60 -420 100 {
 lab=Vin}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/SAR-ADC8.sym} -180 110 0 0 {name=x1}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/SAR-ADC-using-Sky130-PDK.sym} -180 110 0 0 {name=x1}
 C {gnd.sym} -1330 240 0 0 {name=l27 lab=GND
 value=1.8}
 C {lab_wire.sym} -1330 160 0 0 {name=p20 sig_type=std_logic lab=CLK}
@@ -28,7 +28,7 @@ C {code_shown.sym} -725 80 0 0 {name=Commands only_toplevel=true value="
 .control
   save all
   tran 0.1u 70u uic
-  write SAR-ADC8_tb.raw
+  write SAR-ADC-using-Sky130-PDK_tb.raw
   
 .endc
 "}

@@ -119,14 +119,14 @@ N -1200 -160 480 -160 {
 lab=VDD}
 N -1200 -140 480 -140 {
 lab=GND}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} 580 -200 0 0 {name=x1}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} 340 -200 0 0 {name=x2}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} 100 -200 0 0 {name=x3}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} -140 -200 0 0 {name=x4}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} -380 -200 0 0 {name=x5}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} -620 -200 0 0 {name=x6}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} -860 -200 0 0 {name=x7}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/switch.sym} -1100 -200 0 0 {name=x8}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 580 -200 0 0 {name=x1}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 340 -200 0 0 {name=x2}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 100 -200 0 0 {name=x3}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} -140 -200 0 0 {name=x4}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} -380 -200 0 0 {name=x5}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} -620 -200 0 0 {name=x6}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} -860 -200 0 0 {name=x7}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} -1100 -200 0 0 {name=x8}
 C {opin.sym} 720 -460 0 0 {name=OUT lab=OUT}
 C {ipin.sym} 480 -260 0 0 {name=b0 lab=b0}
 C {ipin.sym} 240 -260 0 0 {name=b1 lab=b1}
