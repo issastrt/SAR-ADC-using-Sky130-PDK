@@ -403,14 +403,14 @@ N 1260 170 1260 220 {
 lab=GND}
 N 1260 -240 1260 -190 {
 lab=VDD}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 -40 0 0 {name=x2}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 400 0 0 {name=x4}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 620 0 0 {name=x5}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 840 0 0 {name=x6}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1060 0 0 {name=x7}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1280 0 0 {name=x8}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1500 0 0 {name=x9}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 180 0 0 {name=x3}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 -40 0 0 {name=x2}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 400 0 0 {name=x4}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 620 0 0 {name=x5}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 840 0 0 {name=x6}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1060 0 0 {name=x7}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1280 0 0 {name=x8}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 1500 0 0 {name=x9}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} 2800 180 0 0 {name=x3}
 C {devices/ipin.sym} 920 -120 0 0 {name=p4 sig_type=std_logic lab=EN}
 C {devices/ipin.sym} 920 100 0 0 {name=p1 sig_type=std_logic lab=CLK}
 C {devices/ipin.sym} 1260 -240 0 0 {name=p2 sig_type=std_logic lab=VDD}
@@ -422,25 +422,25 @@ C {opin.sym} 3360 680 0 0 {name=p8 lab=Q4}
 C {opin.sym} 3360 900 0 0 {name=p9 lab=Q5}
 C {opin.sym} 3360 1120 0 0 {name=p10 lab=Q6}
 C {opin.sym} 3360 1340 0 0 {name=p12 lab=Q7}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 -30 0 0 {name=x18}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 190 0 0 {name=x19}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 410 0 0 {name=x20}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 630 0 0 {name=x21}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 850 0 0 {name=x22}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 1070 0 0 {name=x23}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 1290 0 0 {name=x24}
-C {/foss/designs/schematic_lvs/Nand_Gate.sym} 1750 1510 0 0 {name=x25}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 -80 0 0 {name=x10}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 140 0 0 {name=x11}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 1020 0 0 {name=x15}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 360 0 0 {name=x12}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 580 0 0 {name=x13}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 800 0 0 {name=x14}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 1240 0 0 {name=x16}
-C {/foss/designs/schematic_lvs/And_Gate.sym} 2590 1460 0 0 {name=x17}
-C {/foss/designs/schematic_lvs/CDAC8.sym} 2980 -20 0 0 {name=x27}
-C {/foss/designs/schematic_lvs/Comparator.sym} 2360 -260 0 0 {name=x1}
-C {/foss/designs/schematic_lvs/RING_COUNTER_FINAL.sym} 1260 -70 0 0 {name=x26}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 -30 0 0 {name=x18}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 190 0 0 {name=x19}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 410 0 0 {name=x20}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 630 0 0 {name=x21}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 850 0 0 {name=x22}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 1070 0 0 {name=x23}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 1290 0 0 {name=x24}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/Nand_Gate.sym} 1750 1510 0 0 {name=x25}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 -80 0 0 {name=x10}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 140 0 0 {name=x11}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 1020 0 0 {name=x15}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 360 0 0 {name=x12}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 580 0 0 {name=x13}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 800 0 0 {name=x14}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 1240 0 0 {name=x16}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/And_Gate.sym} 2590 1460 0 0 {name=x17}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/CDAC8.sym} 2980 -20 0 0 {name=x27}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/comparator.sym} 2360 -260 0 0 {name=x1}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/RING_COUNTER_FINAL.sym} 1260 -70 0 0 {name=x26}
 C {opin.sym} 3360 20 0 0 {name=p30 lab=Q1}
 C {lab_wire.sym} 1370 680 0 0 {name=p5 sig_type=std_logic lab=FFCLR}
 C {lab_wire.sym} 2760 1230 0 0 {name=p19 sig_type=std_logic lab=FFCLR}
@@ -514,7 +514,7 @@ C {noconn.sym} 2820 970 2 0 {name=l5}
 C {noconn.sym} 2820 750 2 0 {name=l6}
 C {noconn.sym} 2820 1190 2 0 {name=l7}
 C {noconn.sym} 2820 1410 2 0 {name=l8}
-C {/foss/designs/schematic_lvs/voltage_doubler.sym} 1050 390 0 0 {name=x28}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/voltage_doubler.sym} 1050 390 0 0 {name=x28}
 C {lab_wire.sym} 900 370 0 0 {name=p77 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 900 410 0 0 {name=p78 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 900 390 0 0 {name=p79 sig_type=std_logic lab=CLK}

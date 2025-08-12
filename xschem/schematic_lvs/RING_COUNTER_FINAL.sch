@@ -345,22 +345,22 @@ N -270 -690 -270 -630 {
 lab=EN}
 N -3500 -610 -3400 -610 {
 lab=GND}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -3300 -390 0 0 {name=x1}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -3100 -390 0 0 {name=x2}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -2900 -390 0 0 {name=x3}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -2700 -390 0 0 {name=x4}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -2500 -390 0 0 {name=x5}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -2300 -390 0 0 {name=x6}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -2100 -390 0 0 {name=x7}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -1900 -390 0 0 {name=x8}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -1700 -390 0 0 {name=x9}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -1500 -390 0 0 {name=x10}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -1300 -390 0 0 {name=x11}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -1100 -390 0 0 {name=x12}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -900 -390 0 0 {name=x13}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -700 -390 0 0 {name=x14}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -500 -390 0 0 {name=x15}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -300 -390 0 0 {name=x16}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -3300 -390 0 0 {name=x1}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -3100 -390 0 0 {name=x2}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -2900 -390 0 0 {name=x3}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -2700 -390 0 0 {name=x4}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -2500 -390 0 0 {name=x5}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -2300 -390 0 0 {name=x6}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -2100 -390 0 0 {name=x7}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -1900 -390 0 0 {name=x8}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -1700 -390 0 0 {name=x9}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -1500 -390 0 0 {name=x10}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -1300 -390 0 0 {name=x11}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -1100 -390 0 0 {name=x12}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -900 -390 0 0 {name=x13}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -700 -390 0 0 {name=x14}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -500 -390 0 0 {name=x15}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -300 -390 0 0 {name=x16}
 C {opin.sym} -3240 -550 3 0 {name=p11 lab=Q0}
 C {opin.sym} -3040 -550 3 0 {name=p1 lab=Q1}
 C {opin.sym} -2840 -550 3 0 {name=p2 lab=Q2}
@@ -380,7 +380,7 @@ C {opin.sym} -250 -550 3 0 {name=p16 lab=Q15}
 C {ipin.sym} -3500 -370 0 0 {name=p17 lab=CLK}
 C {ipin.sym} -3500 -330 0 0 {name=p18 lab=EN}
 C {ipin.sym} -3500 -690 0 0 {name=p19 lab=VDD}
-C {/foss/designs/schematic_lvs/D_FlipFlop_for_Ring.sym} -100 -390 0 0 {name=x17}
+C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/schematic_lvs/D_FlipFlop_for_Ring.sym} -100 -390 0 0 {name=x17}
 C {lab_wire.sym} -3400 -630 0 0 {name=p20 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -3200 -630 0 0 {name=p22 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} -3200 -610 0 0 {name=p23 sig_type=std_logic lab=GND}
