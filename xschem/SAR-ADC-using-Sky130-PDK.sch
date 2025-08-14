@@ -344,7 +344,7 @@ lab=DACout}
 N 2970 -120 3060 -120 {
 lab=Q4}
 N 2310 -360 2310 -330 {
-lab=VDD_Comp}
+lab=VDD}
 N 2310 -190 2310 -160 {
 lab=Vbias}
 N 2480 40 2480 270 {
@@ -453,7 +453,7 @@ C {lab_wire.sym} 2760 -90 0 0 {name=p13 sig_type=std_logic lab=FFCLR}
 C {devices/ipin.sym} 2310 -160 0 0 {name=p33 sig_type=std_logic lab=Vbias}
 C {lab_wire.sym} 3600 -140 0 1 {name=p27 sig_type=std_logic lab=DACout}
 C {lab_wire.sym} 2460 -260 0 1 {name=p22 sig_type=std_logic lab=Compout}
-C {lab_wire.sym} 2310 -360 0 0 {name=p23 sig_type=std_logic lab=VDD_Comp}
+C {lab_wire.sym} 2310 -360 0 0 {name=p23 sig_type=std_logic lab=VDD}
 C {lab_wire.sym} 2760 1450 2 1 {name=p21 sig_type=std_logic lab=EN}
 C {devices/ipin.sym} 1260 220 0 0 {name=p31 sig_type=std_logic lab=GND}
 C {lab_wire.sym} 1690 -220 0 0 {name=p32 sig_type=std_logic lab=VDD}
@@ -514,8 +514,3 @@ C {noconn.sym} 2820 970 2 0 {name=l5}
 C {noconn.sym} 2820 750 2 0 {name=l6}
 C {noconn.sym} 2820 1190 2 0 {name=l7}
 C {noconn.sym} 2820 1410 2 0 {name=l8}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/voltage_doubler.sym} 1050 390 0 0 {name=x28}
-C {lab_wire.sym} 900 370 0 0 {name=p77 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 900 410 0 0 {name=p78 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 900 390 0 0 {name=p79 sig_type=std_logic lab=CLK}
-C {lab_wire.sym} 1200 370 0 1 {name=p80 sig_type=std_logic lab=VDD_Comp}
