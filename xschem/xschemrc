@@ -1,0 +1,43 @@
+# Set SYM_PATH to current directory only
+set ::env(SYM_PATH) "."
+
+# Detect and set PDK_ROOT if not defined
+if { ![info exists env(PDK_ROOT)] } {
+  puts stderr "Warning: PDK_ROOT env. var. not found or empty, trying to find an open_pdks install"
+  if {[file isdir /usr/share/pdk]} {
+    set ::env(PDK_ROOT) /usr/share/pdk
+  } elseif {[file isdir /usr/local/share/pdk]} {
+    set ::env(PDK_ROOT) /usr/local/share/pdk
+  } elseif {[file isdir $env(HOME)/share/pdk]} {
+    set ::env(PDK_ROOT) $env(HOME)/share/pdk
+  } elseif {[file isdir $env(HOME)/.ciel]} {
+    set ::env(PDK_ROOT) $env(HOME)/.ciel
+  } elseif {[file isdir $env(HOME)/.volare]} {
+    set ::env(PDK_ROOT) $env(HOME)/.volare
+  } else {
+    puts stderr {No open_pdks installation found, set PDK_ROOT env. var. and restart xschem}
+  }
+}
+
+# Set default PDK
+if { ![info exists env(PDK)] } {
+  set ::env(PDK) sky130A
+}
+
+# Source the PDK's xschemrc if PDK is defined
+if {![info exists PDK]} {
+  source $env(PDK_ROOT)/$env(PDK)/libs.tech/xschem/xschemrc
+}
+
+# Include library path of this script
+append XSCHEM_LIBRARY_PATH :[file dirname [info script]]
+
+# Source any xschemrc files in IP folders
+foreach rcfile [glob -nocomplain ../ip/*/xschem/xschemrc] {
+  puts "sourcing $rcfile"
+  source $rcfile
+}
+
+# Force Xschem to evaluate expressions before netlisting
+set ::env(XSCHEM_EVAL_EXPR) 1
+
