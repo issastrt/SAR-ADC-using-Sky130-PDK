@@ -271,5 +271,5 @@ L=150
 model=res_xhigh_po_5p73
 spiceprefix=X
 mult=1}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1040 -390 3 0 {name=C3 model=cap_mim_m3_1 W=10 L=1 MF=1 spiceprefix=X}
-C {sky130_fd_pr/cap_mim_m3_1.sym} 1250 -340 0 0 {name=C1 model=cap_mim_m3_1 W=10 L=1 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1040 -390 3 0 {name=C3 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 1250 -340 0 0 {name=C1 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}

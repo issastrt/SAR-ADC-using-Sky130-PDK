@@ -45,8 +45,8 @@ C {lab_wire.sym} -30 120 0 1 {name=p10 sig_type=std_logic lab=Q2}
 C {lab_wire.sym} -30 140 0 1 {name=p11 sig_type=std_logic lab=Q1}
 C {lab_wire.sym} -30 160 0 1 {name=p12 sig_type=std_logic lab=Q0}
 C {lab_pin.sym} -420 60 0 0 {name=p15 sig_type=std_logic lab=Vin}
-C {vsource.sym} -1040 -170 0 0 {name=VVin value="PULSE(0.1 1.7 0 500p 500p 32u 64u)" savecurrent=false}
+C {vsource.sym} -1040 -170 0 0 {name=VVin value="PULSE(0.1 1.7 0 500p 500p 33.5u 67u)" savecurrent=false}
 C {lab_wire.sym} -1040 -200 0 0 {name=p25 sig_type=std_logic lab=Vin}
 C {gnd.sym} -1040 -140 0 0 {name=l1 lab=GND}
 C {gnd.sym} -420 -10 0 0 {name=l3 lab=GND}
-C {sky130_fd_pr/corner.sym} -930 90 0 0 {name=CORNER only_toplevel=true corner=ff}
+C {sky130_fd_pr/corner.sym} -930 90 0 0 {name=CORNER only_toplevel=true corner=tt}
