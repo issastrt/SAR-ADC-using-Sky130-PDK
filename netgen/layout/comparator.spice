@@ -1,0 +1,49 @@
+* NGSPICE file created from comparator.ext - technology: sky130A
+
+.subckt sky130_fd_pr__res_xhigh_po_5p73_2WP2GG a_n703_n15546# a_n573_14984# a_n573_n15416#
+X0 a_n573_14984# a_n573_n15416# a_n703_n15546# sky130_fd_pr__res_xhigh_po_5p73 l=150
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW a_100_n1500# a_n100_n1588# a_n292_n1722#
++ a_n158_n1500#
+X0 a_100_n1500# a_n100_n1588# a_n158_n1500# a_n292_n1722# sky130_fd_pr__nfet_g5v0d10v5 ad=4.35 pd=30.58 as=4.35 ps=30.58 w=15 l=1
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_2_AZGBXE m4_n884_n280# c2_n804_n200#
+X0 c2_n804_n200# m4_n884_n280# sky130_fd_pr__cap_mim_m3_2 l=2 w=5.35
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q a_100_n5000# w_n358_n5297# a_n158_n5000#
++ a_n100_n5097#
+X0 a_100_n5000# a_n100_n5097# a_n158_n5000# w_n358_n5297# sky130_fd_pr__pfet_g5v0d10v5 ad=14.5 pd=100.58 as=14.5 ps=100.58 w=50 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_53M7DK a_100_n2000# a_n100_n2088# a_n292_n2222#
++ a_n158_n2000#
+X0 a_100_n2000# a_n100_n2088# a_n158_n2000# a_n292_n2222# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8 a_n100_n1088# a_n292_n1222# a_n158_n1000#
++ a_100_n1000#
+X0 a_100_n1000# a_n100_n1088# a_n158_n1000# a_n292_n1222# sky130_fd_pr__nfet_g5v0d10v5 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q a_n100_n6097# a_100_n6000# w_n358_n6297#
++ a_n158_n6000#
+X0 a_100_n6000# a_n100_n6097# a_n158_n6000# w_n358_n6297# sky130_fd_pr__pfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1
+.ends
+
+.subckt comparator VDD Vinm Vinp Vout VSS
+XXR1 VSS VDD m1_26567_n1704# sky130_fd_pr__res_xhigh_po_5p73_2WP2GG
+XXM1 m1_28034_9075# Vinm VSS m1_27776_12019# sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW
+XXM2 m1_28560_12019# Vinp VSS m1_28034_9075# sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_0 VSS Vout sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM3 VDD VDD m1_27776_12019# m1_27776_12019# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_1 Vout m1_28560_12019# sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM4 m1_28560_12019# VDD VDD m1_27776_12019# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+XXM5 VSS m1_26567_n1704# VSS m1_28034_9075# sky130_fd_pr__nfet_g5v0d10v5_53M7DK
+XXM6 m1_26567_n1704# VSS VSS Vout sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8
+XXM7 VSS m1_26567_n1704# VSS m1_26567_n1704# sky130_fd_pr__nfet_g5v0d10v5_53M7DK
+XXM9 m1_28560_12019# Vout VDD VDD sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q
+.ends
+

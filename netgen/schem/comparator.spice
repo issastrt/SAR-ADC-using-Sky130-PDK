@@ -1,0 +1,16 @@
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/comparator.sch
+.subckt comparator Vout Vinm Vinp VDD VSS
+*.PININFO Vout:O Vinp:I Vinm:I VDD:I VSS:I
+XM9 Vout net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=60 nf=1 m=1
+XM3 net1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=50 nf=1 m=1
+XM4 net2 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=50 nf=1 m=1
+XM1 net1 Vinm net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15 nf=1 m=1
+XM2 net2 Vinp net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15 nf=1 m=1
+XM6 Vout net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=10 nf=1 m=1
+XM5 net3 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 m=1
+XM7 net4 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 m=1
+XR1 net4 VDD VSS sky130_fd_pr__res_xhigh_po_5p73 L=150 mult=1 m=1
+XC3 net2 Vout sky130_fd_pr__cap_mim_m3_2 W=5.35 L=2 m=1
+XC1 Vout VSS sky130_fd_pr__cap_mim_m3_2 W=5.35 L=2 m=1
+.ends
+.end
