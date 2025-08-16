@@ -208,7 +208,7 @@ C {ipin.sym} 930 -350 0 1 {name=p3 sig_type=std_logic lab=Vinp}
 C {ipin.sym} 570 -350 0 0 {name=p5 sig_type=std_logic lab=Vinm}
 C {ipin.sym} 750 -650 1 0 {name=p1 sig_type=std_logic lab=VDD
 }
-C {ipin.sym} 750 -80 3 0 {name=p2 sig_type=std_logic lab=VSS}
+C {ipin.sym} 750 -80 3 0 {name=p2 sig_type=std_logic lab=Vbias}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1110 -450 0 0 {name=M9
 L=1
 W=60
@@ -265,7 +265,6 @@ nf=1 mult=1
 model=nfet_g5v0d10v5
 spiceprefix=X
 }
-C {devices/lab_pin.sym} 440 -450 0 0 {name=l4 sig_type=std_logic lab=GND}
 C {sky130_fd_pr/res_xhigh_po_5p73.sym} 490 -450 0 0 {name=R1
 L=150
 model=res_xhigh_po_5p73
@@ -273,3 +272,5 @@ spiceprefix=X
 mult=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1040 -390 3 0 {name=C3 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1250 -340 0 0 {name=C1 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}
+C {ipin.sym} 440 -450 2 1 {name=p4 sig_type=std_logic lab=GND
+}
