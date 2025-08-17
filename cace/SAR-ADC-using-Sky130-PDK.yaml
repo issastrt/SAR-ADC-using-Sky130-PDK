@@ -1,0 +1,199 @@
+#--------------------------------------------------------------
+# CACE circuit characterization file
+#--------------------------------------------------------------
+
+name: SAR-ADC-using-Sky130-PDK
+description: 8-bit SAR ADC with 3.3V supply and enable input
+commit: N/A
+PDK: sky130A
+cace_format: 5.2
+
+authorship:
+  designer: Tim Edwards
+  company: Efabless Corporation
+  creation_date: November 21, 2023
+  license: Apache 2.0
+ 
+paths:
+  root: ..
+  documentation: docs
+  schematic: xschem
+  netlist: netlist
+
+pins:
+  Q7:0:
+    description: Digital output (8 bits)
+    type: digital
+    direction: output
+    Vmin: GND - 0.3
+    Vmax: VDD + 0.3
+  Vin:
+    description: ADC voltage input
+    type: signal
+    direction: input
+    Vmin: GND
+    Vmax: VDD
+  VDD:
+    description: Positive digital power supply
+    type: power
+    direction: inout
+    Vmin: 1.7
+    Vmax: 1.9
+  GND:
+    description: Analog ground
+    type: ground
+    direction: inout
+    Vmin: -0.1
+    Vmax: 0.1
+  Vbias:
+    description: Voltage bias
+    type: signal
+    direction: input
+    Vmin: -0.9
+    Vmax: -0.7
+  CLK:
+    description: Clock
+    type: digital
+    direction: input
+    Vmin: 0
+    Vmax: VDD
+  EN:
+    description: Enable pin
+    type: digital
+    direction: input
+    Vmin: 0
+    Vmax: VDD
+
+default_conditions:
+  VVDD:
+    description: Digital power supply voltage
+    display: VDD
+    unit: V
+    typical: 1.8
+  VVGND:
+    description: Digital ground
+    display: VGND
+    unit: V
+    typical: 0
+  VVbias:
+    description: Voltage bias
+    display: Vbias
+    unit: V
+    typical: -0.8
+  VCLK:
+    description: Clock
+    display: CLK
+    unit: V
+    typical: 0
+  VEN:
+    description: Enable pin
+    display: EN
+    unit: V
+    typical: 1.8
+  VVin:
+    description: Input voltage
+    display: Vin
+    unit: V
+    minimum: 0
+    typical: 0.9
+    maximum: 1.8
+  Rout:
+    description: Output load resistance
+    display: RLoad
+    unit: MΩ
+    typical: 100
+  Cout:
+    description: Output load capacitance
+    display: CLoad
+    unit: fF
+    maximum: 100
+  temperature:
+    description: Ambient temperature
+    display: Temp
+    unit: °C
+    minimum: -40
+    typical: 27
+    maximum: 130
+  corner:
+    description: Process corner
+    display: Corner
+    minimum: ss
+    typical: tt
+    maximum: ff
+
+parameters:
+  Idd_enabled:
+    description: Current draw through analog supply, DAC enabled
+    display: Idd
+    unit: uA
+    spec:
+      idd:
+        minimum:
+          value: any
+        typical:
+          value: 170
+        maximum:
+          value: 250
+    tool:
+      ngspice:
+        template: dccurrent_vdd.sch
+        format: ascii
+        suffix: .data
+        variables: [null, idd]
+    plot:
+      idd_enabled:
+        xaxis: VVin
+        yaxis: idd
+    conditions:
+      VVDD:
+        typical: 1.8
+      VVin:
+        minimum: 0
+        typical: 0.9
+        maximum: 1.8
+      VCLK:
+        minimum: 0
+        maximum: 1.8
+      temperature:
+        typical: 27
+      corner:
+        typical: tt
+  
+  Idd_disabled:
+    description: Current draw through analog supply, DAC enabled
+    display: Idd_disabled
+    unit: uA
+    spec:
+      idd:
+        minimum:
+          value: any
+        typical:
+          value: 170
+        maximum:
+          value: 250
+    tool:
+      ngspice:
+        template: dccurrent_vdd.sch
+        format: ascii
+        suffix: .data
+        variables: [null, idd]
+    plot:
+      idd_disabled:
+        xaxis: VVin
+        yaxis: idd
+    conditions:
+      VVDD:
+        typical: 1.8
+      VVin:
+        minimum: 0
+        typical: 0.9
+        maximum: 1.8
+      VEN:
+        typical: 0
+      VCLK:
+        minimum: 0
+        maximum: 1.8
+      temperature:
+        typical: 27
+      corner:
+        typical: tt

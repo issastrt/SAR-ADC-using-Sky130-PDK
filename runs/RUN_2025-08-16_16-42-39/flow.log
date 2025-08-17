@@ -1,0 +1,6 @@
+Generating simulation netlist from schematic…
+Parameter Idd_enabled: Generating simulation files.
+Parameter Idd_enabled: Running simulations.
+Parameter Idd_enabled: Collecting results.
+Parameter Idd_enabled: Plotting idd_enabled to '[repr.filename][link=file:///foss/designs/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-08-16_16-42-39/parameters/Idd_enabled]runs/RUN_2025-08-16_16-42-39/parameters/Idd_enabled[/link][/repr.filename]'…
+Done with CACE simulations and evaluations in 0:00:23.

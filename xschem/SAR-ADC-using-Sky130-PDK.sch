@@ -514,4 +514,3 @@ C {noconn.sym} 2820 970 2 0 {name=l5}
 C {noconn.sym} 2820 750 2 0 {name=l6}
 C {noconn.sym} 2820 1190 2 0 {name=l7}
 C {noconn.sym} 2820 1410 2 0 {name=l8}
-C {lab_wire.sym} 2220 -260 0 0 {name=p77 sig_type=std_logic lab=GND}
