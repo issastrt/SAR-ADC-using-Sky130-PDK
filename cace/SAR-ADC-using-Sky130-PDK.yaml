@@ -3,15 +3,15 @@
 #--------------------------------------------------------------
 
 name: SAR-ADC-using-Sky130-PDK
-description: 8-bit SAR ADC with 3.3V supply and enable input
+description: Design of a SAR ADC for Wearable Biosensor Applications using SkyWater 130nm CMOS Technology
 commit: N/A
 PDK: sky130A
 cace_format: 5.2
 
 authorship:
-  designer: Tim Edwards
-  company: Efabless Corporation
-  creation_date: November 21, 2023
+  designer: Samantha Eureka Daiz, Christian Mico A. Madrazo, Audrey T. Manahan, Isabelle Rose A. Sta Rita
+  company: De La Salle University
+  creation_date: June 24, 2025
   license: Apache 2.0
  
 paths:
@@ -46,19 +46,19 @@ pins:
     Vmin: -0.1
     Vmax: 0.1
   Vbias:
-    description: Voltage bias
+    description: Comparator bias voltage
     type: signal
     direction: input
     Vmin: -0.9
     Vmax: -0.7
   CLK:
-    description: Clock
+    description: Clock signal input
     type: digital
     direction: input
     Vmin: 0
     Vmax: VDD
   EN:
-    description: Enable pin
+    description: Enable pin (active low)
     type: digital
     direction: input
     Vmin: 0
@@ -66,12 +66,12 @@ pins:
 
 default_conditions:
   VVDD:
-    description: Digital power supply voltage
+    description: Analog power supply voltage
     display: VDD
     unit: V
     typical: 1.8
   VVGND:
-    description: Digital ground
+    description: Analog ground
     display: VGND
     unit: V
     typical: 0
@@ -123,7 +123,7 @@ default_conditions:
 
 parameters:
   Idd_enabled:
-    description: Current draw through analog supply, DAC enabled
+    description: Current draw through analog supply, ADC enabled
     display: Idd
     unit: uA
     spec:
@@ -160,7 +160,7 @@ parameters:
         typical: tt
   
   Idd_disabled:
-    description: Current draw through analog supply, DAC enabled
+    description: Current draw through analog supply, ADC enabled
     display: Idd_disabled
     unit: uA
     spec:
