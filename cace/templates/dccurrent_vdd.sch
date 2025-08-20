@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -750 -320 -650 -320 {
 lab=VDD}
@@ -17,7 +17,7 @@ N -750 -190 -650 -190 {
 lab=Vin}
 N -710 70 -710 120 {
 lab=Vin}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
+C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -1620 -280 0 0 {name=CONTROL only_toplevel=false value=".control
 op
 set wr_singlescale
@@ -40,27 +40,27 @@ C {devices/code_shown.sym} -1630 -560 0 0 {name=SETUP only_toplevel=false value=
 "}
 C {devices/vsource.sym} -750 -290 0 0 {name=VVDD value="DC CACE\{VVDD\}" savecurrent=false}
 C {devices/lab_pin.sym} -650 -320 0 1 {name=p33 sig_type=std_logic lab=VDD}
-C {gnd.sym} -750 -260 0 0 {name=l2 lab=GND}
-C {gnd.sym} -470 -260 0 0 {name=l3 lab=GND}
+C {devices/gnd.sym} -750 -260 0 0 {name=l2 lab=GND}
+C {devices/gnd.sym} -470 -260 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} -470 -290 0 0 {name=VVGND value="DC CACE\{VVGND\}" savecurrent=false}
 C {devices/lab_pin.sym} -470 -320 0 1 {name=p1 sig_type=std_logic lab=VGND}
 C {devices/lab_pin.sym} -710 -70 0 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -710 10 0 0 {name=p3 sig_type=std_logic lab=VGND}
 C {devices/vsource.sym} -300 -290 0 0 {name=VVbias value="DC CACE\{VVbias\}" savecurrent=false}
 C {devices/lab_pin.sym} -200 -320 0 1 {name=p4 sig_type=std_logic lab=Vbias}
-C {gnd.sym} -300 -260 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} -300 -260 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -710 -50 0 0 {name=p5 sig_type=std_logic lab=Vbias}
 C {devices/vsource.sym} -470 -160 0 0 {name=VCLK value="DC CACE\{VCLK\}" savecurrent=false}
 C {devices/lab_pin.sym} -370 -190 0 1 {name=p6 sig_type=std_logic lab=CLK}
-C {gnd.sym} -470 -130 0 0 {name=l4 lab=GND}
+C {devices/gnd.sym} -470 -130 0 0 {name=l4 lab=GND}
 C {devices/vsource.sym} -300 -160 0 0 {name=VEN value="DC CACE\{VEN\}" savecurrent=false}
 C {devices/lab_pin.sym} -200 -190 0 1 {name=p7 sig_type=std_logic lab=EN}
-C {gnd.sym} -300 -70 0 0 {name=l5 lab=GND}
+C {devices/gnd.sym} -300 -70 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -710 -30 0 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -710 -10 0 0 {name=p9 sig_type=std_logic lab=EN}
 C {devices/vsource.sym} -750 -160 0 0 {name=VVin value="DC CACE\{VVin\}" savecurrent=false}
 C {devices/lab_pin.sym} -650 -190 0 1 {name=p10 sig_type=std_logic lab=Vin}
-C {gnd.sym} -750 -130 0 0 {name=l6 lab=GND}
+C {devices/gnd.sym} -750 -130 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -710 70 0 0 {name=p11 sig_type=std_logic lab=Vin}
 C {devices/res.sym} -130 50 2 0 {name=Rout
 value=CACE\{Rout\}
@@ -86,14 +86,14 @@ device=resistor}
 C {devices/res.sym} 310 180 2 0 {name=Rout7
 value=CACE\{Rout\}
 device=resistor}
-C {gnd.sym} -130 80 0 0 {name=l7 lab=GND}
-C {gnd.sym} 10 80 0 0 {name=l8 lab=GND}
-C {gnd.sym} 160 80 0 0 {name=l9 lab=GND}
-C {gnd.sym} 310 80 0 0 {name=l10 lab=GND}
-C {gnd.sym} -130 210 0 0 {name=l11 lab=GND}
-C {gnd.sym} 10 210 0 0 {name=l12 lab=GND}
-C {gnd.sym} 160 210 0 0 {name=l13 lab=GND}
-C {gnd.sym} 310 210 0 0 {name=l14 lab=GND}
+C {devices/gnd.sym} -130 80 0 0 {name=l7 lab=GND}
+C {devices/gnd.sym} 10 80 0 0 {name=l8 lab=GND}
+C {devices/gnd.sym} 160 80 0 0 {name=l9 lab=GND}
+C {devices/gnd.sym} 310 80 0 0 {name=l10 lab=GND}
+C {devices/gnd.sym} -130 210 0 0 {name=l11 lab=GND}
+C {devices/gnd.sym} 10 210 0 0 {name=l12 lab=GND}
+C {devices/gnd.sym} 160 210 0 0 {name=l13 lab=GND}
+C {devices/gnd.sym} 310 210 0 0 {name=l14 lab=GND}
 C {devices/lab_pin.sym} -320 40 0 1 {name=p12 sig_type=std_logic lab=Q7}
 C {devices/lab_pin.sym} -320 60 0 1 {name=p13 sig_type=std_logic lab=Q6}
 C {devices/lab_pin.sym} -320 80 0 1 {name=p14 sig_type=std_logic lab=Q5}
@@ -110,7 +110,7 @@ C {devices/lab_pin.sym} -130 150 0 0 {name=p24 sig_type=std_logic lab=Q3}
 C {devices/lab_pin.sym} 10 150 0 0 {name=p25 sig_type=std_logic lab=Q2}
 C {devices/lab_pin.sym} 160 150 0 0 {name=p26 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 310 150 0 0 {name=p27 sig_type=std_logic lab=Q0}
-C {res.sym} -300 -100 0 0 {name=R1
+C {devices/res.sym} -300 -100 0 0 {name=R1
 value=0.01
 footprint=1206
 device=resistor

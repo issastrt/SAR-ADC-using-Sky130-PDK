@@ -83,19 +83,19 @@ N 500 170 500 200 {
 lab=GND}
 N 690 10 750 10 {
 lab=#net1}
-C {opin.sym} 930 10 0 0 {name=p3 lab=Vout}
-C {lab_wire.sym} 850 60 0 1 {name=p6 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 820 180 0 1 {name=p7 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 820 -130 0 1 {name=p10 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 850 -40 0 1 {name=p11 sig_type=std_logic lab=VDD}
-C {ipin.sym} 530 -70 2 1 {name=p1 lab=A}
-C {ipin.sym} 350 -70 2 1 {name=p2 lab=B}
-C {ipin.sym} 470 -140 3 1 {name=p4 lab=VDD}
-C {ipin.sym} 500 200 1 1 {name=p5 lab=GND}
-C {lab_wire.sym} 530 140 0 1 {name=p8 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 530 60 0 1 {name=p9 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 620 -70 0 1 {name=p12 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 450 -70 0 1 {name=p13 sig_type=std_logic lab=VDD}
+C {devices/opin.sym} 930 10 0 0 {name=p3 lab=Vout}
+C {devices/lab_wire.sym} 850 60 0 1 {name=p6 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 820 180 0 1 {name=p7 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 820 -130 0 1 {name=p10 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 850 -40 0 1 {name=p11 sig_type=std_logic lab=VDD}
+C {devices/ipin.sym} 530 -70 2 1 {name=p1 lab=A}
+C {devices/ipin.sym} 350 -70 2 1 {name=p2 lab=B}
+C {devices/ipin.sym} 470 -140 3 1 {name=p4 lab=VDD}
+C {devices/ipin.sym} 500 200 1 1 {name=p5 lab=GND}
+C {devices/lab_wire.sym} 530 140 0 1 {name=p8 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 530 60 0 1 {name=p9 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 620 -70 0 1 {name=p12 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 450 -70 0 1 {name=p13 sig_type=std_logic lab=VDD}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 400 -70 0 0 {name=M1
 L=0.720
 W=1.44

@@ -743,28 +743,28 @@ N 15870 -1800 15870 -1760 {
 lab=z1}
 N 15870 -1570 15870 -1530 {
 lab=z0}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 8890 -750 0 0 {name=x1}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 8650 -750 0 0 {name=x2}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 8410 -750 0 0 {name=x3}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 8170 -750 0 0 {name=x4}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 7930 -750 0 0 {name=x5}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 7690 -750 0 0 {name=x6}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 7450 -750 0 0 {name=x7}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym} 7210 -750 0 0 {name=x8}
-C {ipin.sym} 8790 -810 0 0 {name=b0 lab=b0}
-C {ipin.sym} 8550 -810 0 0 {name=b1 lab=b1}
-C {ipin.sym} 8310 -810 0 0 {name=b2 lab=b2
+C {switch_symbol.sym} 8890 -750 0 0 {name=x1}
+C {switch_symbol.sym} 8650 -750 0 0 {name=x2}
+C {switch_symbol.sym} 8410 -750 0 0 {name=x3}
+C {switch_symbol.sym} 8170 -750 0 0 {name=x4}
+C {switch_symbol.sym} 7930 -750 0 0 {name=x5}
+C {switch_symbol.sym} 7690 -750 0 0 {name=x6}
+C {switch_symbol.sym} 7450 -750 0 0 {name=x7}
+C {switch_symbol.sym} 7210 -750 0 0 {name=x8}
+C {devices/ipin.sym} 8790 -810 0 0 {name=b0 lab=b0}
+C {devices/ipin.sym} 8550 -810 0 0 {name=b1 lab=b1}
+C {devices/ipin.sym} 8310 -810 0 0 {name=b2 lab=b2
 }
-C {ipin.sym} 8070 -810 0 0 {name=b3 lab=b3}
-C {ipin.sym} 7830 -810 0 0 {name=b4 lab=b4
+C {devices/ipin.sym} 8070 -810 0 0 {name=b3 lab=b3}
+C {devices/ipin.sym} 7830 -810 0 0 {name=b4 lab=b4
 }
-C {ipin.sym} 7590 -810 0 0 {name=b5 lab=b5}
-C {ipin.sym} 7350 -810 0 0 {name=b6 lab=b6}
-C {ipin.sym} 7110 -810 0 0 {name=b7 lab=b7}
-C {vdd.sym} 9030 -610 0 0 {name=l6 lab=VDD}
-C {vdd.sym} 9030 -550 0 0 {name=l1 lab=GND}
-C {ipin.sym} 7110 -710 0 0 {name=b8 lab=VDD}
-C {ipin.sym} 7110 -690 0 0 {name=b9 lab=GND}
+C {devices/ipin.sym} 7590 -810 0 0 {name=b5 lab=b5}
+C {devices/ipin.sym} 7350 -810 0 0 {name=b6 lab=b6}
+C {devices/ipin.sym} 7110 -810 0 0 {name=b7 lab=b7}
+C {devices/vdd.sym} 9030 -610 0 0 {name=l6 lab=VDD}
+C {devices/vdd.sym} 9030 -550 0 0 {name=l1 lab=GND}
+C {devices/ipin.sym} 7110 -710 0 0 {name=b8 lab=VDD}
+C {devices/ipin.sym} 7110 -690 0 0 {name=b9 lab=GND}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 15870 -1600 0 1 {name=C2 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 15730 -1830 0 1 {name=C1 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 15870 -1830 0 1 {name=C9 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
@@ -1020,27 +1020,27 @@ C {sky130_fd_pr/cap_mim_m3_2.sym} 14180 -3250 0 0 {name=C252 model=cap_mim_m3_2 
 C {sky130_fd_pr/cap_mim_m3_2.sym} 14040 -3250 0 0 {name=C253 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 13900 -3250 0 0 {name=C254 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 13760 -3250 0 0 {name=C255 model=cap_mim_m3_2 W=22.7 L=2 MF=1 spiceprefix=X}
-C {lab_wire.sym} 7190 -910 0 0 {name=p7 sig_type=std_logic lab=z7}
-C {lab_wire.sym} 7430 -910 0 0 {name=p8 sig_type=std_logic lab=z6}
-C {lab_wire.sym} 7670 -910 0 0 {name=p9 sig_type=std_logic lab=z5}
-C {lab_wire.sym} 7910 -910 0 0 {name=p10 sig_type=std_logic lab=z4}
-C {lab_wire.sym} 8150 -910 0 0 {name=p11 sig_type=std_logic lab=z3}
-C {lab_wire.sym} 8390 -910 0 0 {name=p12 sig_type=std_logic lab=z2}
-C {lab_wire.sym} 8630 -910 0 0 {name=p13 sig_type=std_logic lab=z1}
-C {lab_wire.sym} 8870 -910 0 0 {name=p14 sig_type=std_logic lab=z0}
-C {opin.sym} -1960 -3280 0 1 {name=b10 lab=OUT}
-C {lab_pin.sym} 6980 -3040 0 0 {name=p1 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 11440 -2820 0 0 {name=p2 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 13660 -2570 0 0 {name=p3 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 14800 -2330 0 0 {name=p4 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 15390 -2090 0 0 {name=p5 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 15630 -1860 0 0 {name=p6 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 15790 -1630 0 0 {name=p15 sig_type=std_logic lab=OUT}
-C {lab_pin.sym} 15870 -3180 0 1 {name=p16 sig_type=std_logic lab=z7}
-C {lab_pin.sym} 15870 -2940 0 1 {name=p17 sig_type=std_logic lab=z6}
-C {lab_pin.sym} 15870 -2710 0 1 {name=p18 sig_type=std_logic lab=z5}
-C {lab_pin.sym} 15870 -2460 0 1 {name=p19 sig_type=std_logic lab=z4}
-C {lab_pin.sym} 15870 -2220 0 1 {name=p20 sig_type=std_logic lab=z3}
-C {lab_pin.sym} 15870 -1990 0 1 {name=p21 sig_type=std_logic lab=z2}
-C {lab_pin.sym} 15870 -1760 0 1 {name=p22 sig_type=std_logic lab=z1}
-C {lab_pin.sym} 15870 -1530 0 1 {name=p23 sig_type=std_logic lab=z0}
+C {devices/lab_wire.sym} 7190 -910 0 0 {name=p7 sig_type=std_logic lab=z7}
+C {devices/lab_wire.sym} 7430 -910 0 0 {name=p8 sig_type=std_logic lab=z6}
+C {devices/lab_wire.sym} 7670 -910 0 0 {name=p9 sig_type=std_logic lab=z5}
+C {devices/lab_wire.sym} 7910 -910 0 0 {name=p10 sig_type=std_logic lab=z4}
+C {devices/lab_wire.sym} 8150 -910 0 0 {name=p11 sig_type=std_logic lab=z3}
+C {devices/lab_wire.sym} 8390 -910 0 0 {name=p12 sig_type=std_logic lab=z2}
+C {devices/lab_wire.sym} 8630 -910 0 0 {name=p13 sig_type=std_logic lab=z1}
+C {devices/lab_wire.sym} 8870 -910 0 0 {name=p14 sig_type=std_logic lab=z0}
+C {devices/opin.sym} -1960 -3280 0 1 {name=b10 lab=OUT}
+C {devices/lab_pin.sym} 6980 -3040 0 0 {name=p1 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 11440 -2820 0 0 {name=p2 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 13660 -2570 0 0 {name=p3 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 14800 -2330 0 0 {name=p4 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 15390 -2090 0 0 {name=p5 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 15630 -1860 0 0 {name=p6 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 15790 -1630 0 0 {name=p15 sig_type=std_logic lab=OUT}
+C {devices/lab_pin.sym} 15870 -3180 0 1 {name=p16 sig_type=std_logic lab=z7}
+C {devices/lab_pin.sym} 15870 -2940 0 1 {name=p17 sig_type=std_logic lab=z6}
+C {devices/lab_pin.sym} 15870 -2710 0 1 {name=p18 sig_type=std_logic lab=z5}
+C {devices/lab_pin.sym} 15870 -2460 0 1 {name=p19 sig_type=std_logic lab=z4}
+C {devices/lab_pin.sym} 15870 -2220 0 1 {name=p20 sig_type=std_logic lab=z3}
+C {devices/lab_pin.sym} 15870 -1990 0 1 {name=p21 sig_type=std_logic lab=z2}
+C {devices/lab_pin.sym} 15870 -1760 0 1 {name=p22 sig_type=std_logic lab=z1}
+C {devices/lab_pin.sym} 15870 -1530 0 1 {name=p23 sig_type=std_logic lab=z0}

@@ -1,199 +1,146 @@
-#--------------------------------------------------------------
-# CACE circuit characterization file
-#--------------------------------------------------------------
-
-name: SAR-ADC-using-Sky130-PDK
-description: Design of a SAR ADC for Wearable Biosensor Applications using SkyWater 130nm CMOS Technology
-commit: N/A
-PDK: sky130A
-cace_format: 5.2
+name        : SAR-ADC-using-Sky130-PDK
+description : Design of a SAR ADC for Wearable Biosensor Applications using SkyWater 130nm CMOS Technology
+commit      : N/A
+PDK         : sky130A
+cace_format : 5.2
 
 authorship:
-  designer: Samantha Eureka Daiz, Christian Mico A. Madrazo, Audrey T. Manahan, Isabelle Rose A. Sta Rita
-  company: De La Salle University
-  creation_date: June 24, 2025
-  license: Apache 2.0
+  designer      : Samantha Eureka Daiz, Christian Mico A. Madrazo, Audrey T. Manahan, Isabelle Rose A. Sta Rita
+  company       : De La Salle University
+  creation_date : June 24, 2025
+  license       : Apache 2.0
  
 paths:
-  root: ..
-  documentation: docs
-  schematic: xschem
-  netlist: netlist
+  root          : ..
+  documentation : docs
+  schematic     : xschem
+  netlist       : netlist
 
 pins:
   Q7:0:
-    description: Digital output (8 bits)
-    type: digital
-    direction: output
-    Vmin: GND - 0.3
-    Vmax: VDD + 0.3
+    description : Digital output (8 bits)
+    type        : digital
+    direction   : output
+    Vmin        : GND - 0.3
+    Vmax        : VDD + 0.3
   Vin:
-    description: ADC voltage input
-    type: signal
-    direction: input
-    Vmin: GND
-    Vmax: VDD
+    description : ADC voltage input
+    type        : signal
+    direction   : input
+    Vmin        : GND
+    Vmax        : VDD
   VDD:
-    description: Positive digital power supply
-    type: power
-    direction: inout
-    Vmin: 1.7
-    Vmax: 1.9
+    description : Positive digital power supply
+    type        : power
+    direction   : inout
+    Vmin        : 1.7
+    Vmax        : 1.9
   GND:
-    description: Analog ground
-    type: ground
-    direction: inout
-    Vmin: -0.1
-    Vmax: 0.1
+    description : Analog ground
+    type        : ground
+    direction   : inout
+    Vmin        : -0.1
+    Vmax        : 0.1
   Vbias:
-    description: Comparator bias voltage
-    type: signal
-    direction: input
-    Vmin: -0.9
-    Vmax: -0.7
+    description : Comparator bias voltage
+    type        : signal
+    direction   : input
+    Vmin        : -0.9
+    Vmax        : -0.7
   CLK:
-    description: Clock signal input
-    type: digital
-    direction: input
-    Vmin: 0
-    Vmax: VDD
+    description : Clock signal input
+    type        : digital
+    direction   : input
+    Vmin        : 0
+    Vmax        : VDD
   EN:
-    description: Enable pin (active low)
-    type: digital
-    direction: input
-    Vmin: 0
-    Vmax: VDD
+    description : Enable pin (active low)
+    type        : digital
+    direction   : input
+    Vmin        : 0
+    Vmax        : VDD
 
 default_conditions:
   VVDD:
-    description: Analog power supply voltage
-    display: VDD
-    unit: V
-    typical: 1.8
+    description : Analog power supply voltage
+    display     : VDD
+    unit        : V
+    typical     : 1.8
   VVGND:
-    description: Analog ground
-    display: VGND
-    unit: V
-    typical: 0
+    description : Analog ground
+    display     : VGND
+    unit        : V
+    typical     : 0
   VVbias:
-    description: Voltage bias
-    display: Vbias
-    unit: V
-    typical: -0.8
-  VCLK:
-    description: Clock
-    display: CLK
-    unit: V
-    typical: 0
-  VEN:
-    description: Enable pin
-    display: EN
-    unit: V
-    typical: 1.8
+    description : Voltage bias
+    display     : Vbias
+    unit        : V
+    typical     : -0.8
   VVin:
-    description: Input voltage
-    display: Vin
-    unit: V
-    minimum: 0
-    typical: 0.9
-    maximum: 1.8
+    description : Input voltage
+    display     : Vin
+    unit        : V
+    minimum     : 0
+    typical     : 0.9
+    maximum     : 1.8
   Rout:
-    description: Output load resistance
-    display: RLoad
-    unit: MΩ
-    typical: 100
+    description : Output load resistance
+    display     : RLoad
+    unit        : MΩ
+    typical     : 100
   Cout:
-    description: Output load capacitance
-    display: CLoad
-    unit: fF
-    maximum: 100
+    description : Output load capacitance
+    display     : CLoad
+    unit        : fF
+    maximum     : 100
   temperature:
-    description: Ambient temperature
-    display: Temp
-    unit: °C
-    minimum: -40
-    typical: 27
-    maximum: 130
+    description : Ambient temperature
+    display     : Temp
+    unit        : °C
+    minimum     : -40
+    typical     : 27
+    maximum     : 130
   corner:
-    description: Process corner
-    display: Corner
-    minimum: ss
-    typical: tt
-    maximum: ff
+    description : Process corner
+    display     : Corner
+    minimum     : ss
+    typical     : tt
+    maximum     : ff
 
 parameters:
-  Idd_enabled:
-    description: Current draw through analog supply, ADC enabled
-    display: Idd
-    unit: uA
+  Power:
+    description : Current draw through analog supply, ADC enabled
+    display     : Average Power
+    unit        : mW
     spec:
-      idd:
-        minimum:
-          value: any
-        typical:
-          value: 170
-        maximum:
-          value: 250
+      avg_power :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
     tool:
       ngspice:
-        template: dccurrent_vdd.sch
-        format: ascii
-        suffix: .data
-        variables: [null, idd]
+        template          : transient.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [null, idd]
+        script            : power_consumption.py
+        script_variables  : [power, avg_power]
     plot:
-      idd_enabled:
-        xaxis: VVin
-        yaxis: idd
+      power:
+        xaxis : VVin
+        yaxis : avg_power
     conditions:
       VVDD:
-        typical: 1.8
+        typical : 1.8
       VVin:
-        minimum: 0
-        typical: 0.9
-        maximum: 1.8
-      VCLK:
-        minimum: 0
-        maximum: 1.8
+        minimum  : 0
+        maximum  : 1.8
+        step     : linear
+        stepsize : 0.2 #to change to 1.8/[(2^8)-1] (1 LSB)
       temperature:
-        typical: 27
+        typical : 27
       corner:
-        typical: tt
-  
-  Idd_disabled:
-    description: Current draw through analog supply, ADC enabled
-    display: Idd_disabled
-    unit: uA
-    spec:
-      idd:
-        minimum:
-          value: any
-        typical:
-          value: 170
-        maximum:
-          value: 250
-    tool:
-      ngspice:
-        template: dccurrent_vdd.sch
-        format: ascii
-        suffix: .data
-        variables: [null, idd]
-    plot:
-      idd_disabled:
-        xaxis: VVin
-        yaxis: idd
-    conditions:
-      VVDD:
-        typical: 1.8
-      VVin:
-        minimum: 0
-        typical: 0.9
-        maximum: 1.8
-      VEN:
-        typical: 0
-      VCLK:
-        minimum: 0
-        maximum: 1.8
-      temperature:
-        typical: 27
-      corner:
-        typical: tt
+        typical : tt

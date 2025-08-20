@@ -159,39 +159,39 @@ N -1140 -480 -1070 -480 {
 lab=VDD}
 N -1140 -460 -1070 -460 {
 lab=GND}
-C {ipin.sym} -1330 -400 0 0 {name=p7 lab=D}
-C {ipin.sym} -1330 -360 0 0 {name=p8 lab=CLK}
-C {ipin.sym} -890 -520 0 0 {name=p9 lab=nPRE}
-C {ipin.sym} -890 -20 0 0 {name=p10 lab=nCLR}
-C {opin.sym} -130 -380 0 0 {name=p11 lab=Q}
-C {opin.sym} -150 -180 0 0 {name=p12 lab=Q'}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym} -590 -250 0 0 {name=x1}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -1130 -240 0 0 {name=x2}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym} -410 -270 0 0 {name=x3}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -1130 -320 2 1 {name=x4}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -350 -340 2 1 {name=x5}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -350 -220 0 0 {name=x6}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym} -410 -290 2 1 {name=x7}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -910 -240 0 0 {name=x8}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym} -910 -320 2 1 {name=x9}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym} -1160 -270 3 1 {name=x10}
-C {ipin.sym} -1140 -480 0 0 {name=p1 lab=VDD}
-C {ipin.sym} -1140 -460 0 0 {name=p2 lab=GND}
-C {lab_wire.sym} -850 -480 0 0 {name=p3 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -470 -460 0 0 {name=p4 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -290 -460 0 0 {name=p5 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -290 -100 0 0 {name=p6 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -470 -100 0 0 {name=p13 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -850 -80 0 0 {name=p14 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1070 -80 0 0 {name=p15 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -630 -340 0 0 {name=p16 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -630 -320 0 0 {name=p17 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -850 -100 0 0 {name=p18 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1070 -100 0 0 {name=p19 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -470 -120 0 0 {name=p20 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -290 -120 0 0 {name=p21 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -470 -440 0 0 {name=p22 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -290 -440 0 0 {name=p23 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -850 -460 0 0 {name=p24 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1230 -310 3 1 {name=p25 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1250 -310 3 1 {name=p26 sig_type=std_logic lab=VDD}
+C {devices/ipin.sym} -1330 -400 0 0 {name=p7 lab=D}
+C {devices/ipin.sym} -1330 -360 0 0 {name=p8 lab=CLK}
+C {devices/ipin.sym} -890 -520 0 0 {name=p9 lab=nPRE}
+C {devices/ipin.sym} -890 -20 0 0 {name=p10 lab=nCLR}
+C {devices/opin.sym} -130 -380 0 0 {name=p11 lab=Q}
+C {devices/opin.sym} -150 -180 0 0 {name=p12 lab=Q'}
+C {Inverter.sym} -590 -250 0 0 {name=x1}
+C {3-input-nand.sym} -1130 -240 0 0 {name=x2}
+C {Nand_Gate.sym} -410 -270 0 0 {name=x3}
+C {3-input-nand.sym} -1130 -320 2 1 {name=x4}
+C {3-input-nand.sym} -350 -340 2 1 {name=x5}
+C {3-input-nand.sym} -350 -220 0 0 {name=x6}
+C {Nand_Gate.sym} -410 -290 2 1 {name=x7}
+C {3-input-nand.sym} -910 -240 0 0 {name=x8}
+C {3-input-nand.sym} -910 -320 2 1 {name=x9}
+C {Inverter.sym} -1160 -270 3 1 {name=x10}
+C {devices/ipin.sym} -1140 -480 0 0 {name=p1 lab=VDD}
+C {devices/ipin.sym} -1140 -460 0 0 {name=p2 lab=GND}
+C {devices/lab_wire.sym} -850 -480 0 0 {name=p3 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -470 -460 0 0 {name=p4 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -290 -460 0 0 {name=p5 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -290 -100 0 0 {name=p6 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -470 -100 0 0 {name=p13 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -850 -80 0 0 {name=p14 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1070 -80 0 0 {name=p15 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -630 -340 0 0 {name=p16 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -630 -320 0 0 {name=p17 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -850 -100 0 0 {name=p18 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1070 -100 0 0 {name=p19 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -470 -120 0 0 {name=p20 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -290 -120 0 0 {name=p21 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -470 -440 0 0 {name=p22 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -290 -440 0 0 {name=p23 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -850 -460 0 0 {name=p24 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1230 -310 3 1 {name=p25 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1250 -310 3 1 {name=p26 sig_type=std_logic lab=VDD}

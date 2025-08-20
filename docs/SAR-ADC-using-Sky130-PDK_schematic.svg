@@ -5,476 +5,158 @@
   stroke: #000000;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l1{
   fill: #00ccee;
   stroke: #00ccee;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l2{
   fill: #4f4f4f; fill-opacity: 0.2;
   stroke: #4f4f4f;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l3{
   fill: #cccccc; fill-opacity: 0.5;
   stroke: #cccccc;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l4{
   fill: #88dd00;
   stroke: #88dd00;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l5{
   fill: #bb2200;
   stroke: #bb2200;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l6{
   fill: #00ccee; fill-opacity: 0.5;
   stroke: #00ccee;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l7{
   fill: #ff0000; fill-opacity: 0.5;
   stroke: #ff0000;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l8{
   fill: #ffff00; fill-opacity: 0.5;
   stroke: #ffff00;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l9{
   fill: #ffffff; fill-opacity: 0.5;
   stroke: #ffffff;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l10{
   fill: #ff00ff;
   stroke: #ff00ff;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l11{
   fill: #00ff00; fill-opacity: 0.5;
   stroke: #00ff00;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l12{
-  fill: #0000ff; fill-opacity: 0.5;
-  stroke: #0000ff;
+  fill: #0044ff; fill-opacity: 0.5;
+  stroke: #0044ff;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l13{
   fill: #aaaa00; fill-opacity: 0.5;
   stroke: #aaaa00;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l14{
   fill: #aaccaa; fill-opacity: 0.2;
   stroke: #aaccaa;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l15{
   fill: #ff7777; fill-opacity: 0.5;
   stroke: #ff7777;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l16{
   fill: #bfff81; fill-opacity: 0.5;
   stroke: #bfff81;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l17{
   fill: #00ffcc; fill-opacity: 0.2;
   stroke: #00ffcc;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l18{
   fill: #ce0097; fill-opacity: 0.5;
   stroke: #ce0097;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l19{
   fill: #d2d46b; fill-opacity: 0.2;
   stroke: #d2d46b;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l20{
   fill: #ef6158; fill-opacity: 0.2;
   stroke: #ef6158;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 .l21{
   fill: #fdb200; fill-opacity: 0.2;
   stroke: #fdb200;
   stroke-linecap:round;
   stroke-linejoin:round;
-  stroke-width: 0.362671;
+  stroke-width: 0.453338;
 }
 text {font-family: Sans-Serif;}
 </style>
 <rect class="l0" x="0" y="0" width="1000" height="700"/>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(34.9259, 153.833)" >EN</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(31.9259, 227.71)" >CLK</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(144.1, 113.536)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(449.325, 120.252)" >Vin</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(743.277, 117.958) rotate(270)" >Q0</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 274.723)" >Q2</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 348.6)" >Q3</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 422.477)" >Q4</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 496.355)" >Q5</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 570.232)" >Q6</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 644.11)" >Q7</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 200.845)" >Q1</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(183.495, 418.637)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 603.33)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 529.453)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 455.576)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 381.698)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 307.821)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 233.944)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 160.066)" >FFCLR</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(492.696, 140.4)" >Vbias</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(950.022, 143.276)" >DACout</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(567.203, 102.979)" >Compout</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(504.153, 69.3985)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(659.266, 683.455)" >EN</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(144.1, 268.007)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 116.411)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 123.128)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 190.289)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 197.005)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 264.166)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 270.882)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 338.043)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 344.76)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 411.921)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 418.637)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 485.798)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 492.514)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 559.675)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 566.392)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 633.553)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 640.269)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 626.837)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 633.553)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 552.959)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 559.675)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 613.404)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 620.121)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 539.527)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 546.243)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 465.65)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 472.366)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 479.082)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 485.798)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 391.772)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 398.489)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 405.205)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 411.921)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 317.895)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 324.611)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 331.327)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 338.043)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 257.45)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 264.166)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 183.573)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 190.289)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 109.695)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 116.411)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 96.263)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 102.979)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(756.008, 99.6211)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(755.008, 106.337)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 170.14)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 176.856)" >GND</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 244.018)" >VDD</text>
-<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 250.734)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 171.071)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 117.099)" >x2</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 121.825)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 126.502)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 126.502)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 150.008)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 150.008)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 153.366)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 102.996)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 96.2794)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 318.825)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 264.854)" >x4</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 269.579)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 274.257)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 274.257)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 297.763)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 297.763)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 301.121)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 250.75)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 244.034)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 392.703)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 338.731)" >x5</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 343.457)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 348.134)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 348.134)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 371.64)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 371.64)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 374.998)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 324.628)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 317.911)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 466.58)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 412.609)" >x6</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 417.334)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 422.011)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 422.011)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 445.518)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 445.518)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 448.876)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 398.505)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 391.789)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 540.457)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 486.486)" >x7</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 491.211)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 495.889)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 495.889)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 519.395)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 519.395)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 522.753)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 472.382)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 465.666)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 614.335)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 560.363)" >x8</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 565.089)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 569.766)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 569.766)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 593.272)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 593.272)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 596.631)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 546.26)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 539.543)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 688.212)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 634.241)" >x9</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 638.966)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 643.643)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 643.643)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 667.15)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 667.15)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 670.508)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 620.137)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 613.421)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 244.948)" >D_FlipFlop_for_Ring</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 190.977)" >x3</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 195.702)" >nPRE</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 200.379)" >D</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 200.379)" >Q</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 223.886)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 223.886)" >Q'</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 227.244)" >nCLR</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 176.873)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 170.157)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 146.315)" >x18</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 132.882)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 136.576)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 150.008)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 143.292)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 123.144)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 116.428)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 220.192)" >x19</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 206.76)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 210.453)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 223.886)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 217.17)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 197.021)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 190.305)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 294.069)" >x20</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 280.637)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 284.331)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 297.763)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 291.047)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 270.899)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 264.182)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 367.947)" >x21</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 354.514)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 358.208)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 371.64)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 364.924)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 344.776)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 338.06)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 441.824)" >x22</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 428.392)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 432.086)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 445.518)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 438.802)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 418.653)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 411.937)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 515.701)" >x23</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 502.269)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 505.963)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 519.395)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 512.679)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 492.531)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 485.815)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 589.579)" >x24</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 576.146)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 579.84)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 593.272)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 586.556)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 566.408)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 559.692)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 663.456)" >x25</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 650.024)" >Nand_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 653.718)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 667.15)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 660.434)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 640.285)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 633.569)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 139.598)" >x10</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 126.166)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 129.86)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 143.292)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 136.576)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 116.428)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 108.392)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 213.476)" >x11</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 200.043)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 203.737)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 217.17)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 210.453)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 190.305)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 182.27)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 508.985)" >x15</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 495.553)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 499.247)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 512.679)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 505.963)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 485.815)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 477.779)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 287.353)" >x12</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 273.921)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 277.615)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 291.047)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 284.331)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 264.182)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 256.147)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 361.23)" >x13</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 347.798)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 351.492)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 364.924)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 358.208)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 338.06)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 330.024)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 435.108)" >x14</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 421.676)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 425.369)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 438.802)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 432.086)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 411.937)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 403.902)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 582.862)" >x16</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 569.43)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 573.124)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 586.556)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 579.84)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 559.692)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 551.656)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 656.74)" >x17</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 643.308)" >And_Gate</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 647.001)" >A</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 660.434)" >B</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 653.718)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 633.569)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 625.534)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(787.828, 147.564)" >CDAC8</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(823.255, 117.099)" >x27</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(810.897, 146.65)" >OUT</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 173.515)" >b7</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 166.799)" >b6</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 146.65)" >b3</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 153.366)" >b4</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 160.083)" >b5</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 139.934)" >b2</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 133.218)" >b1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 126.502)" >b0</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(769.526, 106.354)" >GND</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(769.526, 99.6375)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(498.195, 107.268)" >comparator</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(547.894, 100.309)" >x1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(533.178, 106.354)" >Vout</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(494.165, 92.9213)" >Vinm</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(494.165, 119.786)" >Vinp</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(510.956, 96.2794)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(510.956, 116.428)" >VSS</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(146.942, 184.503)" >RING_COUNTER_FINAL</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(188.582, 130.532)" >x26</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(161.717, 139.934)" >VDD</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 227.244)" >Q2</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 139.934)" >Q15</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(179.224, 213.812)" >Q4</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 207.095)" >Q5</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 200.379)" >Q6</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 193.663)" >Q7</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 233.96)" >Q1</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 180.231)" >Q9</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 173.515)" >Q10</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 166.799)" >Q11</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 160.083)" >Q12</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 153.366)" >Q13</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(177.224, 146.65)" >Q14</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 240.676)" >Q0</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 220.528)" >Q3</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 186.947)" >Q8</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(141.569, 227.244)" >CLK</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(141.569, 153.366)" >EN</text>
-<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(161.717, 237.318)" >GND</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 149.024)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 222.901)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 296.778)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 370.656)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 518.41)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 444.533)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 592.288)" >NC</text>
-<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 666.165)" >NC</text>
 <path class="l4" d="M667.106 111.242L667.106 117.958"/>
 <path class="l4" d="M646.957 124.674L653.673 124.674"/>
 <path class="l4" d="M680.538 124.674L687.254 124.674"/>
@@ -1071,6 +753,324 @@ text {font-family: Sans-Serif;}
 <path class="l5" d="M686.834 443.27L687.674 443.27L687.674 444.11L686.834 444.11L686.834 443.27z"/>
 <path class="l5" d="M686.834 591.025L687.674 591.025L687.674 591.864L686.834 591.864L686.834 591.025z"/>
 <path class="l5" d="M686.834 664.902L687.674 664.902L687.674 665.742L686.834 665.742L686.834 664.902z"/>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 171.071)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 117.099)" >x2</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 121.825)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 126.502)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 126.502)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 150.008)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 150.008)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 153.366)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 102.996)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 96.2794)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 318.825)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 264.854)" >x4</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 269.579)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 274.257)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 274.257)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 297.763)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 297.763)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 301.121)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 250.75)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 244.034)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 392.703)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 338.731)" >x5</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 343.457)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 348.134)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 348.134)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 371.64)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 371.64)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 374.998)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 324.628)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 317.911)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 466.58)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 412.609)" >x6</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 417.334)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 422.011)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 422.011)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 445.518)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 445.518)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 448.876)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 398.505)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 391.789)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 540.457)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 486.486)" >x7</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 491.211)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 495.889)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 495.889)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 519.395)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 519.395)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 522.753)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 472.382)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 465.666)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 614.335)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 560.363)" >x8</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 565.089)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 569.766)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 569.766)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 593.272)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 593.272)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 596.631)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 546.26)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 539.543)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 688.212)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 634.241)" >x9</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 638.966)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 643.643)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 643.643)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 667.15)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 667.15)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 670.508)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 620.137)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 613.421)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(645.782, 244.948)" >D_FlipFlop_for_Ring</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(685.575, 190.977)" >x3</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(664.143, 195.702)" >nPRE</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 200.379)" >D</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(675.859, 200.379)" >Q</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(655.352, 223.886)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(674.859, 223.886)" >Q'</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(662.068, 227.244)" >nCLR</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 176.873)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(648.636, 170.157)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(34.9259, 153.833)" >EN</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(31.9259, 227.71)" >CLK</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(144.1, 113.536)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(449.325, 120.252)" >Vin</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(743.277, 117.958) rotate(270)" >Q0</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 274.723)" >Q2</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 348.6)" >Q3</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 422.477)" >Q4</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 496.355)" >Q5</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 570.232)" >Q6</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 644.11)" >Q7</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 146.315)" >x18</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 132.882)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 136.576)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 150.008)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 143.292)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 123.144)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 116.428)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 220.192)" >x19</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 206.76)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 210.453)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 223.886)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 217.17)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 197.021)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 190.305)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 294.069)" >x20</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 280.637)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 284.331)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 297.763)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 291.047)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 270.899)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 264.182)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 367.947)" >x21</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 354.514)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 358.208)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 371.64)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 364.924)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 344.776)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 338.06)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 441.824)" >x22</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 428.392)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 432.086)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 445.518)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 438.802)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 418.653)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 411.937)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 515.701)" >x23</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 502.269)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 505.963)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 519.395)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 512.679)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 492.531)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 485.815)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 589.579)" >x24</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 576.146)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 579.84)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 593.272)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 586.556)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 566.408)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 559.692)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(318.287, 663.456)" >x25</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(319.546, 650.024)" >Nand_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 653.718)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 667.15)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(338.411, 660.434)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 640.285)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(309.472, 633.569)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 139.598)" >x10</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 126.166)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 129.86)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 143.292)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 136.576)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 116.428)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 108.392)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 213.476)" >x11</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 200.043)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 203.737)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 217.17)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 210.453)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 190.305)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 182.27)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 508.985)" >x15</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 495.553)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 499.247)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 512.679)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 505.963)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 485.815)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 477.779)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 287.353)" >x12</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 273.921)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 277.615)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 291.047)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 284.331)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 264.182)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 256.147)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 361.23)" >x13</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 347.798)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 351.492)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 364.924)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 358.208)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 338.06)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 330.024)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 435.108)" >x14</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 421.676)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 425.369)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 438.802)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 432.086)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 411.937)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 403.902)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 582.862)" >x16</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 569.43)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 573.124)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 586.556)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 579.84)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 559.692)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 551.656)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(593.648, 656.74)" >x17</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(594.907, 643.308)" >And_Gate</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 647.001)" >A</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 660.434)" >B</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(615.056, 653.718)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 633.569)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(584.833, 625.534)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(787.828, 147.564)" >CDAC8</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(823.255, 117.099)" >x27</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(810.897, 146.65)" >OUT</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 173.515)" >b7</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 166.799)" >b6</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 146.65)" >b3</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 153.366)" >b4</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 160.083)" >b5</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 139.934)" >b2</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 133.218)" >b1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(776.243, 126.502)" >b0</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(769.526, 106.354)" >GND</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(769.526, 99.6375)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(498.195, 107.268)" >comparator</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(547.894, 100.309)" >x1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(533.178, 106.354)" >Vout</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(494.165, 92.9213)" >Vinm</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(494.165, 119.786)" >Vinp</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(510.956, 96.2794)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(510.956, 116.428)" >VSS</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="5.23858" transform="translate(146.942, 184.503)" >RING_COUNTER_FINAL</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(188.582, 130.532)" >x26</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(161.717, 139.934)" >VDD</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 227.244)" >Q2</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 139.934)" >Q15</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(179.224, 213.812)" >Q4</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 207.095)" >Q5</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 200.379)" >Q6</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 193.663)" >Q7</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 233.96)" >Q1</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 180.231)" >Q9</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 173.515)" >Q10</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 166.799)" >Q11</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 160.083)" >Q12</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(178.224, 153.366)" >Q13</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(177.224, 146.65)" >Q14</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 240.676)" >Q0</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 220.528)" >Q3</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(180.224, 186.947)" >Q8</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(141.569, 227.244)" >CLK</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(141.569, 153.366)" >EN</text>
+<text fill="#cccccc"  xml:space="preserve" font-size="3.49238" transform="translate(161.717, 237.318)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(875.305, 200.845)" >Q1</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(183.495, 418.637)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 603.33)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 529.453)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 455.576)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 381.698)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 307.821)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 233.944)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(650.266, 160.066)" >FFCLR</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(492.696, 140.4)" >Vbias</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(950.022, 143.276)" >DACout</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(567.203, 102.979)" >Compout</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(504.153, 69.3985)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(659.266, 683.455)" >EN</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="5.76243" transform="translate(144.1, 268.007)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 116.411)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 123.128)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 190.289)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 197.005)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 264.166)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 270.882)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 338.043)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 344.76)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 411.921)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 418.637)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 485.798)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 492.514)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 559.675)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 566.392)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(295.953, 633.553)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(294.953, 640.269)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 626.837)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 633.553)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 552.959)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 559.675)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 613.404)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 620.121)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 539.527)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 546.243)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 465.65)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 472.366)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 479.082)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 485.798)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 391.772)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 398.489)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 405.205)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 411.921)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 317.895)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 324.611)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 331.327)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 338.043)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 257.45)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 264.166)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 183.573)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 190.289)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(571.314, 109.695)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(570.314, 116.411)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 96.263)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 102.979)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(756.008, 99.6211)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(755.008, 106.337)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 170.14)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 176.856)" >GND</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(635.118, 244.018)" >VDD</text>
+<text fill="#00ccee"  xml:space="preserve" font-size="4.71472" transform="translate(634.118, 250.734)" >GND</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 149.024)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 222.901)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 296.778)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 370.656)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 518.41)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 444.533)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 592.288)" >NC</text>
+<text fill="#88dd00"  xml:space="preserve" font-size="2.61929" transform="translate(688.711, 666.165)" >NC</text>
 <path class="l1" d="M700.686 641.816L754.415 641.816"/>
 <path class="l1" d="M700.686 567.938L747.699 567.938"/>
 <path class="l1" d="M700.686 494.061L740.983 494.061"/>

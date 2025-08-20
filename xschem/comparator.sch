@@ -155,60 +155,12 @@ N 750 -100 750 -80 {
 lab=VSS}
 N 440 -450 470 -450 {
 lab=VSS}
-C {opin.sym} 1310 -390 0 0 {name=Vout lab=Vout}
-C {devices/ngspice_get_value.sym} 730 -390 0 1 {name=r18 node=v(@m.$\{path\}xm1.msky130_fd_pr__nfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 730 -350 0 1 {name=r19 node=v(@m.$\{path\}xm1.msky130_fd_pr__nfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 770 -390 0 1 {name=r21 node=v(@m.$\{path\}xm1.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 950 -300 0 1 {name=r2 node=v(@m.$\{path\}xm2.msky130_fd_pr__nfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 950 -260 0 1 {name=r3 node=v(@m.$\{path\}xm2.msky130_fd_pr__nfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 990 -300 0 1 {name=r5 node=v(@m.$\{path\}xm2.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 1030 -580 0 1 {name=r6 node=v(@m.$\{path\}xm4.msky130_fd_pr__pfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 1030 -540 0 1 {name=r7 node=v(@m.$\{path\}xm4.msky130_fd_pr__pfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 1070 -580 0 1 {name=r9 node=v(@m.$\{path\}xm4.msky130_fd_pr__pfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 680 -600 0 1 {name=r10 node=v(@m.$\{path\}xm3.msky130_fd_pr__pfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 680 -560 0 1 {name=r11 node=v(@m.$\{path\}xm3.msky130_fd_pr__pfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 720 -600 0 1 {name=r13 node=v(@m.$\{path\}xm3.msky130_fd_pr__pfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 1230 -530 0 1 {name=r14 node=v(@m.$\{path\}xm6.msky130_fd_pr__pfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 1230 -490 0 1 {name=r15 node=v(@m.$\{path\}xm6.msky130_fd_pr__pfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 1270 -530 0 1 {name=r17 node=v(@m.$\{path\}xm6.msky130_fd_pr__pfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 1200 -180 0 1 {name=r22 node=v(@m.$\{path\}xm7.msky130_fd_pr__nfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 1200 -140 0 1 {name=r23 node=v(@m.$\{path\}xm7.msky130_fd_pr__nfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 1240 -180 0 1 {name=r25 node=v(@m.$\{path\}xm7.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 890 -200 0 1 {name=r26 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 890 -160 0 1 {name=r27 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 930 -200 0 1 {name=r29 node=v(@m.$\{path\}xm5.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {devices/ngspice_get_value.sym} 430 -140 0 1 {name=r30 node=v(@m.$\{path\}xm8.msky130_fd_pr__nfet_01v8[vds])
-descr="vds="}
-C {devices/ngspice_get_value.sym} 430 -100 0 1 {name=r31 node=v(@m.$\{path\}xm8.msky130_fd_pr__nfet_01v8[vgs])
-descr="vgs="}
-C {devices/ngspice_get_value.sym} 470 -140 0 1 {name=r33 node=v(@m.$\{path\}xm8.msky130_fd_pr__nfet_01v8[vth])
-descr="vth="}
-C {ipin.sym} 930 -350 0 1 {name=p3 sig_type=std_logic lab=Vinp}
-C {ipin.sym} 570 -350 0 0 {name=p5 sig_type=std_logic lab=Vinm}
-C {ipin.sym} 750 -650 1 0 {name=p1 sig_type=std_logic lab=VDD
+C {devices/opin.sym} 1310 -390 0 0 {name=Vout lab=Vout}
+C {devices/ipin.sym} 930 -350 0 1 {name=p3 sig_type=std_logic lab=Vinp}
+C {devices/ipin.sym} 570 -350 0 0 {name=p5 sig_type=std_logic lab=Vinm}
+C {devices/ipin.sym} 750 -650 1 0 {name=p1 sig_type=std_logic lab=VDD
 }
-C {ipin.sym} 750 -80 3 0 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/ipin.sym} 750 -80 3 0 {name=p2 sig_type=std_logic lab=VSS}
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 1110 -450 0 0 {name=M9
 L=1
 W=60
@@ -272,4 +224,4 @@ spiceprefix=X
 mult=1}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1040 -390 3 0 {name=C3 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}
 C {sky130_fd_pr/cap_mim_m3_2.sym} 1250 -340 0 0 {name=C1 model=cap_mim_m3_2 W=5.35 L=2 MF=1 spiceprefix=X}
-C {lab_wire.sym} 440 -450 0 0 {name=p4 sig_type=std_logic lab=VSS}
+C {devices/lab_wire.sym} 440 -450 0 0 {name=p4 sig_type=std_logic lab=VSS}

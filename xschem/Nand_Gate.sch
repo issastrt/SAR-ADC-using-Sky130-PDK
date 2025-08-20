@@ -55,15 +55,15 @@ N 390 -160 390 -140 {
 lab=VDD}
 N 420 150 420 180 {
 lab=GND}
-C {ipin.sym} 450 -90 2 1 {name=p1 lab=A}
-C {ipin.sym} 270 -90 2 1 {name=p2 lab=B}
-C {ipin.sym} 390 -160 3 1 {name=p4 lab=VDD}
-C {ipin.sym} 420 180 1 1 {name=p5 lab=GND}
-C {lab_wire.sym} 450 120 0 1 {name=p8 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 450 40 0 1 {name=p9 sig_type=std_logic lab=GND}
-C {lab_wire.sym} 540 -90 0 1 {name=p12 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} 370 -90 0 1 {name=p13 sig_type=std_logic lab=VDD}
-C {opin.sym} 610 -10 2 1 {name=p3 lab=Vout
+C {devices/ipin.sym} 450 -90 2 1 {name=p1 lab=A}
+C {devices/ipin.sym} 270 -90 2 1 {name=p2 lab=B}
+C {devices/ipin.sym} 390 -160 3 1 {name=p4 lab=VDD}
+C {devices/ipin.sym} 420 180 1 1 {name=p5 lab=GND}
+C {devices/lab_wire.sym} 450 120 0 1 {name=p8 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 450 40 0 1 {name=p9 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 540 -90 0 1 {name=p12 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 370 -90 0 1 {name=p13 sig_type=std_logic lab=VDD}
+C {devices/opin.sym} 610 -10 2 1 {name=p3 lab=Vout
 }
 C {sky130_fd_pr/pfet_g5v0d10v5.sym} 320 -90 0 0 {name=M1
 L=0.720

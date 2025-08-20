@@ -345,90 +345,90 @@ N -270 -690 -270 -630 {
 lab=EN}
 N -3500 -610 -3400 -610 {
 lab=GND}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -3300 -390 0 0 {name=x1}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -3100 -390 0 0 {name=x2}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -2900 -390 0 0 {name=x3}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -2700 -390 0 0 {name=x4}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -2500 -390 0 0 {name=x5}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -2300 -390 0 0 {name=x6}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -2100 -390 0 0 {name=x7}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -1900 -390 0 0 {name=x8}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -1700 -390 0 0 {name=x9}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -1500 -390 0 0 {name=x10}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -1300 -390 0 0 {name=x11}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -1100 -390 0 0 {name=x12}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -900 -390 0 0 {name=x13}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -700 -390 0 0 {name=x14}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -500 -390 0 0 {name=x15}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -300 -390 0 0 {name=x16}
-C {opin.sym} -3240 -550 3 0 {name=p11 lab=Q0}
-C {opin.sym} -3040 -550 3 0 {name=p1 lab=Q1}
-C {opin.sym} -2840 -550 3 0 {name=p2 lab=Q2}
-C {opin.sym} -2640 -550 3 0 {name=p3 lab=Q3}
-C {opin.sym} -2440 -550 3 0 {name=p4 lab=Q4}
-C {opin.sym} -2240 -550 3 0 {name=p5 lab=Q5}
-C {opin.sym} -2040 -550 3 0 {name=p6 lab=Q6}
-C {opin.sym} -1840 -550 3 0 {name=p7 lab=Q7}
-C {opin.sym} -1640 -550 3 0 {name=p8 lab=Q8}
-C {opin.sym} -1440 -550 3 0 {name=p9 lab=Q9}
-C {opin.sym} -1240 -550 3 0 {name=p10 lab=Q10}
-C {opin.sym} -1040 -550 3 0 {name=p12 lab=Q11}
-C {opin.sym} -840 -550 3 0 {name=p13 lab=Q12}
-C {opin.sym} -640 -550 3 0 {name=p14 lab=Q13}
-C {opin.sym} -440 -550 3 0 {name=p15 lab=Q14}
-C {opin.sym} -250 -550 3 0 {name=p16 lab=Q15}
-C {ipin.sym} -3500 -370 0 0 {name=p17 lab=CLK}
-C {ipin.sym} -3500 -330 0 0 {name=p18 lab=EN}
-C {ipin.sym} -3500 -690 0 0 {name=p19 lab=VDD}
-C {/foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym} -100 -390 0 0 {name=x17}
-C {lab_wire.sym} -3400 -630 0 0 {name=p20 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -3200 -630 0 0 {name=p22 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -3200 -610 0 0 {name=p23 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -3000 -630 0 0 {name=p24 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -3000 -610 0 0 {name=p25 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -2800 -630 0 0 {name=p26 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -2800 -610 0 0 {name=p27 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -2600 -630 0 0 {name=p28 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -2600 -610 0 0 {name=p29 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -2400 -630 0 0 {name=p30 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -2400 -610 0 0 {name=p31 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -2200 -630 0 0 {name=p32 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -2200 -610 0 0 {name=p33 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -2000 -630 0 0 {name=p34 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -2000 -610 0 0 {name=p35 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1800 -630 0 0 {name=p36 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1800 -610 0 0 {name=p37 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1600 -630 0 0 {name=p38 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1600 -610 0 0 {name=p39 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1400 -630 0 0 {name=p40 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1400 -610 0 0 {name=p41 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1200 -630 0 0 {name=p42 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1200 -610 0 0 {name=p43 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -1000 -630 0 0 {name=p44 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -1000 -610 0 0 {name=p45 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -800 -630 0 0 {name=p46 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -800 -610 0 0 {name=p47 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -600 -630 0 0 {name=p48 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -600 -610 0 0 {name=p49 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -400 -630 0 0 {name=p50 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -400 -610 0 0 {name=p51 sig_type=std_logic lab=GND}
-C {lab_wire.sym} -200 -630 0 0 {name=p52 sig_type=std_logic lab=VDD}
-C {lab_wire.sym} -200 -610 0 0 {name=p53 sig_type=std_logic lab=GND}
-C {ipin.sym} -3500 -610 0 0 {name=p54 lab=GND}
-C {noconn.sym} -3280 -480 2 0 {name=l1}
-C {noconn.sym} -3080 -480 2 0 {name=l2}
-C {noconn.sym} -2880 -480 2 0 {name=l3}
-C {noconn.sym} -2680 -480 2 0 {name=l4}
-C {noconn.sym} -2480 -480 2 0 {name=l5}
-C {noconn.sym} -2280 -480 2 0 {name=l6}
-C {noconn.sym} -2080 -480 2 0 {name=l7}
-C {noconn.sym} -1880 -480 2 0 {name=l8}
-C {noconn.sym} -1680 -480 2 0 {name=l9}
-C {noconn.sym} -1480 -480 2 0 {name=l10}
-C {noconn.sym} -1280 -480 2 0 {name=l11}
-C {noconn.sym} -1080 -480 2 0 {name=l12}
-C {noconn.sym} -880 -480 2 0 {name=l13}
-C {noconn.sym} -80 -480 2 0 {name=l14}
-C {noconn.sym} -280 -480 2 0 {name=l15}
-C {noconn.sym} -480 -480 2 0 {name=l16}
-C {noconn.sym} -680 -480 2 0 {name=l17}
+C {D_FlipFlop_for_Ring.sym} -3300 -390 0 0 {name=x1}
+C {D_FlipFlop_for_Ring.sym} -3100 -390 0 0 {name=x2}
+C {D_FlipFlop_for_Ring.sym} -2900 -390 0 0 {name=x3}
+C {D_FlipFlop_for_Ring.sym} -2700 -390 0 0 {name=x4}
+C {D_FlipFlop_for_Ring.sym} -2500 -390 0 0 {name=x5}
+C {D_FlipFlop_for_Ring.sym} -2300 -390 0 0 {name=x6}
+C {D_FlipFlop_for_Ring.sym} -2100 -390 0 0 {name=x7}
+C {D_FlipFlop_for_Ring.sym} -1900 -390 0 0 {name=x8}
+C {D_FlipFlop_for_Ring.sym} -1700 -390 0 0 {name=x9}
+C {D_FlipFlop_for_Ring.sym} -1500 -390 0 0 {name=x10}
+C {D_FlipFlop_for_Ring.sym} -1300 -390 0 0 {name=x11}
+C {D_FlipFlop_for_Ring.sym} -1100 -390 0 0 {name=x12}
+C {D_FlipFlop_for_Ring.sym} -900 -390 0 0 {name=x13}
+C {D_FlipFlop_for_Ring.sym} -700 -390 0 0 {name=x14}
+C {D_FlipFlop_for_Ring.sym} -500 -390 0 0 {name=x15}
+C {D_FlipFlop_for_Ring.sym} -300 -390 0 0 {name=x16}
+C {devices/opin.sym} -3240 -550 3 0 {name=p11 lab=Q0}
+C {devices/opin.sym} -3040 -550 3 0 {name=p1 lab=Q1}
+C {devices/opin.sym} -2840 -550 3 0 {name=p2 lab=Q2}
+C {devices/opin.sym} -2640 -550 3 0 {name=p3 lab=Q3}
+C {devices/opin.sym} -2440 -550 3 0 {name=p4 lab=Q4}
+C {devices/opin.sym} -2240 -550 3 0 {name=p5 lab=Q5}
+C {devices/opin.sym} -2040 -550 3 0 {name=p6 lab=Q6}
+C {devices/opin.sym} -1840 -550 3 0 {name=p7 lab=Q7}
+C {devices/opin.sym} -1640 -550 3 0 {name=p8 lab=Q8}
+C {devices/opin.sym} -1440 -550 3 0 {name=p9 lab=Q9}
+C {devices/opin.sym} -1240 -550 3 0 {name=p10 lab=Q10}
+C {devices/opin.sym} -1040 -550 3 0 {name=p12 lab=Q11}
+C {devices/opin.sym} -840 -550 3 0 {name=p13 lab=Q12}
+C {devices/opin.sym} -640 -550 3 0 {name=p14 lab=Q13}
+C {devices/opin.sym} -440 -550 3 0 {name=p15 lab=Q14}
+C {devices/opin.sym} -250 -550 3 0 {name=p16 lab=Q15}
+C {devices/ipin.sym} -3500 -370 0 0 {name=p17 lab=CLK}
+C {devices/ipin.sym} -3500 -330 0 0 {name=p18 lab=EN}
+C {devices/ipin.sym} -3500 -690 0 0 {name=p19 lab=VDD}
+C {D_FlipFlop_for_Ring.sym} -100 -390 0 0 {name=x17}
+C {devices/lab_wire.sym} -3400 -630 0 0 {name=p20 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -3200 -630 0 0 {name=p22 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -3200 -610 0 0 {name=p23 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -3000 -630 0 0 {name=p24 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -3000 -610 0 0 {name=p25 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -2800 -630 0 0 {name=p26 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -2800 -610 0 0 {name=p27 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -2600 -630 0 0 {name=p28 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -2600 -610 0 0 {name=p29 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -2400 -630 0 0 {name=p30 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -2400 -610 0 0 {name=p31 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -2200 -630 0 0 {name=p32 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -2200 -610 0 0 {name=p33 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -2000 -630 0 0 {name=p34 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -2000 -610 0 0 {name=p35 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1800 -630 0 0 {name=p36 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1800 -610 0 0 {name=p37 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1600 -630 0 0 {name=p38 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1600 -610 0 0 {name=p39 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1400 -630 0 0 {name=p40 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1400 -610 0 0 {name=p41 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1200 -630 0 0 {name=p42 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1200 -610 0 0 {name=p43 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -1000 -630 0 0 {name=p44 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -1000 -610 0 0 {name=p45 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -800 -630 0 0 {name=p46 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -800 -610 0 0 {name=p47 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -600 -630 0 0 {name=p48 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -600 -610 0 0 {name=p49 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -400 -630 0 0 {name=p50 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -400 -610 0 0 {name=p51 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} -200 -630 0 0 {name=p52 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} -200 -610 0 0 {name=p53 sig_type=std_logic lab=GND}
+C {devices/ipin.sym} -3500 -610 0 0 {name=p54 lab=GND}
+C {devices/noconn.sym} -3280 -480 2 0 {name=l1}
+C {devices/noconn.sym} -3080 -480 2 0 {name=l2}
+C {devices/noconn.sym} -2880 -480 2 0 {name=l3}
+C {devices/noconn.sym} -2680 -480 2 0 {name=l4}
+C {devices/noconn.sym} -2480 -480 2 0 {name=l5}
+C {devices/noconn.sym} -2280 -480 2 0 {name=l6}
+C {devices/noconn.sym} -2080 -480 2 0 {name=l7}
+C {devices/noconn.sym} -1880 -480 2 0 {name=l8}
+C {devices/noconn.sym} -1680 -480 2 0 {name=l9}
+C {devices/noconn.sym} -1480 -480 2 0 {name=l10}
+C {devices/noconn.sym} -1280 -480 2 0 {name=l11}
+C {devices/noconn.sym} -1080 -480 2 0 {name=l12}
+C {devices/noconn.sym} -880 -480 2 0 {name=l13}
+C {devices/noconn.sym} -80 -480 2 0 {name=l14}
+C {devices/noconn.sym} -280 -480 2 0 {name=l15}
+C {devices/noconn.sym} -480 -480 2 0 {name=l16}
+C {devices/noconn.sym} -680 -480 2 0 {name=l17}
