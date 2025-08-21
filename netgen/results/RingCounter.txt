@@ -1,0 +1,125 @@
+
+Circuit 1 cell sky130_fd_pr__pfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__pfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__pfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_g5v0d10v5 and sky130_fd_pr__pfet_g5v0d10v5 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_g5v0d10v5 and Circuit 2 cell sky130_fd_pr__nfet_g5v0d10v5 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_g5v0d10v5 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_g5v0d10v5    |Circuit 2: sky130_fd_pr__nfet_g5v0d10v5    
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_g5v0d10v5 and sky130_fd_pr__nfet_g5v0d10v5 are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CY7YBN in circuit Inverter (0)(1 instance)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P in circuit Inverter (0)(1 instance)
+
+Subcircuit summary:
+Circuit 1: Inverter                        |Circuit 2: Inverter                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (1)           |sky130_fd_pr__pfet_g5v0d10v5 (1)           
+sky130_fd_pr__nfet_g5v0d10v5 (1)           |sky130_fd_pr__nfet_g5v0d10v5 (1)           
+Number of devices: 2                       |Number of devices: 2                       
+Number of nets: 4                          |Number of nets: 4                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Inverter                        |Circuit 2: Inverter                        
+-------------------------------------------|-------------------------------------------
+Vout                                       |Vout                                       
+Vin                                        |Vin                                        
+VDD                                        |VDD                                        
+GND                                        |GND                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Inverter and Inverter are equivalent.
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CY7YBN in circuit Nand_Gate (0)(2 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P in circuit Nand_Gate (0)(2 instances)
+
+Subcircuit summary:
+Circuit 1: Nand_Gate                       |Circuit 2: Nand_Gate                       
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_g5v0d10v5 (2)           |sky130_fd_pr__pfet_g5v0d10v5 (2)           
+sky130_fd_pr__nfet_g5v0d10v5 (2)           |sky130_fd_pr__nfet_g5v0d10v5 (2)           
+Number of devices: 4                       |Number of devices: 4                       
+Number of nets: 6                          |Number of nets: 6                          
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: Nand_Gate                       |Circuit 2: Nand_Gate                       
+-------------------------------------------|-------------------------------------------
+A                                          |A                                          
+B                                          |B                                          
+Vout                                       |Vout                                       
+GND                                        |GND                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes Nand_Gate and Nand_Gate are equivalent.
+Flattening unmatched subcell D_FlipFlop in circuit RingCounter (0)(17 instances)
+Flattening unmatched subcell x3-input-nand in circuit RingCounter (0)(102 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_g5v0d10v5_CY7YBN in circuit RingCounter (0)(306 instances)
+Flattening unmatched subcell sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P in circuit RingCounter (0)(306 instances)
+Flattening unmatched subcell D_FlipFlop_for_Ring in circuit RING_COUNTER_FINAL (1)(17 instances)
+Flattening unmatched subcell 3-input-nand in circuit RING_COUNTER_FINAL (1)(102 instances)
+
+Subcircuit summary:
+Circuit 1: RingCounter                     |Circuit 2: RING_COUNTER_FINAL              
+-------------------------------------------|-------------------------------------------
+Inverter (34)                              |Inverter (34)                              
+sky130_fd_pr__pfet_g5v0d10v5 (306)         |sky130_fd_pr__pfet_g5v0d10v5 (306)         
+sky130_fd_pr__nfet_g5v0d10v5 (306)         |sky130_fd_pr__nfet_g5v0d10v5 (306)         
+Nand_Gate (34)                             |Nand_Gate (34)                             
+Number of devices: 680                     |Number of devices: 680                     
+Number of nets: 378                        |Number of nets: 378                        
+---------------------------------------------------------------------------------------
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: RingCounter                     |Circuit 2: RING_COUNTER_FINAL              
+-------------------------------------------|-------------------------------------------
+GND                                        |GND                                        
+EN                                         |EN                                         
+VDD                                        |VDD                                        
+Q0                                         |Q0                                         
+Q1                                         |Q1                                         
+Q15                                        |Q15                                        
+Q2                                         |Q2                                         
+Q14                                        |Q14                                        
+Q3                                         |Q3                                         
+Q13                                        |Q13                                        
+Q4                                         |Q4                                         
+Q12                                        |Q12                                        
+Q5                                         |Q5                                         
+Q11                                        |Q11                                        
+Q6                                         |Q6                                         
+Q10                                        |Q10                                        
+Q7                                         |Q7                                         
+Q9                                         |Q9                                         
+Q8                                         |Q8                                         
+CLK                                        |CLK                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes RingCounter and RING_COUNTER_FINAL are equivalent.
+
+Final result: Circuits match uniquely.
+.

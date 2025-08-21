@@ -14,7 +14,7 @@ XXM1 VDD Vout VDD Vin sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
 XXM2 GND Vin Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
 .ends
 
-.subckt x3-input-nand GND A B C Vout VDD
+.subckt x3-input-nand A B C Vout VDD GND
 XXM1 VDD Vout VDD C sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
 XXM2 Vout VDD VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
 XXM3 VDD Vout VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
@@ -32,13 +32,13 @@ XXM4 GND A m1_2428_n226# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
 
 .subckt D_FlipFlop CLK D GND nCLR nPRE Q' Q VDD
 XInverter_1 VDD CLK Nand_Gate_1/B GND Inverter
-X3-input-nand_0 GND nCLR D CLK 3-input-nand_2/B VDD x3-input-nand
 XInverter_0 VDD D Inverter_0/Vout GND Inverter
-X3-input-nand_1 GND nPRE Inverter_0/Vout CLK 3-input-nand_3/B VDD x3-input-nand
-X3-input-nand_2 GND nPRE 3-input-nand_2/B Nand_Gate_1/A Nand_Gate_0/A VDD x3-input-nand
-X3-input-nand_3 GND nCLR 3-input-nand_3/B Nand_Gate_0/A Nand_Gate_1/A VDD x3-input-nand
-X3-input-nand_4 GND nPRE Nand_Gate_0/Vout Q' Q VDD x3-input-nand
-X3-input-nand_5 GND nCLR Nand_Gate_1/Vout Q Q' VDD x3-input-nand
+X3-input-nand_0 nCLR D CLK 3-input-nand_2/B VDD GND x3-input-nand
+X3-input-nand_1 nPRE Inverter_0/Vout CLK 3-input-nand_3/B VDD GND x3-input-nand
+X3-input-nand_3 nCLR 3-input-nand_3/B Nand_Gate_0/A Nand_Gate_1/A VDD GND x3-input-nand
+X3-input-nand_2 nPRE 3-input-nand_2/B Nand_Gate_1/A Nand_Gate_0/A VDD GND x3-input-nand
+X3-input-nand_4 nPRE Nand_Gate_0/Vout Q' Q VDD GND x3-input-nand
+X3-input-nand_5 nCLR Nand_Gate_1/Vout Q Q' VDD GND x3-input-nand
 XNand_Gate_0 Nand_Gate_0/A Nand_Gate_1/B Nand_Gate_0/Vout VDD GND Nand_Gate
 XNand_Gate_1 Nand_Gate_1/A Nand_Gate_1/B Nand_Gate_1/Vout VDD GND Nand_Gate
 .ends
