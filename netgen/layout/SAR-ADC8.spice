@@ -1,4 +1,4 @@
-* NGSPICE file created from CDAC8.ext - technology: sky130A
+* NGSPICE file created from SAR-ADC8.ext - technology: sky130A
 
 .subckt sky130_fd_pr__pfet_g5v0d10v5_CY7YBN a_n130_n144# a_72_n144# w_n330_n441# a_n72_n241#
 X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=0.72
@@ -9,7 +9,46 @@ X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5
 X0 a_144_n144# a_n144_n232# a_n202_n144# a_n336_n366# sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
 .ends
 
-.subckt switch GND Z A B Vref VDD
+.subckt Inverter VDD Vout Vin GND
+XXM1 VDD Vout VDD Vin sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 GND Vin Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt Nand_Gate GND A Vout B VDD
+XXM1 VDD Vout VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 m1_2428_n226# B Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM4 GND A m1_2428_n226# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt And_Gate VDD A B Vout GND
+XInverter_0 VDD Vout Inverter_0/Vin GND Inverter
+XNand_Gate_0 GND A Inverter_0/Vin B VDD Nand_Gate
+.ends
+
+.subckt x3-input-nand GND A B C Vout VDD
+XXM1 VDD Vout VDD C sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 VDD Vout VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 m1_3159_n1124# C Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 m1_2545_n1124# B m1_3159_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM6 GND A m1_2545_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt D_FlipFlop nCLR nPRE Q' Q D CLK VDD GND
+XInverter_1 VDD Nand_Gate_1/B CLK GND Inverter
+X3-input-nand_0 GND nCLR D CLK 3-input-nand_2/B VDD x3-input-nand
+XInverter_0 VDD Inverter_0/Vout D GND Inverter
+X3-input-nand_1 GND nPRE Inverter_0/Vout CLK 3-input-nand_3/B VDD x3-input-nand
+X3-input-nand_3 GND nCLR 3-input-nand_3/B Nand_Gate_0/A Nand_Gate_1/A VDD x3-input-nand
+X3-input-nand_2 GND nPRE 3-input-nand_2/B Nand_Gate_1/A Nand_Gate_0/A VDD x3-input-nand
+X3-input-nand_4 GND nPRE Nand_Gate_0/Vout Q' Q VDD x3-input-nand
+X3-input-nand_5 GND nCLR Nand_Gate_1/Vout Q Q' VDD x3-input-nand
+XNand_Gate_0 GND Nand_Gate_0/A Nand_Gate_0/Vout Nand_Gate_1/B VDD Nand_Gate
+XNand_Gate_1 GND Nand_Gate_1/A Nand_Gate_1/Vout Nand_Gate_1/B VDD Nand_Gate
+.ends
+
+.subckt switch Z A B Vref VDD GND
 XXM1 B Z VDD m1_1636_n741# sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
 XXM2 Z Vref B GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
 XXM3 Z A VDD Vref sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
@@ -22,8 +61,8 @@ XXM6 GND Vref m1_1636_n741# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
 X0 c2_n2539_n200# m4_n2619_n280# sky130_fd_pr__cap_mim_m3_2 l=2 w=22.7
 .ends
 
-.subckt CDAC8 GND VDD OUT b0 b1 b2 b3 b7 b6 b5 b4
-Xswitch_0 GND switch_0/Z GND VDD b2 VDD switch
+.subckt CDAC8 OUT b0 b1 b3 b6 b4 b7 b5 b2 VDD GND
+Xswitch_0 switch_0/Z GND VDD b2 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_28 switch_8/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_39 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_17 switch_2/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -31,7 +70,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_193 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_182 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_171 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_160 switch_0/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_1 GND switch_1/Z GND VDD b0 VDD switch
+Xswitch_1 switch_1/Z GND VDD b0 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_29 switch_8/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_18 switch_0/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_194 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -39,7 +78,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_183 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_150 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_161 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_172 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_2 GND switch_2/Z GND VDD b1 VDD switch
+Xswitch_2 switch_2/Z GND VDD b1 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_19 switch_0/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_195 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_184 switch_5/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -61,7 +100,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_142 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_164 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_153 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_175 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_5 GND switch_5/Z GND VDD b3 VDD switch
+Xswitch_5 switch_5/Z GND VDD b3 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_121 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_198 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_187 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -71,7 +110,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_143 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_165 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_154 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_176 switch_5/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_6 GND switch_6/Z GND VDD b6 VDD switch
+Xswitch_6 switch_6/Z GND VDD b6 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_122 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_199 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_188 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -82,7 +121,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_144 switch_2/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_166 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_155 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_111 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_7 GND switch_7/Z GND VDD b7 VDD switch
+Xswitch_7 switch_7/Z GND VDD b7 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_123 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_189 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_178 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -92,7 +131,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_101 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_112 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_167 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_156 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_8 GND switch_8/Z GND VDD b4 VDD switch
+Xswitch_8 switch_8/Z GND VDD b4 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_124 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_113 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_179 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -101,7 +140,7 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_102 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_146 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_168 switch_5/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_157 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
-Xswitch_9 GND switch_9/Z GND VDD b5 VDD switch
+Xswitch_9 switch_9/Z GND VDD b5 VDD GND switch
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_0 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_125 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_114 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
@@ -286,5 +325,112 @@ Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_16 switch_9/Z OUT sky130_fd_pr__cap_mim_m3_2_
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_192 switch_5/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_181 switch_6/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
 Xsky130_fd_pr__cap_mim_m3_2_XAJUMH_170 switch_7/Z OUT sky130_fd_pr__cap_mim_m3_2_XAJUMH
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW a_100_n1500# a_n100_n1588# a_n292_n1722#
++ a_n158_n1500#
+X0 a_100_n1500# a_n100_n1588# a_n158_n1500# a_n292_n1722# sky130_fd_pr__nfet_g5v0d10v5 ad=4.35 pd=30.58 as=4.35 ps=30.58 w=15 l=1
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_2_AZGBXE m4_n884_n280# c2_n804_n200#
+X0 c2_n804_n200# m4_n884_n280# sky130_fd_pr__cap_mim_m3_2 l=2 w=5.35
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q a_100_n5000# w_n358_n5297# a_n158_n5000#
++ a_n100_n5097#
+X0 a_100_n5000# a_n100_n5097# a_n158_n5000# w_n358_n5297# sky130_fd_pr__pfet_g5v0d10v5 ad=14.5 pd=100.58 as=14.5 ps=100.58 w=50 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_53M7DK a_100_n2000# a_n100_n2088# a_n292_n2222#
++ a_n158_n2000#
+X0 a_100_n2000# a_n100_n2088# a_n158_n2000# a_n292_n2222# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8 a_n100_n1088# a_n292_n1222# a_n158_n1000#
++ a_100_n1000#
+X0 a_100_n1000# a_n100_n1088# a_n158_n1000# a_n292_n1222# sky130_fd_pr__nfet_g5v0d10v5 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q a_n100_n6097# a_100_n6000# w_n358_n6297#
++ a_n158_n6000#
+X0 a_100_n6000# a_n100_n6097# a_n158_n6000# w_n358_n6297# sky130_fd_pr__pfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1
+.ends
+
+.subckt sky130_fd_pr__res_xhigh_po_5p73_2WP2GG a_n703_n15546# a_n573_14984# a_n573_n15416#
+X0 a_n573_14984# a_n573_n15416# a_n703_n15546# sky130_fd_pr__res_xhigh_po_5p73 l=150
+.ends
+
+.subckt Comparator VDD Vinm Vinp Vout VSS
+XXM1 m1_28034_9075# Vinm VSS m1_27776_12019# sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW
+XXM2 m1_28560_12019# Vinp VSS m1_28034_9075# sky130_fd_pr__nfet_g5v0d10v5_Q3MXVW
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_0 VSS Vout sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM3 VDD VDD m1_27776_12019# m1_27776_12019# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_1 Vout m1_28560_12019# sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM4 m1_28560_12019# VDD VDD m1_27776_12019# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+XXM5 VSS m1_26378_n1710# VSS m1_28034_9075# sky130_fd_pr__nfet_g5v0d10v5_53M7DK
+XXM6 m1_26378_n1710# VSS VSS Vout sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8
+XXM7 VSS m1_26378_n1710# VSS m1_26378_n1710# sky130_fd_pr__nfet_g5v0d10v5_53M7DK
+XXM9 m1_28560_12019# Vout VDD VDD sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q
+Xsky130_fd_pr__res_xhigh_po_5p73_2WP2GG_0 VSS VDD m1_26378_n1710# sky130_fd_pr__res_xhigh_po_5p73_2WP2GG
+.ends
+
+.subckt RingCounter Q0 Q1 Q3 Q4 Q5 Q6 Q8 Q11 Q13 Q14 Q15 VDD CLK Q10 Q12 EN Q7 Q2
++ Q9 GND
+XD_FlipFlop_10 VDD EN D_FlipFlop_10/Q' Q8 Q7 CLK VDD GND D_FlipFlop
+XD_FlipFlop_11 VDD EN D_FlipFlop_11/Q' Q10 Q9 CLK VDD GND D_FlipFlop
+XD_FlipFlop_12 VDD EN D_FlipFlop_12/Q' Q11 Q10 CLK VDD GND D_FlipFlop
+XD_FlipFlop_13 VDD EN D_FlipFlop_13/Q' Q12 Q11 CLK VDD GND D_FlipFlop
+XD_FlipFlop_14 VDD EN D_FlipFlop_14/Q' Q13 Q12 CLK VDD GND D_FlipFlop
+XD_FlipFlop_15 VDD EN D_FlipFlop_15/Q' Q14 Q13 CLK VDD GND D_FlipFlop
+XD_FlipFlop_16 VDD EN D_FlipFlop_16/Q' D_FlipFlop_17/D Q15 CLK VDD GND D_FlipFlop
+XD_FlipFlop_17 EN VDD D_FlipFlop_17/Q' Q0 D_FlipFlop_17/D CLK VDD GND D_FlipFlop
+XD_FlipFlop_1 VDD EN D_FlipFlop_1/Q' Q1 Q0 CLK VDD GND D_FlipFlop
+XD_FlipFlop_3 VDD EN D_FlipFlop_3/Q' Q3 Q2 CLK VDD GND D_FlipFlop
+XD_FlipFlop_2 VDD EN D_FlipFlop_2/Q' Q2 Q1 CLK VDD GND D_FlipFlop
+XD_FlipFlop_4 VDD EN D_FlipFlop_4/Q' Q4 Q3 CLK VDD GND D_FlipFlop
+XD_FlipFlop_5 VDD EN D_FlipFlop_5/Q' Q5 Q4 CLK VDD GND D_FlipFlop
+XD_FlipFlop_6 VDD EN D_FlipFlop_6/Q' Q7 Q6 CLK VDD GND D_FlipFlop
+XD_FlipFlop_7 VDD EN D_FlipFlop_7/Q' Q6 Q5 CLK VDD GND D_FlipFlop
+XD_FlipFlop_8 VDD EN D_FlipFlop_8/Q' Q15 Q14 CLK VDD GND D_FlipFlop
+XD_FlipFlop_9 VDD EN D_FlipFlop_9/Q' Q9 Q8 CLK VDD GND D_FlipFlop
+.ends
+
+.subckt SAR-ADC8 CLK Q0 Q1 Q2 Q3 Q4 Q6 Q5 Q7 VDD Vin EN GND Vbias
+XAnd_Gate_0 VDD CLK And_Gate_0/B And_Gate_0/Vout GND And_Gate
+XAnd_Gate_1 VDD CLK And_Gate_1/B And_Gate_1/Vout GND And_Gate
+XAnd_Gate_3 VDD CLK And_Gate_3/B And_Gate_3/Vout GND And_Gate
+XAnd_Gate_2 VDD CLK And_Gate_2/B And_Gate_2/Vout GND And_Gate
+XAnd_Gate_4 VDD And_Gate_4/A CLK And_Gate_4/Vout GND And_Gate
+XAnd_Gate_5 VDD And_Gate_5/A CLK And_Gate_5/Vout GND And_Gate
+XAnd_Gate_6 VDD And_Gate_6/A CLK And_Gate_6/Vout GND And_Gate
+XAnd_Gate_7 VDD And_Gate_7/A CLK And_Gate_7/Vout GND And_Gate
+XD_FlipFlop_0 FFCLR Nand_Gate_5/A D_FlipFlop_0/Q' Q4 D_FlipFlop_7/D And_Gate_7/Vout
++ VDD GND D_FlipFlop
+XD_FlipFlop_1 EN FFCLR D_FlipFlop_1/Q' Q7 D_FlipFlop_7/D And_Gate_5/Vout VDD GND D_FlipFlop
+XCDAC8_0 CDAC8_0/OUT Q0 Q1 Q3 Q6 Q4 Q7 Q5 Q2 VDD GND CDAC8
+XD_FlipFlop_3 FFCLR Nand_Gate_2/A D_FlipFlop_3/Q' Q5 D_FlipFlop_7/D And_Gate_6/Vout
++ VDD GND D_FlipFlop
+XD_FlipFlop_2 FFCLR Nand_Gate_0/A D_FlipFlop_2/Q' Q6 D_FlipFlop_7/D And_Gate_4/Vout
++ VDD GND D_FlipFlop
+XD_FlipFlop_4 FFCLR Nand_Gate_1/B D_FlipFlop_4/Q' Q3 D_FlipFlop_7/D And_Gate_3/Vout
++ VDD GND D_FlipFlop
+XComparator_0 VDD CDAC8_0/OUT Vin D_FlipFlop_7/D Vbias Comparator
+XD_FlipFlop_5 FFCLR Nand_Gate_6/B D_FlipFlop_5/Q' Q2 D_FlipFlop_7/D And_Gate_2/Vout
++ VDD GND D_FlipFlop
+XD_FlipFlop_6 FFCLR Nand_Gate_7/B D_FlipFlop_6/Q' Q1 D_FlipFlop_7/D And_Gate_0/Vout
++ VDD GND D_FlipFlop
+XD_FlipFlop_7 FFCLR Nand_Gate_4/B D_FlipFlop_7/Q' Q0 D_FlipFlop_7/D And_Gate_1/Vout
++ VDD GND D_FlipFlop
+XNand_Gate_0 GND Nand_Gate_0/A And_Gate_4/A Nand_Gate_0/B VDD Nand_Gate
+XNand_Gate_1 GND Nand_Gate_1/A And_Gate_3/B Nand_Gate_1/B VDD Nand_Gate
+XNand_Gate_2 GND Nand_Gate_2/A And_Gate_6/A Nand_Gate_2/B VDD Nand_Gate
+XNand_Gate_4 GND Nand_Gate_4/A And_Gate_1/B Nand_Gate_4/B VDD Nand_Gate
+XNand_Gate_3 GND FFCLR And_Gate_5/A Nand_Gate_3/B VDD Nand_Gate
+XNand_Gate_5 GND Nand_Gate_5/A And_Gate_7/A Nand_Gate_5/B VDD Nand_Gate
+XNand_Gate_6 GND Nand_Gate_6/A And_Gate_2/B Nand_Gate_6/B VDD Nand_Gate
+XRingCounter_0 FFCLR Nand_Gate_3/B Nand_Gate_0/B Nand_Gate_2/A Nand_Gate_2/B Nand_Gate_5/A
++ Nand_Gate_1/B Nand_Gate_6/A Nand_Gate_7/A Nand_Gate_4/B Nand_Gate_4/A VDD CLK Nand_Gate_6/B
++ Nand_Gate_7/B EN Nand_Gate_5/B Nand_Gate_0/A Nand_Gate_1/A GND RingCounter
+XNand_Gate_7 GND Nand_Gate_7/A And_Gate_0/B Nand_Gate_7/B VDD Nand_Gate
 .ends
 

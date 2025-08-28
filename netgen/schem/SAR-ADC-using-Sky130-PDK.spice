@@ -1,0 +1,455 @@
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/SAR-ADC-using-Sky130-PDK.sch
+.subckt SAR-ADC-using-Sky130-PDK VDD Vin Q0 Vbias EN Q1 CLK Q2 Q3 Q4 Q5 Q6 Q7 GND
+*.PININFO EN:I CLK:I VDD:I Vin:I Q0:O Q2:O Q3:O Q4:O Q5:O Q6:O Q7:O Q1:O Vbias:I GND:I
+x2 net23 Compout Q0 net1 net32 FFCLR GND VDD D_FlipFlop_for_Ring
+x4 net19 Compout Q2 net2 net33 FFCLR GND VDD D_FlipFlop_for_Ring
+x5 net17 Compout Q3 net3 net34 FFCLR GND VDD D_FlipFlop_for_Ring
+x6 net15 Compout Q4 net4 net35 FFCLR GND VDD D_FlipFlop_for_Ring
+x7 net13 Compout Q5 net5 net36 FFCLR GND VDD D_FlipFlop_for_Ring
+x8 net11 Compout Q6 net6 net37 FFCLR GND VDD D_FlipFlop_for_Ring
+x9 FFCLR Compout Q7 net7 net38 EN GND VDD D_FlipFlop_for_Ring
+x3 net21 Compout Q1 net8 net39 FFCLR GND VDD D_FlipFlop_for_Ring
+x18 net9 net23 net30 GND VDD Nand_Gate
+x19 net22 net21 net31 GND VDD Nand_Gate
+x20 net20 net19 net25 GND VDD Nand_Gate
+x21 net18 net17 net26 GND VDD Nand_Gate
+x22 net15 net16 net27 GND VDD Nand_Gate
+x23 net13 net14 net28 GND VDD Nand_Gate
+x24 net11 net12 net29 GND VDD Nand_Gate
+x25 FFCLR net10 net24 GND VDD Nand_Gate
+x10 CLK net30 net1 GND VDD And_Gate
+x11 CLK net31 net8 GND VDD And_Gate
+x15 net28 CLK net5 GND VDD And_Gate
+x12 CLK net25 net2 GND VDD And_Gate
+x13 CLK net26 net3 GND VDD And_Gate
+x14 net27 CLK net4 GND VDD And_Gate
+x16 net29 CLK net6 GND VDD And_Gate
+x17 net24 CLK net7 GND VDD And_Gate
+x27 DACout Q7 Q6 Q5 Q4 Q3 Q2 Q1 Q0 GND VDD CDAC8
+x1 Compout DACout Vin VDD Vbias comparator
+x26 VDD net11 net9 net13 net14 net15 net16 net10 net18 net19 net20 net21 net22 net23 FFCLR net12 net17 CLK EN GND
++ RING_COUNTER_FINAL
+* noconn #net32
+* noconn #net39
+* noconn #net33
+* noconn #net34
+* noconn #net36
+* noconn #net35
+* noconn #net37
+* noconn #net38
+.ends
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym # of pins=8
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sch
+.subckt D_FlipFlop_for_Ring nPRE D Q CLK Q' nCLR GND VDD
+*.PININFO D:I CLK:I nPRE:I nCLR:I Q:O Q':O VDD:I GND:I
+x1 CLK net6 GND VDD Inverter
+x2 CLK D nCLR net1 GND VDD 3-input-nand
+x3 net4 net6 net7 GND VDD Nand_Gate
+x4 CLK net5 nPRE net2 GND VDD 3-input-nand
+x5 Q net8 nCLR Q' GND VDD 3-input-nand
+x6 Q' net7 nPRE Q GND VDD 3-input-nand
+x7 net3 net6 net8 GND VDD Nand_Gate
+x8 net3 net1 nPRE net4 GND VDD 3-input-nand
+x9 net4 net2 nCLR net3 GND VDD 3-input-nand
+x10 D net5 GND VDD Inverter
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym # of pins=5
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sch
+.subckt Nand_Gate A B Vout GND VDD
+*.PININFO A:I B:I VDD:I GND:I Vout:O
+XM1 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 Vout B net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM4 net1 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sym # of pins=5
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sch
+.subckt And_Gate A B Vout GND VDD
+*.PININFO Vout:O A:I B:I VDD:I GND:I
+XM1 net1 B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 net1 A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 net1 B net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM4 net2 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM5 Vout net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM6 Vout net1 GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/CDAC8.sym # of pins=11
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/CDAC8.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/CDAC8.sch
+.subckt CDAC8 OUT b7 b6 b5 b4 b3 b2 b1 b0 GND VDD
+*.PININFO b0:I b1:I b2:I b3:I b4:I b5:I b6:I b7:I VDD:I GND:I OUT:O
+x1 VDD GND z0 b0 VDD GND switch
+x2 VDD GND z1 b1 VDD GND switch
+x3 VDD GND z2 b2 VDD GND switch
+x4 VDD GND z3 b3 VDD GND switch
+x5 VDD GND z4 b4 VDD GND switch
+x6 VDD GND z5 b5 VDD GND switch
+x7 VDD GND z6 b6 VDD GND switch
+x8 VDD GND z7 b7 VDD GND switch
+XC2 OUT z0 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC1 OUT z1 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC9 OUT z1 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC3 OUT z2 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC4 OUT z2 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC5 OUT z2 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC6 OUT z2 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC7 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC8 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC10 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC11 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC12 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC13 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC14 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC15 OUT z3 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC16 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC17 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC18 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC19 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC20 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC21 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC22 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC23 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC24 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC25 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC26 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC27 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC28 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC29 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC30 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC31 OUT z4 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC32 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC33 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC34 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC35 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC36 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC37 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC38 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC39 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC40 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC41 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC42 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC43 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC44 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC45 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC46 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC47 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC48 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC49 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC50 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC51 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC52 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC53 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC54 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC55 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC56 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC57 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC58 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC59 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC60 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC61 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC62 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC63 OUT z5 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC64 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC65 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC66 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC67 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC68 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC69 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC70 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC71 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC72 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC73 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC74 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC75 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC76 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC77 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC78 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC79 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC80 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC81 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC82 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC83 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC84 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC85 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC86 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC87 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC88 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC89 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC90 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC91 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC92 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC93 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC94 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC95 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC96 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC97 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC98 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC99 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC100 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC101 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC102 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC103 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC104 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC105 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC106 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC107 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC108 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC109 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC110 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC111 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC112 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC113 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC114 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC115 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC116 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC117 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC118 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC119 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC120 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC121 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC122 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC123 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC124 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC125 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC126 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC127 OUT z6 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC128 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC129 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC130 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC131 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC132 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC133 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC134 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC135 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC136 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC137 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC138 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC139 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC140 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC141 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC142 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC143 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC144 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC145 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC146 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC147 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC148 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC149 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC150 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC151 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC152 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC153 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC154 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC155 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC156 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC157 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC158 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC159 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC160 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC161 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC162 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC163 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC164 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC165 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC166 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC167 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC168 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC169 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC170 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC171 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC172 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC173 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC174 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC175 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC176 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC177 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC178 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC179 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC180 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC181 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC182 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC183 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC184 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC185 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC186 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC187 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC188 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC189 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC190 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC191 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC192 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC193 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC194 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC195 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC196 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC197 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC198 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC199 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC200 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC201 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC202 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC203 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC204 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC205 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC206 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC207 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC208 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC209 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC210 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC211 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC212 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC213 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC214 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC215 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC216 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC217 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC218 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC219 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC220 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC221 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC222 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC223 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC224 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC225 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC226 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC227 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC228 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC229 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC230 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC231 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC232 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC233 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC234 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC235 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC236 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC237 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC238 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC239 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC240 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC241 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC242 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC243 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC244 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC245 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC246 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC247 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC248 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC249 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC250 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC251 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC252 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC253 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC254 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+XC255 OUT z7 sky130_fd_pr__cap_mim_m3_2 W=22.7 L=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/comparator.sym # of pins=5
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/comparator.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/comparator.sch
+.subckt comparator Vout Vinm Vinp VDD VSS
+*.PININFO Vout:O Vinp:I Vinm:I VDD:I VSS:I
+XM9 Vout net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=60 nf=1 m=1
+XM3 net1 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=50 nf=1 m=1
+XM4 net2 net1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=50 nf=1 m=1
+XM1 net1 Vinm net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15 nf=1 m=1
+XM2 net2 Vinp net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=15 nf=1 m=1
+XM6 Vout net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=10 nf=1 m=1
+XM5 net3 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 m=1
+XM7 net4 net4 VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=1 W=20 nf=1 m=1
+XR1 net4 VDD VSS sky130_fd_pr__res_xhigh_po_5p73 L=150 mult=1 m=1
+XC3 net2 Vout sky130_fd_pr__cap_mim_m3_2 W=5.35 L=2 m=1
+XC1 Vout VSS sky130_fd_pr__cap_mim_m3_2 W=5.35 L=2 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sym # of pins=20
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sch
+.subckt RING_COUNTER_FINAL VDD Q2 Q15 Q4 Q5 Q6 Q7 Q1 Q9 Q10 Q11 Q12 Q13 Q14 Q0 Q3 Q8 CLK EN GND
+*.PININFO Q0:O Q1:O Q2:O Q3:O Q4:O Q5:O Q6:O Q7:O Q8:O Q9:O Q10:O Q11:O Q12:O Q13:O Q14:O Q15:O CLK:I EN:I VDD:I GND:I
+x1 VDD net1 Q0 CLK net2 EN GND VDD D_FlipFlop_for_Ring
+x2 EN Q0 Q1 CLK net3 VDD GND VDD D_FlipFlop_for_Ring
+x3 EN Q1 Q2 CLK net4 VDD GND VDD D_FlipFlop_for_Ring
+x4 EN Q2 Q3 CLK net5 VDD GND VDD D_FlipFlop_for_Ring
+x5 EN Q3 Q4 CLK net6 VDD GND VDD D_FlipFlop_for_Ring
+x6 EN Q4 Q5 CLK net7 VDD GND VDD D_FlipFlop_for_Ring
+x7 EN Q5 Q6 CLK net8 VDD GND VDD D_FlipFlop_for_Ring
+x8 EN Q6 Q7 CLK net9 VDD GND VDD D_FlipFlop_for_Ring
+x9 EN Q7 Q8 CLK net10 VDD GND VDD D_FlipFlop_for_Ring
+x10 EN Q8 Q9 CLK net11 VDD GND VDD D_FlipFlop_for_Ring
+x11 EN Q9 Q10 CLK net12 VDD GND VDD D_FlipFlop_for_Ring
+x12 EN Q10 Q11 CLK net13 VDD GND VDD D_FlipFlop_for_Ring
+x13 EN Q11 Q12 CLK net14 VDD GND VDD D_FlipFlop_for_Ring
+x14 EN Q12 Q13 CLK net15 VDD GND VDD D_FlipFlop_for_Ring
+x15 EN Q13 Q14 CLK net16 VDD GND VDD D_FlipFlop_for_Ring
+x16 EN Q14 Q15 CLK net17 VDD GND VDD D_FlipFlop_for_Ring
+x17 EN Q15 net1 CLK net18 VDD GND VDD D_FlipFlop_for_Ring
+* noconn #net2
+* noconn #net3
+* noconn #net4
+* noconn #net5
+* noconn #net6
+* noconn #net7
+* noconn #net8
+* noconn #net9
+* noconn #net10
+* noconn #net11
+* noconn #net12
+* noconn #net13
+* noconn #net14
+* noconn #net18
+* noconn #net17
+* noconn #net16
+* noconn #net15
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym # of pins=4
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sch
+.subckt Inverter Vin Vout GND VDD
+*.PININFO Vout:O Vin:I VDD:I GND:I
+XM1 Vout Vin VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout Vin GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym # of pins=6
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sch
+.subckt 3-input-nand C B A Vout GND VDD
+*.PININFO A:I B:I Vout:O C:I VDD:I GND:I
+XM1 Vout C VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM2 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 Vout A VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM4 Vout C net1 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM5 net1 B net2 GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM6 net2 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+
+* expanding   symbol:  /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym # of pins=6
+** sym_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sym
+** sch_path: /foss/designs/SAR-ADC-using-Sky130-PDK/xschem/switch.sch
+.subckt switch B A Z Vref VDD GND
+*.PININFO Vref:I Z:B A:B B:B VDD:I GND:I
+XM2 Z Vref B GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM1 B net1 Z VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM3 A Vref Z VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM5 net1 Vref VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 m=1
+XM4 Z net1 A GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+XM6 net1 Vref GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 m=1
+.ends
+
+.end

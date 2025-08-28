@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1755875457
+timestamp 1756371889
 << metal1 >>
 rect 11040 40339 97170 40385
 rect 19709 39536 19773 39542
@@ -1802,71 +1802,71 @@ rect 94793 1773 94794 1775
 rect 94858 1773 94859 1837
 rect 94793 1772 94859 1773
 use D_FlipFlop  D_FlipFlop_1
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 22168 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_2
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 33208 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_3
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 44248 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_4
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 55288 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_5
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 66328 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_6
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 88408 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_7
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 77368 0 1 38557
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_8
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 19890 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_9
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 86130 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_10
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 97170 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_11
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 75090 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_12
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 64050 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_13
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 53010 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_14
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 41970 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_15
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 30930 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_16
-timestamp 1755875389
+timestamp 1756369532
 transform -1 0 8850 0 1 1782
 box -102 -1796 8762 1842
 use D_FlipFlop  D_FlipFlop_17
-timestamp 1755875389
+timestamp 1756369532
 transform 1 0 11128 0 1 38557
 box -102 -1796 8762 1842
 << labels >>
@@ -1888,8 +1888,6 @@ flabel metal2 19544 2712 22291 2758 0 FreeSans 160 0 0 0 Q14
 port 14 nsew
 flabel metal2 8504 2712 11251 2758 0 FreeSans 160 0 0 0 Q15
 port 15 nsew
-flabel metal2 78996 3748 89980 3794 0 FreeSans 160 0 0 0 EN
-port 16 nsew
 flabel metal2 83070 3656 94054 3702 0 FreeSans 160 0 0 0 VDD
 port 17 nsew
 flabel metal3 97205 51 97265 3559 0 FreeSans 160 90 0 0 GND
@@ -1910,4 +1908,6 @@ flabel metal2 74967 39487 77714 39533 0 FreeSans 160 0 0 0 Q5
 port 5 nsew
 flabel metal2 86007 39487 88754 39533 0 FreeSans 160 0 0 0 Q6
 port 6 nsew
+flabel metal3 89978 3799 90038 36586 0 FreeSans 160 0 0 0 EN
+port 23 nsew
 << end >>
