@@ -14,6 +14,8 @@ paths:
   root          : ..
   documentation : docs
   schematic     : xschem
+  magic         : mag
+  layout        : gds
   netlist       : netlist
 
 pins:
@@ -108,89 +110,122 @@ default_conditions:
     maximum     : ff
 
 parameters:
-  SNDR:
-    description : SNDR
-    display     : SNDR
-    unit        : dB
-    spec:
-      sndr :
-        minimum :
-          value : any
-        typical :
-          value : any
-        maximum :
-          value : any
-    tool:
-      ngspice:
-        template          : sndr_enob_fom.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-        script            : sndr_enob_fom.py
-        script_variables  : [sndr, enob, fom]
-    conditions:
-      VVDD:
-        typical : 1.8
-      temperature:
-        typical : 27
-      corner:
-        typical : tt
+  # sampling_rate:
+  #   description : sampling rate
+  #   display     : sampling rate
+  #   unit        : kS/s
+  #   spec:
+  #     sampling_rate :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : sampling_rate.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Clk, FFCLR]
+  #       script            : sampling_rate.py
+  #       script_variables  : [sampling_rate]
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
+  #     VVin:
+  #       minimum  : 0
+  #       maximum  : 1.8
+  #       step     : linear
+  #       stepsize : 0.6 #to change
 
-  ENOB:
-    description : ENOB
-    display     : ENOB
-    unit        : bits
-    spec:
-      enob :
-        minimum :
-          value : any
-        typical :
-          value : any
-        maximum :
-          value : any
-    tool:
-      ngspice:
-        template          : sndr_enob_fom.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-        script            : sndr_enob_fom.py
-        script_variables  : [sndr, enob, fom]
-    conditions:
-      VVDD:
-        typical : 1.8
-      temperature:
-        typical : 27
-      corner:
-        typical : tt
+  # SNDR:
+  #   description : SNDR
+  #   display     : SNDR
+  #   unit        : dB
+  #   spec:
+  #     sndr :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : sndr_enob_fom.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+  #       script            : sndr_enob_fom.py
+  #       script_variables  : [sndr]
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
 
-  FOM:
-    description : FOM
-    display     : FOM
-    unit        : fJ/conv-step
-    spec:
-      enob :
-        minimum :
-          value : any
-        typical :
-          value : any
-        maximum :
-          value : any
-    tool:
-      ngspice:
-        template          : sndr_enob_fom.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-        script            : sndr_enob_fom.py
-        script_variables  : [sndr, enob, fom]
-    conditions:
-      VVDD:
-        typical : 1.8
-      temperature:
-        typical : 27
-      corner:
-        typical : tt
+  # ENOB:
+  #   description : ENOB
+  #   display     : ENOB
+  #   unit        : bits
+  #   spec:
+  #     enob :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : sndr_enob_fom.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+  #       script            : sndr_enob_fom.py
+  #       script_variables  : [sndr, enob, fom]
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
+
+  # FOM:
+  #   description : FOM
+  #   display     : FOM
+  #   unit        : fJ/conv-step
+  #   spec:
+  #     enob :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : sndr_enob_fom.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+  #       script            : sndr_enob_fom.py
+  #       script_variables  : [sndr, enob, fom]
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
 
   # offset_error:
   #   description : Offset Error
@@ -211,7 +246,11 @@ parameters:
   #       suffix            : .data
   #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
   #       script            : offset_error.py
-  #       script_variables  : [offset_error]
+  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+  #   plot:
+  #     offset_error:
+  #       xaxis: Vin_samples      
+  #       yaxis: codes_binary    
   #   conditions:
   #     VVDD:
   #       typical : 1.8
@@ -251,8 +290,21 @@ parameters:
   #       minimum  : 0
   #       maximum  : 1.8
   #       step     : linear
-  #       stepsize : 0.2 #to change to 1.8/[(2^8)-1] (1 LSB)
+  #       stepsize : 0.025 # 73 conversions, this is average power so not really necessary to run through all 256 conversions
   #     temperature:
   #       typical : 27
   #     corner:
+  #       minimum : ss
   #       typical : tt
+  #       maximum : ff
+
+  # netgen_lvs:
+  #   description: Netgen LVS
+  #   display: Netgen LVS
+  #   spec:
+  #     lvs_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #     netgen_lvs:
+  #       script: run_project_lvs.tcl

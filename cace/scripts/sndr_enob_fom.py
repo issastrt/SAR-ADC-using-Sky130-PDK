@@ -34,8 +34,6 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
 
     codes = np.array(codes, dtype=float)
 
-    print("First 64 codes:", codes[:32])
-
     # --- Remove DC offset ---
     codes = codes - np.mean(codes)
 
