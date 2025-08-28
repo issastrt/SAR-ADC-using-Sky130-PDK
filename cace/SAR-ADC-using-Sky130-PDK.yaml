@@ -14,8 +14,8 @@ paths:
   root          : ..
   documentation : docs
   schematic     : xschem
-  magic         : mag
-  layout        : gds
+  # magic         : mag
+  # layout        : gds
   netlist       : netlist
 
 pins:
@@ -227,37 +227,39 @@ parameters:
   #     corner:
   #       typical : tt
 
-  # offset_error:
-  #   description : Offset Error
-  #   display     : Offset Error
-  #   unit        : LSB
-  #   spec:
-  #     offset_error :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : offset_error.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-  #       script            : offset_error.py
-  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-  #   plot:
-  #     offset_error:
-  #       xaxis: Vin_samples      
-  #       yaxis: codes_binary    
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       typical : tt
+  offset_error:
+    description : Offset Error
+    display     : Offset Error
+    unit        : LSB
+    spec:
+      offset_error :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : offset_error.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : offset_error.py
+        script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+    plot:
+      offset_error:
+        xaxis: Vin_samples      
+        yaxis: codes_binary    
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        minimum : ss
+        typical : tt
+        maximum : ff
 
   # Power:
   #   description : Current draw through analog supply, ADC enabled
@@ -290,13 +292,49 @@ parameters:
   #       minimum  : 0
   #       maximum  : 1.8
   #       step     : linear
-  #       stepsize : 0.025 # 73 conversions, this is average power so not really necessary to run through all 256 conversions
+  #       stepsize : 0.05 # 73 conversions, this is average power so not really necessary to run through all 256 conversions
   #     temperature:
   #       typical : 27
   #     corner:
   #       minimum : ss
   #       typical : tt
   #       maximum : ff
+
+  # magic_area:
+  #   spec:
+  #     area:
+  #       display: Area
+  #       description: Total circuit layout area
+  #       unit: mm²
+  #       maximum:
+  #         value: any
+  #     width:
+  #       display: Width
+  #       description: Total circuit layout width
+  #       unit: µm
+  #       maximum:
+  #         value: any
+  #     height:
+  #       display: Height
+  #       description: Total circuit layout height
+  #       unit: µm
+  #       maximum:
+  #         value: any
+  #   tool:
+  #     magic_area
+
+  # magic_drc:
+  #   description: Magic DRC
+  #   display: Magic DRC
+  #   spec:
+  #     drc_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #     magic_drc:
+  #       gds_flatten: true
+  #       script: |
+  #         drc style fast
 
   # netgen_lvs:
   #   description: Netgen LVS
@@ -308,3 +346,25 @@ parameters:
   #   tool:
   #     netgen_lvs:
   #       script: run_project_lvs.tcl
+
+  # klayout_drc_feol:
+  #   description: KLayout DRC feol
+  #   display: KLayout DRC feol
+  #   spec:
+  #     drc_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #       klayout_drc:
+  #           args: ['-rd', 'feol=true']
+
+  # klayout_drc_beol:
+  #   description: KLayout DRC beol
+  #   display: KLayout DRC beol
+  #   spec:
+  #     drc_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #       klayout_drc:
+  #           args: ['-rd', 'beol=true']
