@@ -486,8 +486,8 @@ C {devices/lab_wire.sym} 2510 1020 0 0 {name=p59 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2510 1000 0 0 {name=p60 sig_type=std_logic lab=GND}
 C {devices/lab_wire.sym} 2700 600 0 0 {name=p61 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 620 0 0 {name=p62 sig_type=std_logic lab=GND}
-C {devices/lab_wire.sym} 2510 780 0 0 {name=p63 sig_type=std_logic lab=VDD}
-C {devices/lab_wire.sym} 2510 800 0 0 {name=p64 sig_type=std_logic lab=GND}
+C {devices/lab_wire.sym} 2510 800 0 0 {name=p63 sig_type=std_logic lab=VDD}
+C {devices/lab_wire.sym} 2510 780 0 0 {name=p64 sig_type=std_logic lab=GND}
 C {devices/lab_wire.sym} 2700 380 0 0 {name=p65 sig_type=std_logic lab=VDD}
 C {devices/lab_wire.sym} 2700 400 0 0 {name=p66 sig_type=std_logic lab=GND}
 C {devices/lab_wire.sym} 2510 420 0 0 {name=p67 sig_type=std_logic lab=VDD}
