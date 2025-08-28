@@ -108,12 +108,12 @@ default_conditions:
     maximum     : ff
 
 parameters:
-  Power:
-    description : Current draw through analog supply, ADC enabled
-    display     : Average Power
-    unit        : mW
+  SNDR:
+    description : SNDR
+    display     : SNDR
+    unit        : dB
     spec:
-      avg_power :
+      sndr :
         minimum :
           value : any
         typical :
@@ -122,25 +122,137 @@ parameters:
           value : any
     tool:
       ngspice:
-        template          : transient.sch
+        template          : sndr_enob_fom.sch
         format            : ascii
         suffix            : .data
-        variables         : [null, idd]
-        script            : power_consumption.py
-        script_variables  : [power, avg_power]
-    plot:
-      power:
-        xaxis : VVin
-        yaxis : avg_power
+        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : sndr_enob_fom.py
+        script_variables  : [sndr, enob, fom]
     conditions:
       VVDD:
         typical : 1.8
-      VVin:
-        minimum  : 0
-        maximum  : 1.8
-        step     : linear
-        stepsize : 0.2 #to change to 1.8/[(2^8)-1] (1 LSB)
       temperature:
         typical : 27
       corner:
         typical : tt
+
+  ENOB:
+    description : ENOB
+    display     : ENOB
+    unit        : bits
+    spec:
+      enob :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : sndr_enob_fom.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : sndr_enob_fom.py
+        script_variables  : [sndr, enob, fom]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        typical : tt
+
+  FOM:
+    description : FOM
+    display     : FOM
+    unit        : fJ/conv-step
+    spec:
+      enob :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : sndr_enob_fom.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : sndr_enob_fom.py
+        script_variables  : [sndr, enob, fom]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        typical : tt
+
+  # offset_error:
+  #   description : Offset Error
+  #   display     : Offset Error
+  #   unit        : LSB
+  #   spec:
+  #     offset_error :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : offset_error.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+  #       script            : offset_error.py
+  #       script_variables  : [offset_error]
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
+
+  # Power:
+  #   description : Current draw through analog supply, ADC enabled
+  #   display     : Average Power
+  #   unit        : mW
+  #   spec:
+  #     avg_power :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : power_consumption.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [null, idd]
+  #       script            : power_consumption.py
+  #       script_variables  : [power, avg_power]
+  #   plot:
+  #     power:
+  #       xaxis : VVin
+  #       yaxis : avg_power
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     VVin:
+  #       minimum  : 0
+  #       maximum  : 1.8
+  #       step     : linear
+  #       stepsize : 0.2 #to change to 1.8/[(2^8)-1] (1 LSB)
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       typical : tt
