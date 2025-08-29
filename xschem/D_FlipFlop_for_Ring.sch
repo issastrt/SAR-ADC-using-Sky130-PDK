@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -164,7 +163,7 @@ C {devices/ipin.sym} -1330 -360 0 0 {name=p8 lab=CLK}
 C {devices/ipin.sym} -890 -520 0 0 {name=p9 lab=nPRE}
 C {devices/ipin.sym} -890 -20 0 0 {name=p10 lab=nCLR}
 C {devices/opin.sym} -130 -380 0 0 {name=p11 lab=Q}
-C {devices/opin.sym} -150 -180 0 0 {name=p12 lab=Q'}
+C {devices/opin.sym} -150 -180 0 0 {name=p12 lab=Qbar}
 C {Inverter.sym} -590 -250 0 0 {name=x1}
 C {3-input-nand.sym} -1130 -240 0 0 {name=x2}
 C {Nand_Gate.sym} -410 -270 0 0 {name=x3}

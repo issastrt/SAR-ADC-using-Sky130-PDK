@@ -1,5 +1,4 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
@@ -7,8 +6,7 @@ S {}
 E {}
 N -1330 160 -1330 180 {
 lab=CLK}
-N -420 60 -420 100 {
-lab=Vin}
+N -420 60 -420 95 {lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -180 110 0 0 {name=x1}
 C {devices/gnd.sym} -1330 240 0 0 {name=l27 lab=GND
 value=1.8}
