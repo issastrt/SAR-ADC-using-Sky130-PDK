@@ -1,0 +1,13 @@
+DUT_path: /home/samantha/cace/SAR-ADC-using-Sky130-PDK/netlist/schematic/SAR-ADC-using-Sky130-PDK.spice
+N: 21
+PDK: sky130A
+PDK_ROOT: /usr/local/share/pdk
+Rout: '100000000.0'
+VVDD: '1.8'
+VVGND: '0'
+VVbias: '-0.8'
+VVin: '0.175'
+corner: ss
+filename: power_consumption
+simpath: /home/samantha/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-08-29_13-21-04/parameters/Power/run_021
+temperature: '27'
