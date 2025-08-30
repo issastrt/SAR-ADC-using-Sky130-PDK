@@ -261,110 +261,87 @@ parameters:
   #       typical : tt
   #       maximum : ff
 
-  Power:
-    description : Current draw through analog supply, ADC enabled
-    display     : Average Power
-    unit        : mW
+  # Power:
+  #   description : Current draw through analog supply, ADC enabled
+  #   display     : Average Power
+  #   unit        : mW
+  #   spec:
+  #     avg_power :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : power_consumption.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [null, idd]
+  #       script            : power_consumption.py
+  #       script_variables  : [power, avg_power]
+  #   plot:
+  #     power:
+  #       xaxis : VVin
+  #       yaxis : avg_power
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     VVin:
+  #       minimum: 1.3
+  #       maximum: 1.8
+  #       step: linear
+  #       stepsize: 0.1
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       # minimum : ss
+  #       typical : ff
+  #       # maximum : ff
+
+  magic_area:
     spec:
-      avg_power :
-        minimum :
-          value : any
-        typical :
-          value : any
-        maximum :
-          value : any
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: mm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
     tool:
-      ngspice:
-        template          : power_consumption.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [null, idd]
-        script            : power_consumption.py
-        script_variables  : [power, avg_power]
-    plot:
-      power:
-        xaxis : VVin
-        yaxis : avg_power
-    conditions:
-      VVDD:
-        typical : 1.8
-      VVin:
-        minimum: 1.3
-        maximum: 1.8
-        step: linear
-        stepsize: 0.1
-      temperature:
-        typical : 27
-      corner:
-        # minimum : ss
-        typical : ff
-        # maximum : ff
+      magic_area
 
-  # magic_area:
-  #   spec:
-  #     area:
-  #       display: Area
-  #       description: Total circuit layout area
-  #       unit: mm²
-  #       maximum:
-  #         value: any
-  #     width:
-  #       display: Width
-  #       description: Total circuit layout width
-  #       unit: µm
-  #       maximum:
-  #         value: any
-  #     height:
-  #       display: Height
-  #       description: Total circuit layout height
-  #       unit: µm
-  #       maximum:
-  #         value: any
-  #   tool:
-  #     magic_area
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
 
-  # magic_drc:
-  #   description: Magic DRC
-  #   display: Magic DRC
-  #   spec:
-  #     drc_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #     magic_drc:
-  #       gds_flatten: true
-  #       script: |
-  #         drc style fast
+  netgen_lvs:
+    description: Netgen LVS
+    display: Netgen LVS
+    spec:
+      lvs_errors:
+        maximum:
+          value: 0
+    tool:
+      netgen_lvs:
+        script: run_project_lvs.tcl
 
-  # netgen_lvs:
-  #   description: Netgen LVS
-  #   display: Netgen LVS
-  #   spec:
-  #     lvs_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #     netgen_lvs:
-  #       script: run_project_lvs.tcl
-
-  # klayout_drc_feol:
-  #   description: KLayout DRC feol
-  #   display: KLayout DRC feol
-  #   spec:
-  #     drc_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #       klayout_drc:
-  #           args: ['-rd', 'feol=true']
-
-  # klayout_drc_beol:
-  #   description: KLayout DRC beol
-  #   display: KLayout DRC beol
-  #   spec:
-  #     drc_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #       klayout_drc:
-  #           args: ['-rd', 'beol=true']

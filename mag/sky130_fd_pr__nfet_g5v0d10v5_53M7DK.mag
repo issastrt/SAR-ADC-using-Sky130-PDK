@@ -1,98 +1,76 @@
 magic
 tech sky130A
-timestamp 1755260286
+magscale 1 2
+timestamp 1756538730
+<< error_p >>
+rect -158 -2000 -100 2000
+rect 100 -2000 158 2000
 << pwell >>
-rect -164 -1129 164 1129
+rect -328 2235 328 2258
+rect -328 2147 -307 2235
+rect -306 2147 328 2235
+rect -328 -2258 328 2147
 << mvnmos >>
-rect -50 -1000 50 1000
+rect -100 -2000 100 2000
 << mvndiff >>
-rect -79 994 -50 1000
-rect -79 -994 -73 994
-rect -56 -994 -50 994
-rect -79 -1000 -50 -994
-rect 50 994 79 1000
-rect 50 -994 56 994
-rect 73 -994 79 994
-rect 50 -1000 79 -994
+rect -158 1988 -100 2000
+rect -158 -1988 -146 1988
+rect -112 -1988 -100 1988
+rect -158 -2000 -100 -1988
+rect 100 1988 158 2000
+rect 100 -1988 112 1988
+rect 146 -1988 158 1988
+rect 100 -2000 158 -1988
 << mvndiffc >>
-rect -73 -994 -56 994
-rect 56 -994 73 994
-<< mvpsubdiff >>
-rect -146 1105 146 1111
-rect -146 1088 -92 1105
-rect 92 1088 146 1105
-rect -146 1082 146 1088
-rect -146 1057 -117 1082
-rect -146 -1057 -140 1057
-rect -123 -1057 -117 1057
-rect 117 1057 146 1082
-rect -146 -1082 -117 -1057
-rect 117 -1057 123 1057
-rect 140 -1057 146 1057
-rect 117 -1082 146 -1057
-rect -146 -1088 146 -1082
-rect -146 -1105 -92 -1088
-rect 92 -1105 146 -1088
-rect -146 -1111 146 -1105
-<< mvpsubdiffcont >>
-rect -92 1088 92 1105
-rect -140 -1057 -123 1057
-rect 123 -1057 140 1057
-rect -92 -1105 92 -1088
+rect -146 -1988 -112 1988
+rect 112 -1988 146 1988
 << poly >>
-rect -50 1036 50 1044
-rect -50 1019 -42 1036
-rect 42 1019 50 1036
-rect -50 1000 50 1019
-rect -50 -1019 50 -1000
-rect -50 -1036 -42 -1019
-rect 42 -1036 50 -1019
-rect -50 -1044 50 -1036
+rect -100 2072 100 2088
+rect -100 2038 -84 2072
+rect 84 2038 100 2072
+rect -100 2000 100 2038
+rect -100 -2038 100 -2000
+rect -100 -2072 -84 -2038
+rect 84 -2072 100 -2038
+rect -100 -2088 100 -2072
 << polycont >>
-rect -42 1019 42 1036
-rect -42 -1036 42 -1019
+rect -84 2038 84 2072
+rect -84 -2072 84 -2038
 << locali >>
-rect -140 1088 -92 1105
-rect 92 1088 140 1105
-rect -140 1057 -123 1088
-rect 123 1057 140 1088
-rect -50 1019 -42 1036
-rect 42 1019 50 1036
-rect -73 994 -56 1002
-rect -73 -1002 -56 -994
-rect 56 994 73 1002
-rect 56 -1002 73 -994
-rect -50 -1036 -42 -1019
-rect 42 -1036 50 -1019
-rect -140 -1088 -123 -1057
-rect 123 -1088 140 -1057
-rect -140 -1105 -92 -1088
-rect 92 -1105 140 -1088
+rect -100 2038 -84 2072
+rect 84 2038 100 2072
+rect -146 1988 -112 2004
+rect -146 -2004 -112 -1988
+rect 112 1988 146 2004
+rect 112 -2004 146 -1988
+rect -100 -2072 -84 -2038
+rect 84 -2072 100 -2038
 << viali >>
-rect -42 1019 42 1036
-rect -73 -994 -56 994
-rect 56 -994 73 994
-rect -42 -1036 42 -1019
+rect -84 2038 84 2072
+rect -146 -1988 -112 1988
+rect 112 -1988 146 1988
+rect -84 -2072 84 -2038
 << metal1 >>
-rect -48 1036 48 1039
-rect -48 1019 -42 1036
-rect 42 1019 48 1036
-rect -48 1016 48 1019
-rect -76 994 -53 1000
-rect -76 -994 -73 994
-rect -56 -994 -53 994
-rect -76 -1000 -53 -994
-rect 53 994 76 1000
-rect 53 -994 56 994
-rect 73 -994 76 994
-rect 53 -1000 76 -994
-rect -48 -1019 48 -1016
-rect -48 -1036 -42 -1019
-rect 42 -1036 48 -1019
-rect -48 -1039 48 -1036
+rect -96 2072 96 2078
+rect -96 2038 -84 2072
+rect 84 2038 96 2072
+rect -96 2032 96 2038
+rect -152 1988 -106 2000
+rect -152 -1988 -146 1988
+rect -112 -1988 -106 1988
+rect -152 -2000 -106 -1988
+rect 106 1988 152 2000
+rect 106 -1988 112 1988
+rect 146 -1988 152 1988
+rect 106 -2000 152 -1988
+rect -96 -2038 96 -2032
+rect -96 -2072 -84 -2038
+rect 84 -2072 96 -2038
+rect -96 -2078 96 -2072
 << properties >>
-string FIXED_BBOX -131 -1096 131 1096
+string FIXED_BBOX -262 -2192 262 2192
 string gencell sky130_fd_pr__nfet_g5v0d10v5
 string library sky130
 string parameters w 20.0 l 1.0 m 1 nf 1 diffcov 100 polycov 100 guard 1 glc 1 grc 1 gtc 1 gbc 1 tbcov 100 rlcov 100 topc 1 botc 1 poverlap 0 doverlap 1 lmin 0.50 wmin 0.42 class mosfet compatible {sky130_fd_pr__nfet_01v8 sky130_fd_pr__nfet_01v8_lvt  sky130_fd_bs_flash__special_sonosfet_star  sky130_fd_pr__nfet_g5v0d10v5 sky130_fd_pr__nfet_05v0_nvt  sky130_fd_pr__nfet_03v3_nvt} full_metal 1 viasrc 100 viadrn 100 viagate 100 viagb 0 viagr 0 viagl 0 viagt 0
+string sky130_fd_pr__nfet_g5v0d10v5_53M7DK parameters
 << end >>

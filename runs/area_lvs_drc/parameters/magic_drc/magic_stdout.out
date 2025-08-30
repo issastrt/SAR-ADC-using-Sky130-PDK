@@ -1,0 +1,45 @@
+
+Magic 8.3 revision 528 - Compiled on Fri Jun  6 15:02:32 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.536-0-gbb0ba76
+Cell SAR-ADC-using-Sky130-PDK read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+DRC style is now "drc(full)"
+Cell And_Gate read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell Nand_Gate read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P geometry by factor of 2
+Cell sky130_fd_pr__pfet_g5v0d10v5_CY7YBN read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell Inverter read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell D_FlipFlop read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell 3-input-nand read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell Comparator read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8 read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8 geometry by factor of 2
+Cell sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__res_xhigh_po_5p73_2WP2GG read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__nfet_g5v0d10v5_DTGLBV read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_DTGLBV geometry by factor of 2
+Cell sky130_fd_pr__nfet_g5v0d10v5_94KJBV read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Scaled magic input cell sky130_fd_pr__nfet_g5v0d10v5_94KJBV geometry by factor of 2
+Cell sky130_fd_pr__cap_mim_m3_2_AZGBXE read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell CDAC8 read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell switch read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell sky130_fd_pr__cap_mim_m3_2_XAJUMH read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Cell RingCounter read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Processing timestamp mismatches.
+Timestamp mismatches found in these cells: Comparator.
+Loading DRC CIF style.
+drc = 0
+No errors found.
+

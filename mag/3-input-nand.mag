@@ -1,10 +1,24 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1753268444
+timestamp 1756481424
 << nwell >>
 rect 2023 -528 2065 354
 rect 3953 -528 3995 354
+<< mvpsubdiff >>
+rect 2071 -660 2131 -626
+rect 3887 -660 3947 -626
+rect 2071 -686 2105 -660
+rect 2071 -1300 2105 -1274
+rect 3913 -686 3947 -660
+rect 3913 -1300 3947 -1274
+rect 2071 -1334 2131 -1300
+rect 3887 -1334 3947 -1300
+<< mvpsubdiffcont >>
+rect 2131 -660 3887 -626
+rect 2071 -1274 2105 -686
+rect 3913 -1274 3947 -686
+rect 2131 -1334 3887 -1300
 << locali >>
 rect 2239 394 2551 400
 rect 2239 360 2245 394
@@ -18,15 +32,23 @@ rect 3467 394 3779 400
 rect 3467 360 3473 394
 rect 3773 360 3779 394
 rect 3467 242 3779 360
-rect 2167 -1388 2623 -1300
+rect 2071 -660 2131 -626
+rect 3887 -660 3947 -626
+rect 2071 -686 2105 -660
+rect 2071 -1300 2105 -1274
+rect 3913 -686 3947 -660
+rect 3913 -1300 3947 -1274
+rect 2071 -1334 2131 -1300
+rect 3887 -1334 3947 -1300
+rect 2167 -1388 2623 -1334
 rect 2167 -1422 2173 -1388
 rect 2617 -1422 2623 -1388
 rect 2167 -1428 2623 -1422
-rect 2781 -1388 3237 -1300
+rect 2781 -1388 3237 -1334
 rect 2781 -1422 2787 -1388
 rect 3231 -1422 3237 -1388
 rect 2781 -1428 3237 -1422
-rect 3395 -1388 3851 -1300
+rect 3395 -1388 3851 -1334
 rect 3395 -1422 3401 -1388
 rect 3845 -1422 3851 -1388
 rect 3395 -1428 3851 -1422
@@ -88,28 +110,28 @@ rect 2876 -231 2940 -225
 rect 3692 -225 3698 -222
 rect 3750 -225 3756 -173
 rect 3692 -231 3756 -225
-use sky130_fd_pr__pfet_g5v0d10v5_CY7YBN  XM1 /foss/designs
-timestamp 1753266908
+use sky130_fd_pr__pfet_g5v0d10v5_CY7YBN  XM1
+timestamp 1756481424
 transform 1 0 3623 0 1 -87
 box -330 -441 330 441
 use sky130_fd_pr__pfet_g5v0d10v5_CY7YBN  XM2
-timestamp 1753266908
+timestamp 1756481424
 transform 1 0 3009 0 1 -87
 box -330 -441 330 441
 use sky130_fd_pr__pfet_g5v0d10v5_CY7YBN  XM3
-timestamp 1753266908
+timestamp 1756481424
 transform 1 0 2395 0 1 -87
 box -330 -441 330 441
-use sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P  XM4 /foss/designs
-timestamp 1753266908
+use sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P  XM4
+timestamp 1756481424
 transform 1 0 3623 0 1 -980
 box -372 -402 372 402
 use sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P  XM5
-timestamp 1753266908
+timestamp 1756481424
 transform 1 0 3009 0 1 -980
 box -372 -402 372 402
 use sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P  XM6
-timestamp 1753266908
+timestamp 1756481424
 transform 1 0 2395 0 1 -980
 box -372 -402 372 402
 << labels >>

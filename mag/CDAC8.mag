@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1756374242
+timestamp 1756481424
 << nwell >>
 rect 7192 -763 9164 -702
 << pwell >>
@@ -2941,1055 +2941,1055 @@ rect 50188 -2130 50230 -1894
 rect 50466 -2130 50508 -1894
 rect 50188 -2154 50508 -2130
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_0
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_1
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_2
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_3
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_4
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_5
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_6
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_7
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_8
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_9
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_10
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_11
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_12
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_13
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_14
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_15
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_16
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_17
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_18
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_19
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_20
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_21
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_22
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_23
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_24
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_25
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_26
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_27
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_28
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_29
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_30
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_31
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_32
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_33
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_34
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_35
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_36
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_37
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_38
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_39
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_40
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_41
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_42
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_43
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_44
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_45
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_46
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_47
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_48
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_49
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_50
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_51
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_52
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_53
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_54
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_55
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_56
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_57
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_58
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_59
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_60
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_61
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_62
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_63
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_64
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_65
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 2587 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_66
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -2993 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_67
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -8573 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_68
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -14153 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_69
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_70
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_71
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_72
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_73
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_74
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_75
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_76
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_77
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_78
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_79
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_80
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_81
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_82
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_83
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_84
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_85
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_86
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_87
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_88
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_89
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_90
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_91
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_92
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_93
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_94
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -30893 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_95
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_96
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -36473 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_97
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_98
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_99
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_100
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_101
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_102
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_103
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_104
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_105
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_106
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_107
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_108
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_109
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_110
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_111
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_112
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_113
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_114
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_115
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_116
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_117
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_118
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_119
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_120
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_121
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_122
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_123
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_124
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_125
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_126
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_127
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -25313 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_128
-timestamp 1755519375
+timestamp 1756481424
 transform 1 0 -19733 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_129
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_130
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_131
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_132
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_133
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_134
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_135
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 -1494
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_137
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_138
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_139
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_140
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_141
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_142
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_143
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_144
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 292
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_145
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_146
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_147
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_148
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_149
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_150
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_152
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 2078
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_153
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_154
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_155
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_156
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_157
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_158
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_159
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_160
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 3864
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_161
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_162
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_163
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_164
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_165
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_166
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_167
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_168
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 5650
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_169
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_170
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_171
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_172
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_173
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_174
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_175
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_176
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 7436
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_177
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_178
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_179
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_180
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_181
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_182
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_183
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_184
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 9222
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_185
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_186
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_187
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_188
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_189
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_190
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_191
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_192
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 11008
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_193
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_194
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_195
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_196
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_197
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_198
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_199
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_200
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 12794
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_201
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_202
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_203
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_204
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_205
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_206
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_207
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_208
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 14580
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_209
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_210
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_211
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_212
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_213
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_214
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_215
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_216
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 16366
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_217
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_218
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_219
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_220
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_221
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_222
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_223
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_224
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 18152
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_225
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_226
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_227
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_228
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_229
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_230
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_231
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_232
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 19938
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_233
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_234
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_235
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_236
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_237
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_238
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_239
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_240
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 21724
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_241
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_242
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_243
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_244
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_245
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_246
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_247
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_248
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 23510
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_249
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 13769 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_250
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 19349 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_251
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 24929 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_252
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 30509 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_253
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 36089 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_254
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 41669 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_255
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 47249 0 1 25296
 box -2619 -281 2641 281
 use sky130_fd_pr__cap_mim_m3_2_XAJUMH  sky130_fd_pr__cap_mim_m3_2_XAJUMH_256
-timestamp 1755519375
+timestamp 1756481424
 transform -1 0 52829 0 1 25296
 box -2619 -281 2641 281
 use switch  switch_0
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 3064
 box 1296 -1584 3268 244
 use switch  switch_1
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 1 -954
 box 1296 -1584 3268 244
 use switch  switch_2
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 -512
 box 1296 -1584 3268 244
 use switch  switch_5
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 6636
 box 1296 -1584 3268 244
 use switch  switch_6
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 17352
 box 1296 -1584 3268 244
 use switch  switch_7
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 13780
 box 1296 -1584 3268 244
 use switch  switch_8
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 24055
 box 1296 -1584 3268 244
 use switch  switch_9
-timestamp 1756369532
+timestamp 1756481424
 transform 1 0 5896 0 -1 20924
 box 1296 -1584 3268 244
 << labels >>

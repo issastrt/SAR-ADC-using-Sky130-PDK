@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1756450099
+timestamp 1756481424
 << nwell >>
 rect 0 -882 8762 928
 << pwell >>
@@ -632,43 +632,43 @@ rect -98 -1787 -93 -1731
 rect -37 -1787 -32 -1731
 rect -98 -1792 -32 -1787
 use 3-input-nand  3-input-nand_0
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 -1279 0 -1 400
 box 2023 -1428 3995 400
 use 3-input-nand  3-input-nand_1
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 -1279 0 1 -354
 box 2023 -1428 3995 400
 use 3-input-nand  3-input-nand_2
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 693 0 -1 400
 box 2023 -1428 3995 400
 use 3-input-nand  3-input-nand_3
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 693 0 1 -354
 box 2023 -1428 3995 400
 use 3-input-nand  3-input-nand_4
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 4767 0 -1 400
 box 2023 -1428 3995 400
 use 3-input-nand  3-input-nand_5
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 4767 0 1 -354
 box 2023 -1428 3995 400
 use Inverter  Inverter_0
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 -1366 0 -1 942
 box 1366 -886 2110 942
 use Inverter  Inverter_1
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 3322 0 1 -896
 box 1366 -886 2110 942
 use Nand_Gate  Nand_Gate_0
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 3526 0 -1 1298
 box 1906 -530 3264 1298
 use Nand_Gate  Nand_Gate_1
-timestamp 1756449892
+timestamp 1756481424
 transform 1 0 3526 0 1 -1252
 box 1906 -530 3264 1298
 << labels >>
