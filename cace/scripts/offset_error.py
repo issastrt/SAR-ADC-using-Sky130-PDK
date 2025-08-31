@@ -12,7 +12,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     """
 
     nbits = 8
-    Tconv = 34e-6               # 34 microseconds per conversion
+    Tconv = 8.5e-6               # 34 microseconds per conversion
 
     # --- Supply voltage and threshold ---
     VDD = float(conditions.get("VVDD", 1.8))
@@ -63,6 +63,10 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     Vfsr = VDD
     LSB = Vfsr / (2**nbits)
     V_ideal0 = 0.5 * LSB                # ideal 0 -> 1 transition
+
+    # --- Debug prints ---
+    print(f"[DEBUG] Vmeas (measured 0->1 transition): {V_meas0}")
+    print(f"[DEBUG] Videal (ideal 0->1 transition): {V_ideal0}")
 
     # --- Step 4: offset error in LSB ---
     offset_zero_lsb = (V_meas0 - V_ideal0) / LSB if not np.isnan(V_meas0) else np.nan

@@ -47,8 +47,8 @@ pins:
     description : Comparator bias voltage
     type        : signal
     direction   : input
-    Vmin        : -0.9
-    Vmax        : -0.7
+    Vmin        : -1.0
+    Vmax        : -0.8
   CLK:
     description : Clock signal input
     type        : digital
@@ -77,7 +77,7 @@ default_conditions:
     description : Voltage bias
     display     : Vbias
     unit        : V
-    typical     : -0.8
+    typical     : -0.9
   VVin:
     description : Input voltage
     display     : Vin
@@ -245,23 +245,19 @@ parameters:
   #       format            : ascii
   #       suffix            : .data
   #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-  #   #     script            : offset_error.py
-  #   #     script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-  #   # plot:
-  #   #   offset_error:
-  #   #     xaxis: Vin_samples      
-  #   #     yaxis: codes_binary    
+  #       script            : offset_error.py
+  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+  #   plot:
+  #     offset_error:
+  #       xaxis: Vin_samples      
+  #       yaxis: codes_binary    
   #   conditions:
-  #     VVin:
-  #       enumerate: [1.8]
   #     VVDD:
   #       typical : 1.8
   #     temperature:
   #       typical : 27
   #     corner:
-  #       # minimum : ss
-  #       typical : tt
-  #       # maximum : ff
+  #       enumerate : [tt, ff, ss, sf, fs]
 
   Power:
     description : Current draw through analog supply, ADC enabled

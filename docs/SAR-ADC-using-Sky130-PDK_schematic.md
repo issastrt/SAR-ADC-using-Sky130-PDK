@@ -5,11 +5,11 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| Average Power        | ngspice              | avg_power            |             any |   0.988 mW |          any |   1.003 mW |          any |   1.059 mW |   Pass ✅    |
+| Offset Error         | ngspice              | offset_error         |             any |  0.638 LSB |          any |  0.922 LSB |          any |  1.776 LSB |   Pass ✅    |
 
 
 ## Plots
 
-## power
+## offset_error
 
-![power](./SAR-ADC-using-Sky130-PDK/schematic/power.png)
+![offset_error](./SAR-ADC-using-Sky130-PDK/schematic/offset_error.png)

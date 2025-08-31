@@ -30,13 +30,13 @@ C {SAR-ADC-using-Sky130-PDK.sym} -220 110 0 0 {name=x1}
 C {devices/gnd.sym} -1320 160 0 0 {name=l27 lab=GND
 value=1.8}
 C {devices/lab_wire.sym} -1320 60 0 0 {name=p20 sig_type=std_logic lab=CLK}
-C {devices/vsource.sym} -1320 110 0 0 {name=VCLK value="PULSE(1.8 0 0 500p 500p 0.25u 0.5u)" savecurrent=false}
+C {devices/vsource.sym} -1320 110 0 0 {name=VCLK value="PULSE(1.8 0 0 100p 100p 0.25u 0.5u)" savecurrent=false}
 C {devices/vsource.sym} -730 110 0 0 {name=VVDD value=1.8 savecurrent=false}
 C {devices/gnd.sym} -730 160 0 0 {name=l17 lab=GND}
 C {devices/vdd.sym} -730 60 0 0 {name=l18 lab=VDD}
-C {devices/vsource.sym} -1080 110 0 0 {name=VEN value="PULSE(1.8 0 0 500ps 500ps 0.25u 0)" savecurrent=false}
+C {devices/vsource.sym} -1080 110 0 0 {name=VEN value="PULSE(1.8 0 0 100p 100p 0.25u 0)" savecurrent=false}
 C {devices/gnd.sym} -1080 160 0 0 {name=VEN1 lab=GND}
-C {devices/vsource.sym} -820 110 0 0 {name=VVbias value=-0.8 savecurrent=false}
+C {devices/vsource.sym} -820 110 0 0 {name=VVbias value=-0.9 savecurrent=false}
 C {devices/vdd.sym} -820 60 0 0 {name=l7 lab=Vbias}
 C {devices/lab_wire.sym} -1080 60 0 0 {name=p26 sig_type=std_logic lab=EN}
 C {devices/gnd.sym} -820 160 0 0 {name=l2 lab=GND}
@@ -66,5 +66,5 @@ C {devices/vsource.sym} -1320 -50 0 0 {name=VVin value="PWL(0 0 8.5u 0 8.50001u 
 C {devices/lab_wire.sym} -1320 -100 0 0 {name=p25 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} -1320 0 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} -460 -10 0 0 {name=l3 lab=GND}
-C {sky130_fd_pr/corner.sym} -660 -260 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {sky130_fd_pr/corner.sym} -660 -260 0 0 {name=CORNER only_toplevel=true corner=sf}
 C {title.sym} -1200 260 0 0 {name=l4 author="Daiz, Madrazo, Manahan, Sta Rita"}

@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -750 -320 -650 -320 {
 lab=VDD}
@@ -13,13 +12,13 @@ N -470 -190 -370 -190 {
 lab=CLK}
 N -160 -190 -60 -190 {
 lab=EN}
-N -1260 -210 -1160 -210 {
+N -1440 -60 -1340 -60 {
 lab=Vin}
 N -710 70 -710 120 {
 lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -730 -560 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 0.5u 8.5u uic
+tran 0.5u 93.5u uic
 set wr_singlescale
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vin) V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0)
 quit
@@ -50,17 +49,17 @@ C {devices/vsource.sym} -300 -290 0 0 {name=VVbias value="DC CACE\{VVbias\}" sav
 C {devices/lab_pin.sym} -200 -320 0 1 {name=p4 sig_type=std_logic lab=Vbias}
 C {gnd.sym} -300 -260 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -710 -50 0 0 {name=p5 sig_type=std_logic lab=Vbias}
-C {devices/vsource.sym} -470 -160 0 0 {name=VCLK value="PULSE(1.8 0 0 500p 500p 0.25u 0.5u)" savecurrent=false}
+C {devices/vsource.sym} -470 -160 0 0 {name=VCLK value="PULSE(1.8 0 0 100p 100p 0.25u 0.5u)" savecurrent=false}
 C {devices/lab_pin.sym} -370 -190 0 1 {name=p6 sig_type=std_logic lab=CLK}
 C {gnd.sym} -470 -130 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} -160 -160 0 0 {name=VEN value="PULSE(1.8 0 0 500ps 500ps 0.25u 0)" savecurrent=false}
+C {devices/vsource.sym} -160 -160 0 0 {name=VEN value="PULSE(1.8 0 0 100ps 100ps 0.25u 0)" savecurrent=false}
 C {devices/lab_pin.sym} -60 -190 0 1 {name=p7 sig_type=std_logic lab=EN}
 C {gnd.sym} -160 -70 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -710 -30 0 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -710 -10 0 0 {name=p9 sig_type=std_logic lab=EN}
-C {devices/vsource.sym} -1260 -180 0 0 {name=VVin value="DC CACE\{VVin\}" savecurrent=false}
-C {devices/lab_pin.sym} -1160 -210 0 1 {name=p10 sig_type=std_logic lab=Vin}
-C {gnd.sym} -1260 -150 0 0 {name=l6 lab=GND}
+C {devices/vsource.sym} -1440 -30 0 0 {name=VVin value="PWL(0 0.007 8.5u 0.007 8.500001u 0.008 17u 0.008 17.000001u 0.009 25.5u 0.009 25.500001u 0.010 34u 0.010 34.000001u 0.011 42.5u 0.011 42.500001u 0.012 51u 0.012 51.000001u 0.013 59.5u 0.013 59.500001u 0.014 68u 0.014 68.000001u 0.015 76.5u 0.015 76.500001u 0.016 85u 0.016 85.000001u 0.017 93.5u 0.017)" savecurrent=false}
+C {devices/lab_pin.sym} -1340 -60 0 1 {name=p10 sig_type=std_logic lab=Vin}
+C {gnd.sym} -1440 0 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -710 70 0 0 {name=p11 sig_type=std_logic lab=Vin}
 C {devices/res.sym} -130 50 2 0 {name=Rout
 value=CACE\{Rout\}
