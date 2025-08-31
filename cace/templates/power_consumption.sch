@@ -19,7 +19,7 @@ N -710 70 -710 120 {
 lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -1620 -280 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 0.5u 34u uic
+tran 0.5u 8.5u uic
 set wr_singlescale
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data -I(VVDD)
 quit
@@ -50,10 +50,10 @@ C {devices/vsource.sym} -300 -290 0 0 {name=VVbias value="DC CACE\{VVbias\}" sav
 C {devices/lab_pin.sym} -200 -320 0 1 {name=p4 sig_type=std_logic lab=Vbias}
 C {gnd.sym} -300 -260 0 0 {name=l1 lab=GND}
 C {devices/lab_pin.sym} -710 -50 0 0 {name=p5 sig_type=std_logic lab=Vbias}
-C {devices/vsource.sym} -470 -160 0 0 {name=VCLK value="PULSE(1.8 0 0 500p 500p 1u 2u)" savecurrent=false}
+C {devices/vsource.sym} -470 -160 0 0 {name=VCLK value="PULSE(1.8 0 0 500p 500p 0.25u 0.5u)" savecurrent=false}
 C {devices/lab_pin.sym} -370 -190 0 1 {name=p6 sig_type=std_logic lab=CLK}
 C {gnd.sym} -470 -130 0 0 {name=l4 lab=GND}
-C {devices/vsource.sym} -160 -160 0 0 {name=VEN value="PULSE(1.8 0 0 500ps 500ps 1u 0)" savecurrent=false}
+C {devices/vsource.sym} -160 -160 0 0 {name=VEN value="PULSE(1.8 0 0 500ps 500ps 0.25u 0)" savecurrent=false}
 C {devices/lab_pin.sym} -60 -190 0 1 {name=p7 sig_type=std_logic lab=EN}
 C {gnd.sym} -160 -70 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -710 -30 0 0 {name=p8 sig_type=std_logic lab=CLK}
