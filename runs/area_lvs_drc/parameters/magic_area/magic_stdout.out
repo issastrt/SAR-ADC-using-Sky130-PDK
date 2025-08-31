@@ -11,8 +11,9 @@ The following types are not handled by extraction and will be treated as non-ele
     ubm 
 Scaled tech values by 2 / 1 to match internal grid scaling
 Loading sky130A Device Generator Menu ...
-Using technology "sky130A", version 1.0.536-0-gbb0ba76
-Cell SAR-ADC-using-Sky130-PDK read from path /home/issa/cace/SAR-ADC-using-Sky130-PDK/mag
+Using technology "sky130A", version 1.0.537-0-g40cee97
+File </home/samantha/cace/SAR-ADC-using-Sky130-PDK/mag/SAR-ADC-using-Sky130-PDK.mag> is already locked by pid 1744.  Opening read-only.
+Cell SAR-ADC-using-Sky130-PDK read from path /home/samantha/cace/SAR-ADC-using-Sky130-PDK/mag
 Root cell box:
            width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
 

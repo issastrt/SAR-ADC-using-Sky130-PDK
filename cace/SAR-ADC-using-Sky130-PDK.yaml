@@ -245,21 +245,23 @@ parameters:
   #       format            : ascii
   #       suffix            : .data
   #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-  #       script            : offset_error.py
-  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-  #   plot:
-  #     offset_error:
-  #       xaxis: Vin_samples      
-  #       yaxis: codes_binary    
+  #   #     script            : offset_error.py
+  #   #     script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+  #   # plot:
+  #   #   offset_error:
+  #   #     xaxis: Vin_samples      
+  #   #     yaxis: codes_binary    
   #   conditions:
+  #     VVin:
+  #       enumerate: [1.8]
   #     VVDD:
   #       typical : 1.8
   #     temperature:
   #       typical : 27
   #     corner:
-  #       minimum : ss
+  #       # minimum : ss
   #       typical : tt
-  #       maximum : ff
+  #       # maximum : ff
 
   Power:
     description : Current draw through analog supply, ADC enabled
@@ -296,7 +298,7 @@ parameters:
       temperature:
         typical : 27
       corner:
-        enumerate: [tt, ss, sf, fs, ff]
+        enumerate: [tt, ss, fs, sf, ff]
 
   # magic_area:
   #   spec:
