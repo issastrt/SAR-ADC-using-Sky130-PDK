@@ -259,42 +259,121 @@ parameters:
   #     corner:
   #       enumerate : [tt, ff, ss, sf, fs]
 
-  Power:
-    description : Current draw through analog supply, ADC enabled
-    display     : Average Power
-    unit        : mW
+  # Power:
+  #   description : Current draw through analog supply, ADC enabled
+  #   display     : Average Power
+  #   unit        : mW
+  #   spec:
+  #     avg_power :
+  #       minimum :
+  #         value : any
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : any
+  #   tool:
+  #     ngspice:
+  #       template          : power_consumption.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [null, idd]
+  #       script            : power_consumption.py
+  #       script_variables  : [power, avg_power]
+  #   plot:
+  #     power:
+  #       xaxis : VVin
+  #       yaxis : avg_power
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     VVin:
+  #       minimum: 0
+  #       maximum: 1.8
+  #       step: linear
+  #       stepsize: 0.1
+  #     temperature:
+  #       typical : 27
+  #     corner:
+  #       enumerate: [tt, ss, fs, sf, ff]
+
+  INL:
+    description: Intergral nonlinearity (INL) Test
+    display: INL
+    unit: lsb
     spec:
-      avg_power :
-        minimum :
-          value : any
-        typical :
-          value : any
-        maximum :
-          value : any
+      inl:
+        minimum:
+          value: -1
+          fail: true
+        typical:
+          value: 0
+        maximum:
+          value: 1.5
+          fail: true
     tool:
       ngspice:
-        template          : power_consumption.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [null, idd]
-        script            : power_consumption.py
-        script_variables  : [power, avg_power]
+        template: sar_output.sch
+        format: ascii
+        suffix: .data
+        variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
+        script: inl.py
+        script_variables: [vin, inl]
     plot:
-      power:
-        xaxis : VVin
-        yaxis : avg_power
+      inl:
+        xaxis: vin
+        yaxis: inl
     conditions:
       VVDD:
-        typical : 1.8
+        typical: 1.8
       VVin:
-        minimum: 0
-        maximum: 1.8
-        step: linear
-        stepsize: 0.1
+        enumerate: [1.736470588, 1.743529412, 1.750588235, 1.757647059, 1.764705882, 1.771764706, 1.778823529, 1.785882353, 1.792941176, 1.8]
       temperature:
-        typical : 27
+        typical: 27
       corner:
-        enumerate: [tt, ss, fs, sf, ff]
+        # minimum: ss
+        typical: tt
+        # maximum: ff
+        # enumerate: [ss, tt, ff, sf, fs]
+
+
+  # DNL:
+  #   description: Differential nonlinearity (DNL) Test
+  #   display: DNL
+  #   unit: lsb
+  #   spec:
+  #     dnl:
+  #       minimum:
+  #         value: -1
+  #         fail: true
+  #       typical:
+  #         value: 0
+  #       maximum:
+  #         value: 1
+  #         fail: true
+  #   tool:
+  #     ngspice:
+  #       template: sar_output_dnl.sch
+  #       format: ascii
+  #       suffix: .data
+  #       variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
+  #       script: dnl.py
+  #       script_variables: [code, dnl]
+  #   # plot:
+  #   #   dnl:
+  #   #     xaxis: code
+  #   #     yaxis: dnl
+  #   conditions:
+  #     VVDD:
+  #       typical: 1.8
+  #     VVbias:
+  #       typical: -0.8
+  #     temperature:
+  #       typical: 27
+  #     corner:
+  #       # minimum: ss
+  #       typical: tt
+  #       # maximum: ff
+          # enumerate:[ss, tt, ff, fs, sf]
 
   # magic_area:
   #   spec:
