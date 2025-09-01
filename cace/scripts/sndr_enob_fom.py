@@ -8,8 +8,8 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     Outputs Q7..Q0 are thresholded at VDD/2 to recover digital bits.
     """
 
-    Tconv = 34e-6          # conversion period = 34 µs
-    n_codes = n_codes = 32          # number of codes to collect
+    Tconv = 8.5e-6          # conversion period 
+    n_codes = 128          # number of codes to collect
 
     # --- Extract time ---
     time_arr = np.array(results["time"])
@@ -34,6 +34,8 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
 
     codes = np.array(codes, dtype=float)
 
+    print("Here are the 128 codes:", codes[:128])
+
     # --- Remove DC offset ---
     codes = codes - np.mean(codes)
 
@@ -51,4 +53,4 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
 
     sndr = 10 * np.log10(fund_power / noise_dist_power) if noise_dist_power > 0 else float("inf")
 
-    return {"sndr": [float(sndr)]} #should return sndr, enob, fom in that order
+    return {"sndr": [float(sndr)]} 
