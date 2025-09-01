@@ -18,7 +18,7 @@ N -710 70 -710 120 {
 lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -1620 -280 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 0.5u 8.5u uic
+tran 0.5u 8.5u 
 set wr_singlescale
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data -I(VVDD)
 quit
