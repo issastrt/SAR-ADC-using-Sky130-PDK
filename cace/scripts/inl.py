@@ -8,7 +8,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     threshold = vdd / 2.0
 
     # Target time mask for 34us
-    target_time = 34e-6
+    target_time = 8.5e-6
     time_mask = np.isclose(time, target_time, atol=1e-9)
 
     if not np.any(time_mask):

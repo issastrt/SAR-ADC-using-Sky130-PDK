@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -960 -580 -860 -580 {
 lab=VDD}
@@ -107,7 +106,7 @@ C {devices/lab_pin.sym} -60 -90 0 0 {name=p26 sig_type=std_logic lab=Q1}
 C {devices/lab_pin.sym} 90 -90 0 0 {name=p27 sig_type=std_logic lab=Q0}
 C {devices/code_shown.sym} -2120 -470 0 0 {name=CONTROL only_toplevel=false value="
 .control
-tran 0.5u 34u uic
+tran 0.5u 8.5u uic
 set wr_singlescale
 set timepoints=34u
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vin) V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0)
