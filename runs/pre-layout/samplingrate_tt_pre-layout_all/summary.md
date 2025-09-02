@@ -1,0 +1,9 @@
+
+# CACE Summary for SAR-ADC-using-Sky130-PDK
+
+**netlist source**: schematic
+
+|      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
+| :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
+| sampling rate        | ngspice              | sampling_rate        |             any | 117.350 kS/s |          any | 117.358 kS/s |          any | 117.362 kS/s |   Pass ✅    |
+
