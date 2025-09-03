@@ -14,8 +14,8 @@ paths:
   root          : ..
   documentation : docs
   schematic     : xschem
-  # magic         : mag
-  # layout        : gds
+  magic         : mag
+  layout        : gds
   netlist       : netlist
 
 pins:

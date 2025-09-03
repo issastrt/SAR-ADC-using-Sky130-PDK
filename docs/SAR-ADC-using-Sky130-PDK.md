@@ -42,8 +42,8 @@
   + Description: Comparator bias voltage
   + Type: signal
   + Direction: input
-  + Vmin: -0.9
-  + Vmax: -0.7
+  + Vmin: -1.0
+  + Vmax: -0.8
 - CLK
   + Description: Clock signal input
   + Type: digital
@@ -73,7 +73,7 @@
   + Description: Voltage bias
   + Display: Vbias
   + Unit: V
-  + Typical: -0.8
+  + Typical: -0.9
 - VVin
   + Description: Input voltage
   + Display: Vin

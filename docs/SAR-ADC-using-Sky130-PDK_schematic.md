@@ -5,11 +5,7 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| Offset Error         | ngspice              | offset_error         |             any |  0.638 LSB |          any |  0.922 LSB |          any |  1.776 LSB |   Pass ✅    |
+| DNL                  | ngspice              | dnl                  |          -1 lsb | -0.247 lsb |        0 lsb |  0.004 lsb |        1 lsb |  0.004 lsb |   Pass ✅    |
 
 
 ## Plots
-
-## offset_error
-
-![offset_error](./SAR-ADC-using-Sky130-PDK/schematic/offset_error.png)
