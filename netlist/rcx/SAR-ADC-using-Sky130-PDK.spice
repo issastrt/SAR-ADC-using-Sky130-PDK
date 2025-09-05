@@ -1,6 +1,6 @@
 * NGSPICE file created from SAR-ADC-using-Sky130-PDK.ext - technology: sky130A
 
-.subckt SAR-ADC-using-Sky130-PDK CLK Q0 Q1 Q2 Q3 Q4 Q6 Q5 Q7 VDD EN GND Vbias Vin
+.subckt SAR-ADC-using-Sky130-PDK VDD Vin Q0 Vbias EN Q1 CLK Q2 Q3 Q4 Q5 Q6 Q7 GND
 X0 Comparator_0.Vinm CDAC8_0.switch_7.Z.t131 sky130_fd_pr__cap_mim_m3_2 l=2 w=22.7
 X1 a_64511_52572# EN.t0 GND.t581 GND.t580 sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
 X2 a_45761_13083# CLK.t0 RingCounter_0.D_FlipFlop_8.3-input-nand_1.Vout.t3 GND.t76 sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44

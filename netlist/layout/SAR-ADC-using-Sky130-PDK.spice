@@ -395,7 +395,7 @@ XD_FlipFlop_8 CLK VDD EN D_FlipFlop_8/Qbar Q15 Q14 VDD GND D_FlipFlop
 XD_FlipFlop_9 CLK VDD EN D_FlipFlop_9/Qbar Q9 Q8 VDD GND D_FlipFlop
 .ends
 
-.subckt SAR-ADC-using-Sky130-PDK CLK Q0 Q1 Q2 Q3 Q4 Q6 Q5 Q7 VDD EN GND Vbias Vin
+.subckt SAR-ADC-using-Sky130-PDK VDD Vin Q0 Vbias EN Q1 CLK Q2 Q3 Q4 Q5 Q6 Q7 GND
 XAnd_Gate_0 VDD And_Gate_0/B And_Gate_0/Vout CLK GND And_Gate
 XAnd_Gate_1 VDD And_Gate_1/B And_Gate_1/Vout CLK GND And_Gate
 XAnd_Gate_3 VDD And_Gate_3/B And_Gate_3/Vout CLK GND And_Gate
