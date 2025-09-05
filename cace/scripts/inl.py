@@ -35,7 +35,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     v_ideal = vzero + actual_code_val * lsb
 
     # INL calculation based on your formula
-    ideal_code = (vin_val - vzero) / lsb # ideal code
+    ideal_code = vin_val / lsb # ideal code
     inl_val = actual_code_val - ideal_code   # inl = actual code - ideal code
 
     print(f"Actual Code (from circuit): {actual_code_val}")
