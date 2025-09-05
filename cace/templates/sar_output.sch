@@ -108,7 +108,6 @@ C {devices/code_shown.sym} -2120 -470 0 0 {name=CONTROL only_toplevel=false valu
 .control
 tran 0.5u 8.5u uic
 set wr_singlescale
-set timepoints=34u
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vin) V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0)
 quit
 .endc

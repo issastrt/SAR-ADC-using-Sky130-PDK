@@ -7,7 +7,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     vdd = float(conditions['VVDD'])
     threshold = vdd / 2.0
 
-    # Target time mask for 34us
+    # Target time mask for 34 µs
     target_time = 8.5e-6
     time_mask = np.isclose(time, target_time, atol=1e-9)
 
@@ -24,20 +24,23 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     digital_output = np.vstack(bits).T
     codes = digital_output.dot(1 << np.arange(7, -1, -1))
 
-    # Since only one point, just take the value directly
     vin_val = vin_34[0]
-    code_val = codes[0]
+    actual_code_val = codes[0]
 
     N = 2**8  # 8-bit ADC
-    vin_min = 0.0
-    vin_max = vdd
-    lsb = (vin_max - vin_min) / (N - 1)
+    lsb = vdd / N
+    vzero = 0.003516
 
     # Ideal input voltage for the given code
-    v_ideal = code_val * lsb
+    v_ideal = vzero + actual_code_val * lsb
 
-    # New INL formula
-    inl_val = (vin_val - v_ideal) / lsb
+    # INL calculation based on your formula
+    ideal_code = (vin_val - vzero) / lsb # ideal code
+    inl_val = actual_code_val - ideal_code   # inl = actual code - ideal code
+
+    print(f"Actual Code (from circuit): {actual_code_val}")
+    print(f"Ideal Code (from Vin/LSB):  {ideal_code}")
+    print(f"INL (LSB):                  {inl_val:.4f}")
 
     return {
         'vin': [float(vin_val)],
