@@ -1,7 +1,7 @@
 magic
 tech sky130A
 magscale 1 2
-timestamp 1756481424
+timestamp 1757220954
 << metal1 >>
 rect -1558 1572 544 1618
 rect -1209 414 -1163 946
@@ -10,11 +10,11 @@ rect -372 642 195 688
 rect 372 336 418 1033
 rect -1558 -210 544 -164
 use Inverter  Inverter_0
-timestamp 1756481424
+timestamp 1757220954
 transform 1 0 -1566 0 1 676
 box 1366 -886 2110 942
 use Nand_Gate  Nand_Gate_0
-timestamp 1756481424
+timestamp 1757220954
 transform 1 0 -3464 0 1 320
 box 1906 -530 3264 1298
 << labels >>
