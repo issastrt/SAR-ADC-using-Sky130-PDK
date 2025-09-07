@@ -472,28 +472,27 @@ XAnd_Gate_4 VDD And_Gate_4/A And_Gate_4/Vout CLK GND And_Gate
 XAnd_Gate_5 VDD And_Gate_5/A And_Gate_5/Vout CLK GND And_Gate
 XAnd_Gate_6 VDD And_Gate_6/A And_Gate_6/Vout CLK GND And_Gate
 XAnd_Gate_7 VDD And_Gate_7/A And_Gate_7/Vout CLK GND And_Gate
-XD_FlipFlop_0 EN Nand_Gate_7/B D_FlipFlop_0/Qbar Q7 VDD And_Gate_7/Vout D_FlipFlop_7/D
+XD_FlipFlop_0 EN FFCLR D_FlipFlop_0/Qbar Q7 VDD And_Gate_7/Vout D_FlipFlop_7/D GND
++ D_FlipFlop
+XD_FlipFlop_1 FFCLR Nand_Gate_5/B D_FlipFlop_1/Qbar Q6 VDD And_Gate_6/Vout D_FlipFlop_7/D
 + GND D_FlipFlop
-XD_FlipFlop_1 Nand_Gate_7/B Nand_Gate_5/B D_FlipFlop_1/Qbar Q6 VDD And_Gate_6/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
-XD_FlipFlop_2 Nand_Gate_7/B Nand_Gate_4/B D_FlipFlop_2/Qbar Q5 VDD And_Gate_5/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
-XD_FlipFlop_3 Nand_Gate_7/B Nand_Gate_3/B D_FlipFlop_3/Qbar Q4 VDD And_Gate_4/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
-XD_FlipFlop_4 Nand_Gate_7/B Nand_Gate_2/B D_FlipFlop_4/Qbar Q2 VDD And_Gate_2/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_2 FFCLR Nand_Gate_4/B D_FlipFlop_2/Qbar Q5 VDD And_Gate_5/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
+XD_FlipFlop_3 FFCLR Nand_Gate_3/B D_FlipFlop_3/Qbar Q4 VDD And_Gate_4/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
+XD_FlipFlop_4 FFCLR Nand_Gate_2/B D_FlipFlop_4/Qbar Q2 VDD And_Gate_2/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
 XComparator_0 VDD CDAC_v3_0/OUT Vin D_FlipFlop_7/D Vbias Comparator
-XD_FlipFlop_5 Nand_Gate_7/B Nand_Gate_6/B D_FlipFlop_5/Qbar Q3 VDD And_Gate_3/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
-XD_FlipFlop_6 Nand_Gate_7/B Nand_Gate_0/B D_FlipFlop_6/Qbar Q1 VDD And_Gate_1/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
-XRing_Counter_0 Nand_Gate_7/B Nand_Gate_7/A Nand_Gate_5/A Nand_Gate_4/B Nand_Gate_4/A
-+ Nand_Gate_3/B Nand_Gate_3/A Nand_Gate_6/B Nand_Gate_6/A Nand_Gate_2/B Nand_Gate_2/A
-+ Nand_Gate_1/B Nand_Gate_1/A VDD Nand_Gate_0/B Nand_Gate_0/A EN Nand_Gate_5/B CLK
-+ GND Ring_Counter
+XD_FlipFlop_5 FFCLR Nand_Gate_6/B D_FlipFlop_5/Qbar Q3 VDD And_Gate_3/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
+XD_FlipFlop_6 FFCLR Nand_Gate_0/B D_FlipFlop_6/Qbar Q1 VDD And_Gate_1/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
+XRing_Counter_0 FFCLR Nand_Gate_7/A Nand_Gate_5/A Nand_Gate_4/B Nand_Gate_4/A Nand_Gate_3/B
++ Nand_Gate_3/A Nand_Gate_6/B Nand_Gate_6/A Nand_Gate_2/B Nand_Gate_2/A Nand_Gate_1/B
++ Nand_Gate_1/A VDD Nand_Gate_0/B Nand_Gate_0/A EN Nand_Gate_5/B CLK GND Ring_Counter
 XNand_Gate_0 GND Nand_Gate_0/A Nand_Gate_0/B And_Gate_1/A VDD Nand_Gate
-XD_FlipFlop_7 Nand_Gate_7/B Nand_Gate_1/B D_FlipFlop_7/Qbar Q0 VDD And_Gate_0/Vout
-+ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_7 FFCLR Nand_Gate_1/B D_FlipFlop_7/Qbar Q0 VDD And_Gate_0/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
 XNand_Gate_1 GND Nand_Gate_1/A Nand_Gate_1/B And_Gate_0/A VDD Nand_Gate
 XCDAC_v3_0 Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 CDAC_v3_0/OUT GND VDD CDAC_v3
 XNand_Gate_2 GND Nand_Gate_2/A Nand_Gate_2/B And_Gate_2/A VDD Nand_Gate
@@ -501,6 +500,6 @@ XNand_Gate_4 GND Nand_Gate_4/A Nand_Gate_4/B And_Gate_5/A VDD Nand_Gate
 XNand_Gate_3 GND Nand_Gate_3/A Nand_Gate_3/B And_Gate_4/A VDD Nand_Gate
 XNand_Gate_5 GND Nand_Gate_5/A Nand_Gate_5/B And_Gate_6/A VDD Nand_Gate
 XNand_Gate_6 GND Nand_Gate_6/A Nand_Gate_6/B And_Gate_3/A VDD Nand_Gate
-XNand_Gate_7 GND Nand_Gate_7/A Nand_Gate_7/B And_Gate_7/A VDD Nand_Gate
+XNand_Gate_7 GND Nand_Gate_7/A FFCLR And_Gate_7/A VDD Nand_Gate
 .ends
 

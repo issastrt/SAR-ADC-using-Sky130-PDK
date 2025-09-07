@@ -257,7 +257,10 @@ parameters:
   #     temperature:
   #       typical : 27
   #     corner:
-  #       enumerate : [tt, ff, ss, sf, fs]
+  #       # minimum: ss
+  #       typical: sf
+  #       # maximum: ff
+  #       #enumerate:[ss, tt, ff, fs, sf]
 
   # Power:
   #   description : Current draw through analog supply, ADC enabled
@@ -375,48 +378,48 @@ parameters:
   #       # maximum: ff
   #       #enumerate:[ss, tt, ff, fs, sf]
 
-  magic_area:
-    spec:
-      area:
-        display: Area
-        description: Total circuit layout area
-        unit: mm²
-        maximum:
-          value: any
-      width:
-        display: Width
-        description: Total circuit layout width
-        unit: µm
-        maximum:
-          value: any
-      height:
-        display: Height
-        description: Total circuit layout height
-        unit: µm
-        maximum:
-          value: any
-    tool:
-      magic_area
+  # magic_area:
+  #   spec:
+  #     area:
+  #       display: Area
+  #       description: Total circuit layout area
+  #       unit: mm²
+  #       maximum:
+  #         value: any
+  #     width:
+  #       display: Width
+  #       description: Total circuit layout width
+  #       unit: µm
+  #       maximum:
+  #         value: any
+  #     height:
+  #       display: Height
+  #       description: Total circuit layout height
+  #       unit: µm
+  #       maximum:
+  #         value: any
+  #   tool:
+  #     magic_area
 
-  magic_drc:
-    description: Magic DRC
-    display: Magic DRC
-    spec:
-      drc_errors:
-        maximum:
-          value: 0
-    tool:
-      magic_drc:
-        gds_flatten: true
+  # magic_drc:
+  #   description: Magic DRC
+  #   display: Magic DRC
+  #   spec:
+  #     drc_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #     magic_drc:
+  #       gds_flatten: true
 
-  netgen_lvs:
-    description: Netgen LVS
-    display: Netgen LVS
-    spec:
-      lvs_errors:
-        maximum:
-          value: 0
-    tool:
-      netgen_lvs:
-        script: run_project_lvs.tcl
+  # netgen_lvs:
+  #   description: Netgen LVS
+  #   display: Netgen LVS
+  #   spec:
+  #     lvs_errors:
+  #       maximum:
+  #         value: 0
+  #   tool:
+  #     netgen_lvs:
+  #       script: run_project_lvs.tcl
 

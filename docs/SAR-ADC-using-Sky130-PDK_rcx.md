@@ -5,11 +5,11 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| INL                  | ngspice              | inl                  |          -1 lsb |  1.037 lsb |        0 lsb |  1.045 lsb |      1.5 lsb |  1.053 lsb |   Pass ✅    |
+| Offset Error         | ngspice              | offset_error         |             any |    nan LSB |          any |    nan LSB |          any |    nan LSB |   Pass ✅    |
 
 
 ## Plots
 
-## inl
+## offset_error
 
-![inl](./SAR-ADC-using-Sky130-PDK/rcx/inl.png)
+![offset_error](./SAR-ADC-using-Sky130-PDK/rcx/offset_error.png)
