@@ -1,0 +1,506 @@
+* NGSPICE file created from SAR-ADC-using-Sky130-PDK.ext - technology: sky130A
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_CY7YBN a_n130_n144# a_72_n144# w_n330_n441# a_n72_n241#
+X0 a_72_n144# a_n72_n241# a_n130_n144# w_n330_n441# sky130_fd_pr__pfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=0.72
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P a_n202_n144# a_n144_n232# a_144_n144#
++ VSUBS
+X0 a_144_n144# a_n144_n232# a_n202_n144# VSUBS sky130_fd_pr__nfet_g5v0d10v5 ad=0.4176 pd=3.46 as=0.4176 ps=3.46 w=1.44 l=1.44
+.ends
+
+.subckt Inverter GND VDD Vout Vin
+XXM1 VDD Vout VDD Vin sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 GND Vin Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt Nand_Gate GND A B Vout VDD
+XXM1 VDD Vout VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 m1_2428_n226# B Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM4 GND A m1_2428_n226# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt And_Gate VDD A Vout B GND
+XInverter_0 GND VDD Vout Inverter_0/Vin Inverter
+XNand_Gate_0 GND A B Inverter_0/Vin VDD Nand_Gate
+.ends
+
+.subckt x3-input-nand GND A Vout B C VDD
+XXM1 VDD Vout VDD C sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Vout VDD VDD B sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM3 VDD Vout VDD A sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 m1_3159_n1124# C Vout GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 m1_2545_n1124# B m1_3159_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM6 GND A m1_2545_n1124# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt D_FlipFlop nCLR nPRE Qbar Q VDD CLK D GND
+XInverter_1 GND VDD Nand_Gate_1/B CLK Inverter
+XInverter_0 GND VDD Inverter_0/Vout D Inverter
+X3-input-nand_0 GND nCLR 3-input-nand_2/B D CLK VDD x3-input-nand
+X3-input-nand_1 GND nPRE 3-input-nand_3/B Inverter_0/Vout CLK VDD x3-input-nand
+X3-input-nand_3 GND nCLR Nand_Gate_1/A 3-input-nand_3/B Nand_Gate_0/A VDD x3-input-nand
+X3-input-nand_2 GND nPRE Nand_Gate_0/A 3-input-nand_2/B Nand_Gate_1/A VDD x3-input-nand
+X3-input-nand_4 GND nPRE Q Nand_Gate_0/Vout Qbar VDD x3-input-nand
+X3-input-nand_5 GND nCLR Qbar Nand_Gate_1/Vout Q VDD x3-input-nand
+XNand_Gate_0 GND Nand_Gate_0/A Nand_Gate_1/B Nand_Gate_0/Vout VDD Nand_Gate
+XNand_Gate_1 GND Nand_Gate_1/A Nand_Gate_1/B Nand_Gate_1/Vout VDD Nand_Gate
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_DTGLBV a_100_n2000# a_n100_n2088# a_n292_n2222#
++ a_n158_n2000#
+X0 a_100_n2000# a_n100_n2088# a_n158_n2000# a_n292_n2222# sky130_fd_pr__nfet_g5v0d10v5 ad=5.8 pd=40.58 as=5.8 ps=40.58 w=20 l=1
+.ends
+
+.subckt sky130_fd_pr__cap_mim_m3_2_AZGBXE m4_n884_n280# c2_n804_n200#
+X0 c2_n804_n200# m4_n884_n280# sky130_fd_pr__cap_mim_m3_2 l=2 w=5.35
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q a_100_n5000# w_n358_n5297# a_n158_n5000#
++ a_n100_n5097#
+X0 a_100_n5000# a_n100_n5097# a_n158_n5000# w_n358_n5297# sky130_fd_pr__pfet_g5v0d10v5 ad=14.5 pd=100.58 as=14.5 ps=100.58 w=50 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8 a_n100_n1088# a_n292_n1222# a_n158_n1000#
++ a_100_n1000#
+X0 a_100_n1000# a_n100_n1088# a_n158_n1000# a_n292_n1222# sky130_fd_pr__nfet_g5v0d10v5 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=1
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_94KJBV a_100_n1500# a_n100_n1588# a_n292_n1722#
++ a_n158_n1500#
+X0 a_100_n1500# a_n100_n1588# a_n158_n1500# a_n292_n1722# sky130_fd_pr__nfet_g5v0d10v5 ad=4.35 pd=30.58 as=4.35 ps=30.58 w=15 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q a_n100_n6097# a_100_n6000# w_n358_n6297#
++ a_n158_n6000#
+X0 a_100_n6000# a_n100_n6097# a_n158_n6000# w_n358_n6297# sky130_fd_pr__pfet_g5v0d10v5 ad=17.4 pd=120.58 as=17.4 ps=120.58 w=60 l=1
+.ends
+
+.subckt sky130_fd_pr__res_xhigh_po_5p73_2WP2GG a_n703_n15546# a_n573_14984# a_n573_n15416#
+X0 a_n573_14984# a_n573_n15416# a_n703_n15546# sky130_fd_pr__res_xhigh_po_5p73 l=150
+.ends
+
+.subckt Comparator VDD Vinm Vinp Vout VSS
+Xsky130_fd_pr__nfet_g5v0d10v5_DTGLBV_2 VSS m1_25981_n1645# VSS m1_25981_n1645# sky130_fd_pr__nfet_g5v0d10v5_DTGLBV
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_0 VSS Vout sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM3 VDD VDD m1_27718_12003# m1_27718_12003# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+Xsky130_fd_pr__cap_mim_m3_2_AZGBXE_1 Vout m1_28569_18903# sky130_fd_pr__cap_mim_m3_2_AZGBXE
+XXM4 m1_28569_18903# VDD VDD m1_27718_12003# sky130_fd_pr__pfet_g5v0d10v5_U7VG7Q
+XXM6 m1_25981_n1645# VSS VSS Vout sky130_fd_pr__nfet_g5v0d10v5_Q3M7H8
+Xsky130_fd_pr__nfet_g5v0d10v5_94KJBV_0 m1_27975_9075# Vinm VSS m1_27718_12003# sky130_fd_pr__nfet_g5v0d10v5_94KJBV
+Xsky130_fd_pr__nfet_g5v0d10v5_94KJBV_1 m1_28569_18903# Vinp VSS m1_27975_9075# sky130_fd_pr__nfet_g5v0d10v5_94KJBV
+XXM9 m1_28569_18903# Vout VDD VDD sky130_fd_pr__pfet_g5v0d10v5_UX3D7Q
+Xsky130_fd_pr__res_xhigh_po_5p73_2WP2GG_0 VSS VDD m1_25981_n1645# sky130_fd_pr__res_xhigh_po_5p73_2WP2GG
+Xsky130_fd_pr__nfet_g5v0d10v5_DTGLBV_1 VSS m1_25981_n1645# VSS m1_27975_9075# sky130_fd_pr__nfet_g5v0d10v5_DTGLBV
+.ends
+
+.subckt Ring_Counter Q0 Q1 Q3 Q4 Q5 Q6 Q7 Q8 Q9 Q10 Q11 Q14 Q15 VDD Q12 Q13 EN Q2
++ CLK GND
+XD_FlipFlop_10 VDD EN D_FlipFlop_10/Qbar Q10 VDD CLK Q9 GND D_FlipFlop
+XD_FlipFlop_11 VDD EN D_FlipFlop_11/Qbar Q11 VDD CLK Q10 GND D_FlipFlop
+XD_FlipFlop_12 VDD EN D_FlipFlop_12/Qbar Q12 VDD CLK Q11 GND D_FlipFlop
+XD_FlipFlop_13 VDD EN D_FlipFlop_13/Qbar Q13 VDD CLK Q12 GND D_FlipFlop
+XD_FlipFlop_14 VDD EN D_FlipFlop_14/Qbar Q14 VDD CLK Q13 GND D_FlipFlop
+XD_FlipFlop_15 VDD EN D_FlipFlop_15/Qbar Q15 VDD CLK Q14 GND D_FlipFlop
+XD_FlipFlop_16 VDD EN D_FlipFlop_16/Qbar D_FlipFlop_0/D VDD CLK Q15 GND D_FlipFlop
+XD_FlipFlop_0 EN VDD D_FlipFlop_0/Qbar Q0 VDD CLK D_FlipFlop_0/D GND D_FlipFlop
+XD_FlipFlop_1 VDD EN D_FlipFlop_1/Qbar Q1 VDD CLK Q0 GND D_FlipFlop
+XD_FlipFlop_2 VDD EN D_FlipFlop_2/Qbar Q2 VDD CLK Q1 GND D_FlipFlop
+XD_FlipFlop_3 VDD EN D_FlipFlop_3/Qbar Q3 VDD CLK Q2 GND D_FlipFlop
+XD_FlipFlop_4 VDD EN D_FlipFlop_4/Qbar Q4 VDD CLK Q3 GND D_FlipFlop
+XD_FlipFlop_5 VDD EN D_FlipFlop_5/Qbar Q5 VDD CLK Q4 GND D_FlipFlop
+XD_FlipFlop_6 VDD EN D_FlipFlop_6/Qbar Q6 VDD CLK Q5 GND D_FlipFlop
+XD_FlipFlop_7 VDD EN D_FlipFlop_7/Qbar Q7 VDD CLK Q6 GND D_FlipFlop
+XD_FlipFlop_8 VDD EN D_FlipFlop_8/Qbar Q8 VDD CLK Q7 GND D_FlipFlop
+XD_FlipFlop_9 VDD EN D_FlipFlop_9/Qbar Q9 VDD CLK Q8 GND D_FlipFlop
+.ends
+
+.subckt switch GND VDD Z A B Vref
+XXM1 B Z VDD m1_1636_n831# sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM2 Z Vref B GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM3 Z A VDD Vref sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM4 A m1_1636_n831# Z GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+XXM5 VDD m1_1636_n831# VDD Vref sky130_fd_pr__pfet_g5v0d10v5_CY7YBN
+XXM6 GND Vref m1_1636_n831# GND sky130_fd_pr__nfet_g5v0d10v5_3Y2F6P
+.ends
+
+.subckt unit_cap c1_n26_n1839# m3_n90_n1539#
+X0 c1_n26_n1839# m3_n90_n1539# sky130_fd_pr__cap_mim_m3_1 l=6.88 w=6.88
+.ends
+
+.subckt CDAC_v3 b0 b1 b2 b3 b4 b5 b6 b7 OUT GND VDD
+Xswitch_0 GND VDD switch_0/Z GND VDD b1 switch
+Xunit_cap_190 OUT switch_6/Z unit_cap
+Xunit_cap_40 OUT switch_6/Z unit_cap
+Xunit_cap_51 OUT switch_5/Z unit_cap
+Xunit_cap_62 OUT switch_4/Z unit_cap
+Xunit_cap_73 OUT switch_7/Z unit_cap
+Xunit_cap_84 OUT switch_6/Z unit_cap
+Xunit_cap_95 OUT switch_6/Z unit_cap
+Xunit_cap_180 GND GND unit_cap
+Xunit_cap_191 OUT switch_4/Z unit_cap
+Xunit_cap_30 OUT switch_7/Z unit_cap
+Xunit_cap_41 OUT switch_7/Z unit_cap
+Xunit_cap_52 OUT switch_6/Z unit_cap
+Xunit_cap_63 OUT switch_6/Z unit_cap
+Xunit_cap_74 OUT switch_6/Z unit_cap
+Xunit_cap_85 OUT switch_5/Z unit_cap
+Xunit_cap_96 OUT switch_3/Z unit_cap
+Xunit_cap_170 OUT switch_8/Z unit_cap
+Xunit_cap_181 OUT switch_7/Z unit_cap
+Xunit_cap_192 OUT switch_6/Z unit_cap
+Xswitch_2 GND VDD switch_2/Z GND VDD b2 switch
+Xunit_cap_20 OUT switch_5/Z unit_cap
+Xunit_cap_31 OUT switch_6/Z unit_cap
+Xunit_cap_42 OUT switch_6/Z unit_cap
+Xunit_cap_53 GND GND unit_cap
+Xunit_cap_64 OUT switch_7/Z unit_cap
+Xunit_cap_75 OUT switch_7/Z unit_cap
+Xunit_cap_86 OUT switch_6/Z unit_cap
+Xunit_cap_97 OUT switch_6/Z unit_cap
+Xswitch_3 GND VDD switch_3/Z GND VDD b3 switch
+Xunit_cap_160 OUT switch_6/Z unit_cap
+Xunit_cap_171 OUT switch_6/Z unit_cap
+Xunit_cap_182 OUT switch_6/Z unit_cap
+Xunit_cap_193 OUT switch_5/Z unit_cap
+Xunit_cap_10 GND GND unit_cap
+Xunit_cap_21 OUT switch_6/Z unit_cap
+Xunit_cap_32 OUT switch_7/Z unit_cap
+Xunit_cap_43 OUT switch_7/Z unit_cap
+Xunit_cap_54 GND GND unit_cap
+Xunit_cap_65 OUT switch_6/Z unit_cap
+Xunit_cap_76 OUT switch_6/Z unit_cap
+Xunit_cap_87 OUT switch_5/Z unit_cap
+Xunit_cap_98 OUT switch_0/Z unit_cap
+Xunit_cap_150 OUT switch_6/Z unit_cap
+Xunit_cap_161 GND GND unit_cap
+Xunit_cap_172 OUT switch_7/Z unit_cap
+Xunit_cap_183 OUT switch_7/Z unit_cap
+Xunit_cap_194 OUT switch_6/Z unit_cap
+Xunit_cap_320 GND GND unit_cap
+Xswitch_4 GND VDD switch_4/Z GND VDD b4 switch
+Xunit_cap_11 GND GND unit_cap
+Xunit_cap_22 OUT switch_5/Z unit_cap
+Xunit_cap_33 OUT switch_6/Z unit_cap
+Xunit_cap_44 OUT switch_6/Z unit_cap
+Xunit_cap_55 OUT switch_6/Z unit_cap
+Xunit_cap_66 OUT switch_7/Z unit_cap
+Xunit_cap_77 OUT switch_7/Z unit_cap
+Xunit_cap_88 OUT switch_6/Z unit_cap
+Xunit_cap_99 OUT switch_6/Z unit_cap
+Xunit_cap_321 GND GND unit_cap
+Xunit_cap_310 GND GND unit_cap
+Xswitch_5 GND VDD switch_5/Z GND VDD b5 switch
+Xunit_cap_140 OUT switch_7/Z unit_cap
+Xunit_cap_151 OUT switch_7/Z unit_cap
+Xunit_cap_162 GND GND unit_cap
+Xunit_cap_173 OUT switch_6/Z unit_cap
+Xunit_cap_184 OUT switch_6/Z unit_cap
+Xunit_cap_195 OUT switch_5/Z unit_cap
+Xunit_cap_12 GND GND unit_cap
+Xunit_cap_23 OUT switch_6/Z unit_cap
+Xunit_cap_34 OUT switch_7/Z unit_cap
+Xunit_cap_45 OUT switch_4/Z unit_cap
+Xunit_cap_56 OUT switch_5/Z unit_cap
+Xunit_cap_67 OUT switch_6/Z unit_cap
+Xunit_cap_78 OUT switch_6/Z unit_cap
+Xunit_cap_89 GND GND unit_cap
+Xunit_cap_322 GND GND unit_cap
+Xunit_cap_311 GND GND unit_cap
+Xunit_cap_300 OUT switch_6/Z unit_cap
+Xswitch_6 GND VDD switch_6/Z GND VDD b7 switch
+Xunit_cap_130 OUT switch_5/Z unit_cap
+Xunit_cap_141 OUT switch_6/Z unit_cap
+Xunit_cap_152 OUT switch_6/Z unit_cap
+Xunit_cap_163 OUT switch_6/Z unit_cap
+Xunit_cap_174 OUT switch_7/Z unit_cap
+Xunit_cap_185 OUT switch_7/Z unit_cap
+Xunit_cap_196 OUT switch_6/Z unit_cap
+Xunit_cap_13 GND GND unit_cap
+Xunit_cap_24 OUT switch_3/Z unit_cap
+Xunit_cap_35 GND GND unit_cap
+Xunit_cap_46 OUT switch_6/Z unit_cap
+Xunit_cap_57 OUT switch_6/Z unit_cap
+Xunit_cap_68 OUT switch_7/Z unit_cap
+Xunit_cap_79 OUT switch_7/Z unit_cap
+Xunit_cap_323 GND GND unit_cap
+Xunit_cap_312 GND GND unit_cap
+Xunit_cap_301 OUT switch_5/Z unit_cap
+Xswitch_7 GND VDD switch_7/Z GND VDD b6 switch
+Xunit_cap_120 OUT switch_6/Z unit_cap
+Xunit_cap_131 OUT switch_6/Z unit_cap
+Xunit_cap_142 OUT switch_7/Z unit_cap
+Xunit_cap_164 OUT switch_5/Z unit_cap
+Xunit_cap_175 OUT switch_6/Z unit_cap
+Xunit_cap_186 OUT switch_6/Z unit_cap
+Xunit_cap_197 GND GND unit_cap
+Xunit_cap_14 GND GND unit_cap
+Xunit_cap_25 OUT switch_6/Z unit_cap
+Xunit_cap_36 GND GND unit_cap
+Xunit_cap_47 OUT switch_4/Z unit_cap
+Xunit_cap_58 OUT switch_5/Z unit_cap
+Xunit_cap_69 OUT switch_6/Z unit_cap
+Xunit_cap_313 GND GND unit_cap
+Xunit_cap_302 OUT switch_6/Z unit_cap
+Xswitch_8 GND VDD switch_8/Z GND VDD b0 switch
+Xunit_cap_110 OUT switch_6/Z unit_cap
+Xunit_cap_121 OUT switch_5/Z unit_cap
+Xunit_cap_132 OUT switch_4/Z unit_cap
+Xunit_cap_143 GND GND unit_cap
+Xunit_cap_154 OUT switch_6/Z unit_cap
+Xunit_cap_165 OUT switch_6/Z unit_cap
+Xunit_cap_176 OUT switch_7/Z unit_cap
+Xunit_cap_187 OUT switch_7/Z unit_cap
+Xunit_cap_198 GND GND unit_cap
+Xunit_cap_15 GND GND unit_cap
+Xunit_cap_26 OUT switch_2/Z unit_cap
+Xunit_cap_37 OUT switch_7/Z unit_cap
+Xunit_cap_48 OUT switch_6/Z unit_cap
+Xunit_cap_59 OUT switch_6/Z unit_cap
+Xunit_cap_314 GND GND unit_cap
+Xunit_cap_303 OUT switch_5/Z unit_cap
+Xunit_cap_100 OUT switch_7/Z unit_cap
+Xunit_cap_111 OUT switch_7/Z unit_cap
+Xunit_cap_122 OUT switch_6/Z unit_cap
+Xunit_cap_133 OUT switch_6/Z unit_cap
+Xunit_cap_144 GND GND unit_cap
+Xunit_cap_155 OUT switch_3/Z unit_cap
+Xunit_cap_166 OUT switch_5/Z unit_cap
+Xunit_cap_177 OUT switch_6/Z unit_cap
+Xunit_cap_188 OUT switch_6/Z unit_cap
+Xunit_cap_199 OUT switch_6/Z unit_cap
+Xunit_cap_16 GND GND unit_cap
+Xunit_cap_27 OUT switch_6/Z unit_cap
+Xunit_cap_38 OUT switch_6/Z unit_cap
+Xunit_cap_49 OUT switch_5/Z unit_cap
+Xunit_cap_315 GND GND unit_cap
+Xunit_cap_304 OUT switch_6/Z unit_cap
+Xunit_cap_101 OUT switch_6/Z unit_cap
+Xunit_cap_112 OUT switch_6/Z unit_cap
+Xunit_cap_123 OUT switch_5/Z unit_cap
+Xunit_cap_134 OUT switch_4/Z unit_cap
+Xunit_cap_145 OUT switch_7/Z unit_cap
+Xunit_cap_156 OUT switch_6/Z unit_cap
+Xunit_cap_167 OUT switch_6/Z unit_cap
+Xunit_cap_178 OUT switch_7/Z unit_cap
+Xunit_cap_189 OUT switch_4/Z unit_cap
+Xunit_cap_17 GND GND unit_cap
+Xunit_cap_28 OUT switch_7/Z unit_cap
+Xunit_cap_39 OUT switch_7/Z unit_cap
+Xunit_cap_102 OUT switch_7/Z unit_cap
+Xunit_cap_113 OUT switch_7/Z unit_cap
+Xunit_cap_124 OUT switch_6/Z unit_cap
+Xunit_cap_135 OUT switch_6/Z unit_cap
+Xunit_cap_146 OUT switch_6/Z unit_cap
+Xunit_cap_157 OUT switch_5/Z unit_cap
+Xunit_cap_168 OUT switch_3/Z unit_cap
+Xunit_cap_179 GND GND unit_cap
+Xunit_cap_316 GND GND unit_cap
+Xunit_cap_305 GND GND unit_cap
+Xunit_cap_18 GND GND unit_cap
+Xunit_cap_29 OUT switch_6/Z unit_cap
+Xunit_cap_317 GND GND unit_cap
+Xunit_cap_306 GND GND unit_cap
+Xunit_cap_103 OUT switch_6/Z unit_cap
+Xunit_cap_114 OUT switch_6/Z unit_cap
+Xunit_cap_125 GND GND unit_cap
+Xunit_cap_136 OUT switch_7/Z unit_cap
+Xunit_cap_147 OUT switch_7/Z unit_cap
+Xunit_cap_158 OUT switch_6/Z unit_cap
+Xunit_cap_169 OUT switch_6/Z unit_cap
+Xunit_cap_19 OUT switch_6/Z unit_cap
+Xunit_cap_104 OUT switch_7/Z unit_cap
+Xunit_cap_115 OUT switch_7/Z unit_cap
+Xunit_cap_126 GND GND unit_cap
+Xunit_cap_137 OUT switch_6/Z unit_cap
+Xunit_cap_148 OUT switch_6/Z unit_cap
+Xunit_cap_159 OUT switch_5/Z unit_cap
+Xunit_cap_318 GND GND unit_cap
+Xunit_cap_307 GND GND unit_cap
+Xunit_cap_319 GND GND unit_cap
+Xunit_cap_308 GND GND unit_cap
+Xunit_cap_105 OUT switch_6/Z unit_cap
+Xunit_cap_116 OUT switch_6/Z unit_cap
+Xunit_cap_127 OUT switch_6/Z unit_cap
+Xunit_cap_138 OUT switch_7/Z unit_cap
+Xunit_cap_149 OUT switch_7/Z unit_cap
+Xunit_cap_106 OUT switch_7/Z unit_cap
+Xunit_cap_117 OUT switch_4/Z unit_cap
+Xunit_cap_128 OUT switch_5/Z unit_cap
+Xunit_cap_139 OUT switch_6/Z unit_cap
+Xunit_cap_309 GND GND unit_cap
+Xunit_cap_0 GND GND unit_cap
+Xunit_cap_107 GND GND unit_cap
+Xunit_cap_118 OUT switch_6/Z unit_cap
+Xunit_cap_129 OUT switch_6/Z unit_cap
+Xunit_cap_290 OUT switch_6/Z unit_cap
+Xunit_cap_1 GND GND unit_cap
+Xunit_cap_108 GND GND unit_cap
+Xunit_cap_119 OUT switch_4/Z unit_cap
+Xunit_cap_291 OUT switch_7/Z unit_cap
+Xunit_cap_280 OUT switch_7/Z unit_cap
+Xunit_cap_2 GND GND unit_cap
+Xunit_cap_109 OUT switch_7/Z unit_cap
+Xunit_cap_292 OUT switch_6/Z unit_cap
+Xunit_cap_281 OUT switch_6/Z unit_cap
+Xunit_cap_270 GND GND unit_cap
+Xunit_cap_3 GND GND unit_cap
+Xunit_cap_293 OUT switch_7/Z unit_cap
+Xunit_cap_282 OUT switch_7/Z unit_cap
+Xunit_cap_271 OUT switch_6/Z unit_cap
+Xunit_cap_260 OUT switch_6/Z unit_cap
+Xunit_cap_4 GND GND unit_cap
+Xunit_cap_294 OUT switch_6/Z unit_cap
+Xunit_cap_283 OUT switch_6/Z unit_cap
+Xunit_cap_272 OUT switch_5/Z unit_cap
+Xunit_cap_261 OUT switch_4/Z unit_cap
+Xunit_cap_250 OUT switch_7/Z unit_cap
+Xunit_cap_5 GND GND unit_cap
+Xunit_cap_295 OUT switch_7/Z unit_cap
+Xunit_cap_284 OUT switch_7/Z unit_cap
+Xunit_cap_273 OUT switch_6/Z unit_cap
+Xunit_cap_262 OUT switch_6/Z unit_cap
+Xunit_cap_251 GND GND unit_cap
+Xunit_cap_240 OUT switch_3/Z unit_cap
+Xunit_cap_6 GND GND unit_cap
+Xunit_cap_296 OUT switch_6/Z unit_cap
+Xunit_cap_285 OUT switch_6/Z unit_cap
+Xunit_cap_274 OUT switch_5/Z unit_cap
+Xunit_cap_263 OUT switch_4/Z unit_cap
+Xunit_cap_252 GND GND unit_cap
+Xunit_cap_241 OUT switch_6/Z unit_cap
+Xunit_cap_230 OUT switch_6/Z unit_cap
+Xunit_cap_7 GND GND unit_cap
+Xunit_cap_220 OUT switch_6/Z unit_cap
+Xunit_cap_297 OUT switch_2/Z unit_cap
+Xunit_cap_286 OUT switch_7/Z unit_cap
+Xunit_cap_275 OUT switch_6/Z unit_cap
+Xunit_cap_264 OUT switch_6/Z unit_cap
+Xunit_cap_253 OUT switch_7/Z unit_cap
+Xunit_cap_242 OUT switch_2/Z unit_cap
+Xunit_cap_231 OUT switch_5/Z unit_cap
+Xunit_cap_8 GND GND unit_cap
+Xunit_cap_210 OUT switch_7/Z unit_cap
+Xunit_cap_221 OUT switch_7/Z unit_cap
+Xunit_cap_298 OUT switch_6/Z unit_cap
+Xunit_cap_287 GND GND unit_cap
+Xunit_cap_276 OUT switch_4/Z unit_cap
+Xunit_cap_265 OUT switch_5/Z unit_cap
+Xunit_cap_254 OUT switch_6/Z unit_cap
+Xunit_cap_243 OUT switch_6/Z unit_cap
+Xunit_cap_232 OUT switch_6/Z unit_cap
+Xunit_cap_9 GND GND unit_cap
+Xunit_cap_200 OUT switch_5/Z unit_cap
+Xunit_cap_211 OUT switch_6/Z unit_cap
+Xunit_cap_222 OUT switch_6/Z unit_cap
+Xunit_cap_233 GND GND unit_cap
+Xunit_cap_299 OUT switch_3/Z unit_cap
+Xunit_cap_288 GND GND unit_cap
+Xunit_cap_277 OUT switch_6/Z unit_cap
+Xunit_cap_266 OUT switch_6/Z unit_cap
+Xunit_cap_255 OUT switch_7/Z unit_cap
+Xunit_cap_244 OUT switch_7/Z unit_cap
+Xunit_cap_201 OUT switch_6/Z unit_cap
+Xunit_cap_212 OUT switch_7/Z unit_cap
+Xunit_cap_223 OUT switch_7/Z unit_cap
+Xunit_cap_289 OUT switch_7/Z unit_cap
+Xunit_cap_278 OUT switch_4/Z unit_cap
+Xunit_cap_267 OUT switch_5/Z unit_cap
+Xunit_cap_256 OUT switch_6/Z unit_cap
+Xunit_cap_245 OUT switch_6/Z unit_cap
+Xunit_cap_234 GND GND unit_cap
+Xunit_cap_202 OUT switch_5/Z unit_cap
+Xunit_cap_213 OUT switch_6/Z unit_cap
+Xunit_cap_224 OUT switch_6/Z unit_cap
+Xunit_cap_279 OUT switch_6/Z unit_cap
+Xunit_cap_268 OUT switch_6/Z unit_cap
+Xunit_cap_257 OUT switch_7/Z unit_cap
+Xunit_cap_246 OUT switch_7/Z unit_cap
+Xunit_cap_235 OUT switch_6/Z unit_cap
+Xunit_cap_203 OUT switch_6/Z unit_cap
+Xunit_cap_214 OUT switch_7/Z unit_cap
+Xunit_cap_225 OUT switch_0/Z unit_cap
+Xunit_cap_269 GND GND unit_cap
+Xunit_cap_258 OUT switch_6/Z unit_cap
+Xunit_cap_247 OUT switch_6/Z unit_cap
+Xunit_cap_236 OUT switch_5/Z unit_cap
+Xunit_cap_204 OUT switch_4/Z unit_cap
+Xunit_cap_215 GND GND unit_cap
+Xunit_cap_226 OUT switch_6/Z unit_cap
+Xunit_cap_259 OUT switch_7/Z unit_cap
+Xunit_cap_248 OUT switch_7/Z unit_cap
+Xunit_cap_237 OUT switch_6/Z unit_cap
+Xunit_cap_205 OUT switch_6/Z unit_cap
+Xunit_cap_216 GND GND unit_cap
+Xunit_cap_227 OUT switch_3/Z unit_cap
+Xunit_cap_249 OUT switch_6/Z unit_cap
+Xunit_cap_238 OUT switch_5/Z unit_cap
+Xunit_cap_90 GND GND unit_cap
+Xunit_cap_206 OUT switch_4/Z unit_cap
+Xunit_cap_217 OUT switch_7/Z unit_cap
+Xunit_cap_239 OUT switch_6/Z unit_cap
+Xunit_cap_228 OUT switch_6/Z unit_cap
+Xunit_cap_207 OUT switch_6/Z unit_cap
+Xunit_cap_218 OUT switch_6/Z unit_cap
+Xunit_cap_229 OUT switch_5/Z unit_cap
+Xunit_cap_80 OUT switch_6/Z unit_cap
+Xunit_cap_91 OUT switch_6/Z unit_cap
+Xunit_cap_70 OUT switch_7/Z unit_cap
+Xunit_cap_81 OUT switch_2/Z unit_cap
+Xunit_cap_92 OUT switch_5/Z unit_cap
+Xunit_cap_208 OUT switch_7/Z unit_cap
+Xunit_cap_219 OUT switch_7/Z unit_cap
+Xunit_cap_209 OUT switch_6/Z unit_cap
+Xunit_cap_60 OUT switch_4/Z unit_cap
+Xunit_cap_71 GND GND unit_cap
+Xunit_cap_82 OUT switch_6/Z unit_cap
+Xunit_cap_93 OUT switch_6/Z unit_cap
+Xunit_cap_50 OUT switch_6/Z unit_cap
+Xunit_cap_61 OUT switch_6/Z unit_cap
+Xunit_cap_72 GND GND unit_cap
+Xunit_cap_83 OUT switch_3/Z unit_cap
+Xunit_cap_94 OUT switch_5/Z unit_cap
+.ends
+
+.subckt SAR-ADC-using-Sky130-PDK CLK EN GND Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Vbias VDD Vin
+XAnd_Gate_0 VDD And_Gate_0/A And_Gate_0/Vout CLK GND And_Gate
+XAnd_Gate_1 VDD And_Gate_1/A And_Gate_1/Vout CLK GND And_Gate
+XAnd_Gate_3 VDD And_Gate_3/A And_Gate_3/Vout CLK GND And_Gate
+XAnd_Gate_2 VDD And_Gate_2/A And_Gate_2/Vout CLK GND And_Gate
+XAnd_Gate_4 VDD And_Gate_4/A And_Gate_4/Vout CLK GND And_Gate
+XAnd_Gate_5 VDD And_Gate_5/A And_Gate_5/Vout CLK GND And_Gate
+XAnd_Gate_6 VDD And_Gate_6/A And_Gate_6/Vout CLK GND And_Gate
+XAnd_Gate_7 VDD And_Gate_7/A And_Gate_7/Vout CLK GND And_Gate
+XD_FlipFlop_0 EN Nand_Gate_7/B D_FlipFlop_0/Qbar Q7 VDD And_Gate_7/Vout D_FlipFlop_7/D
++ GND D_FlipFlop
+XD_FlipFlop_1 Nand_Gate_7/B Nand_Gate_5/B D_FlipFlop_1/Qbar Q6 VDD And_Gate_6/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_2 Nand_Gate_7/B Nand_Gate_4/B D_FlipFlop_2/Qbar Q5 VDD And_Gate_5/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_3 Nand_Gate_7/B Nand_Gate_3/B D_FlipFlop_3/Qbar Q4 VDD And_Gate_4/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_4 Nand_Gate_7/B Nand_Gate_2/B D_FlipFlop_4/Qbar Q2 VDD And_Gate_2/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XComparator_0 VDD CDAC_v3_0/OUT Vin D_FlipFlop_7/D Vbias Comparator
+XD_FlipFlop_5 Nand_Gate_7/B Nand_Gate_6/B D_FlipFlop_5/Qbar Q3 VDD And_Gate_3/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XD_FlipFlop_6 Nand_Gate_7/B Nand_Gate_0/B D_FlipFlop_6/Qbar Q1 VDD And_Gate_1/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XRing_Counter_0 Nand_Gate_7/B Nand_Gate_7/A Nand_Gate_5/A Nand_Gate_4/B Nand_Gate_4/A
++ Nand_Gate_3/B Nand_Gate_3/A Nand_Gate_6/B Nand_Gate_6/A Nand_Gate_2/B Nand_Gate_2/A
++ Nand_Gate_1/B Nand_Gate_1/A VDD Nand_Gate_0/B Nand_Gate_0/A EN Nand_Gate_5/B CLK
++ GND Ring_Counter
+XNand_Gate_0 GND Nand_Gate_0/A Nand_Gate_0/B And_Gate_1/A VDD Nand_Gate
+XD_FlipFlop_7 Nand_Gate_7/B Nand_Gate_1/B D_FlipFlop_7/Qbar Q0 VDD And_Gate_0/Vout
++ D_FlipFlop_7/D GND D_FlipFlop
+XNand_Gate_1 GND Nand_Gate_1/A Nand_Gate_1/B And_Gate_0/A VDD Nand_Gate
+XCDAC_v3_0 Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 CDAC_v3_0/OUT GND VDD CDAC_v3
+XNand_Gate_2 GND Nand_Gate_2/A Nand_Gate_2/B And_Gate_2/A VDD Nand_Gate
+XNand_Gate_4 GND Nand_Gate_4/A Nand_Gate_4/B And_Gate_5/A VDD Nand_Gate
+XNand_Gate_3 GND Nand_Gate_3/A Nand_Gate_3/B And_Gate_4/A VDD Nand_Gate
+XNand_Gate_5 GND Nand_Gate_5/A Nand_Gate_5/B And_Gate_6/A VDD Nand_Gate
+XNand_Gate_6 GND Nand_Gate_6/A Nand_Gate_6/B And_Gate_3/A VDD Nand_Gate
+XNand_Gate_7 GND Nand_Gate_7/A Nand_Gate_7/B And_Gate_7/A VDD Nand_Gate
+.ends
+
