@@ -1,9 +1,9 @@
-v {xschem version=3.4.5 file_version=1.2
-}
+v {xschem version=3.4.8RC file_version=1.3}
 G {}
 K {}
 V {}
 S {}
+F {}
 E {}
 N -1320 60 -1320 80 {
 lab=CLK}
@@ -43,8 +43,8 @@ C {devices/gnd.sym} -820 160 0 0 {name=l2 lab=GND}
 C {devices/code_shown.sym} -1335 -290 0 0 {name=Commands only_toplevel=true value="
 .option 
 .control
-  save V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0) V(Vin)
-  tran 0.5u 42.5u uic
+  save V(ring_counter_0.d_flipflop_0.3-input-nand_0.vout)
+  tran 0.5u 8.5u uic
   write SAR-ADC-using-Sky130-PDK_tb.raw
   
 .endc
@@ -62,7 +62,7 @@ C {devices/lab_wire.sym} -70 120 0 1 {name=p10 sig_type=std_logic lab=Q2}
 C {devices/lab_wire.sym} -70 140 0 1 {name=p11 sig_type=std_logic lab=Q1}
 C {devices/lab_wire.sym} -70 160 0 1 {name=p12 sig_type=std_logic lab=Q0}
 C {devices/lab_pin.sym} -460 60 0 0 {name=p15 sig_type=std_logic lab=Vin}
-C {devices/vsource.sym} -1320 -50 0 0 {name=VVin value="PWL(0 0 8.5u 0 8.50001u 10m 17u 10m 17.00001u 0.9 25.5u 0.9 25.50001u 1.7 34u 1.7 34.00001u 1.8 42.5u 1.8" savecurrent=false}
+C {devices/vsource.sym} -1320 -50 0 0 {name=VVin value=1 savecurrent=false}
 C {devices/lab_wire.sym} -1320 -100 0 0 {name=p25 sig_type=std_logic lab=Vin}
 C {devices/gnd.sym} -1320 0 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} -460 -10 0 0 {name=l3 lab=GND}

@@ -1,9 +1,9 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.5 file_version=1.2
+}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N 2860 1340 3020 1340 {
 lab=Q7}

@@ -139,9 +139,9 @@ parameters:
   #       typical : tt
   #     VVin:
   #       minimum  : 0
-  #       maximum  : 1.8
+  #       maximum  : 0.5
   #       step     : linear
-  #       stepsize : 0.6 #to change
+  #       stepsize : 0.1 #to change
 
   # SNDR:
   #   description : SNDR
@@ -227,40 +227,37 @@ parameters:
   #     corner:
   #       typical : tt
 
-  # offset_error:
-  #   description : Offset Error
-  #   display     : Offset Error
-  #   unit        : LSB
-  #   spec:
-  #     offset_error :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : offset_error.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-  #       script            : offset_error.py
-  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-  #   plot:
-  #     offset_error:
-  #       xaxis: Vin_samples      
-  #       yaxis: codes_binary    
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       # minimum: ss
-  #       typical: sf
-  #       # maximum: ff
-  #       #enumerate:[ss, tt, ff, fs, sf]
+  offset_error:
+    description : Offset Error
+    display     : Offset Error
+    unit        : LSB
+    spec:
+      offset_error :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : offset_error.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : offset_error.py
+        script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+    plot:
+      offset_error:
+        xaxis: Vin_samples      
+        yaxis: codes_binary    
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        enumerate : [sf]
 
   # Power:
   #   description : Current draw through analog supply, ADC enabled

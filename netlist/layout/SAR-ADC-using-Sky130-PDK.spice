@@ -463,7 +463,7 @@ Xunit_cap_83 OUT switch_3/Z unit_cap
 Xunit_cap_94 OUT switch_5/Z unit_cap
 .ends
 
-.subckt SAR-ADC-using-Sky130-PDK CLK EN GND Q0 Q1 Q2 Q3 Q4 Q5 Q6 Q7 Vbias VDD Vin
+.subckt SAR-ADC-using-Sky130-PDK VDD Vin Q0 Vbias EN Q1 CLK Q2 Q3 Q4 Q5 Q6 Q7 GND
 XAnd_Gate_0 VDD And_Gate_0/A And_Gate_0/Vout CLK GND And_Gate
 XAnd_Gate_1 VDD And_Gate_1/A And_Gate_1/Vout CLK GND And_Gate
 XAnd_Gate_3 VDD And_Gate_3/A And_Gate_3/Vout CLK GND And_Gate
