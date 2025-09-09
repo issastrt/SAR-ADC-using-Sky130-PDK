@@ -5,11 +5,7 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| Offset Error         | ngspice              | offset_error         |             any |    nan LSB |          any |    nan LSB |          any |    nan LSB |   Pass ✅    |
+| sampling rate        | ngspice              | sampling_rate        |             any | 117.167 kS/s |          any | 117.167 kS/s |          any | 117.167 kS/s |   Pass ✅    |
 
 
 ## Plots
-
-## offset_error
-
-![offset_error](./SAR-ADC-using-Sky130-PDK/rcx/offset_error.png)

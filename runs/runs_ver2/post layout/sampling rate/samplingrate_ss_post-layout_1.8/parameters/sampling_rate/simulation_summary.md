@@ -1,0 +1,5 @@
+# Simulation Summary for sampling rate
+
+| run | time | Clk | FFCLR | sampling_rate |
+| :-- | ---: | --: | ----: | ------------: |
+| run_0 | [1.000e-12, 1.028e-12, 1.083e-12, …] | [1.782, 1.782, 1.781, …] | [0.342, 0.347, 0.354, …] | 1.172e+05 |
