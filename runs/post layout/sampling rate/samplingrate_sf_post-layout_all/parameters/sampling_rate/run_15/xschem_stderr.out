@@ -1,0 +1,7 @@
+Using run time directory XSCHEM_SHAREDIR = /nix/store/2ch8ik45lcfxz2smhsiagqhd6pyacfaq-xschem-3.4.7/share/xschem
+Sourcing /nix/store/2ch8ik45lcfxz2smhsiagqhd6pyacfaq-xschem-3.4.7/share/xschem/xschemrc init file
+Sourcing /usr/local/share/pdk/sky130A/libs.tech/xschem/xschemrc init file
+open_pdks installation: using /usr/local/share/pdk
+SKYWATER_MODELS: /usr/local/share/pdk/sky130A/libs.tech/combined
+SKYWATER_STDCELLS: /usr/local/share/pdk/sky130A/libs.ref/sky130_fd_sc_hd/spice
+setup_tcp_bespice: success : listening to TCP port: 2022

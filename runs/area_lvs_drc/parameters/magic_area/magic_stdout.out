@@ -1,0 +1,21 @@
+
+Magic 8.3 revision 528 - Compiled on Fri Jun  6 15:02:32 UTC 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Using technology "sky130A", version 1.0.537-0-g40cee97
+Cell SAR-ADC-using-Sky130-PDK read from path /home/samantha/cace/SAR-ADC-using-Sky130-PDK/mag
+Root cell box:
+           width x height  (   llx,  lly  ), (   urx,  ury  )  area (units^2)
+
+microns:  353.350 x 314.945  (-64.755,  0.040), ( 288.595,  314.985)  111285.805
+lambda:   35335.00 x 31494.50  (-6475.50,  4.00 ), ( 28859.50,  31498.50)  1112858112.00
+internal:  70670 x 62989   (-12951,  8    ), ( 57719,  62997)  4451432630
