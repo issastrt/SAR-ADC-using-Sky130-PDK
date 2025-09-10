@@ -1,0 +1,27 @@
+Running parameters: DNL
+Generating simulation netlist from schematic…
+Skipping extraction of rcx netlist. Up to date.
+Skipping extraction of layout netlist. Up to date.
+Not regenerating GDSII from magic layout. Up to date.
+Parameter DNL: Generating simulation files…
+Parameter DNL: Running simulations…
+Parameter DNL: Collecting results…
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.72941176 1.73117647 1.73294118 1.73470588 1.73647059 1.73823529
+ 1.74       1.74176471 1.74352941 1.74529412 1.74705882 1.74882353
+ 1.75058824 1.75235294 1.75411765 1.75588235 1.75764706 1.75941176
+ 1.76117647 1.76294118 1.76470588]
+[DEBUG] Code samples:
+[248 248 248 248 249 249 249 249 250 250 250 250 251 251 251 251 252 252
+ 252 252 253]
+[DEBUG] Transition voltages:
+[1.72941176 1.73647059 1.74352941 1.75058824 1.75764706 1.76470588]
+[DEBUG] Code transitions:
+[  1 249 250 251 252 253]
+[DEBUG] Bin widths:
+[0.00705883 0.00705882 0.00705883 0.00705882 0.00705882]
+[DEBUG] DNL:
+[0.00392249 0.00392107 0.00392249 0.00392107 0.00392107]
+Parameter DNL: Saving simulation summary as '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-09-11_04-07-18/parameters/DNL/simulation_summary.md]runs/RUN_2025-09-11_04-07-18/parameters/DNL/simulation_summary.md[/link][/repr.filename]'…
+Done with CACE simulations and evaluations in 0:31:34.
