@@ -1,0 +1,5 @@
+Warning : voltage source vvin has non-increasing PWL time points.
+Warning - approaching max data size: current size = 5561.082 MB, limit = 5824.938 MB
+Warning - approaching max data size: current size = 5563.332 MB, limit = 5819.312 MB
+Error: no block to end.
+Warning: ignoring previous error
