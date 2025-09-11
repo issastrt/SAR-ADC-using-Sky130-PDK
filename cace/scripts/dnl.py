@@ -6,6 +6,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     time = np.array(results['time'])
     vin = np.array(results['VVin'])
     vdd = float(conditions['VVDD'])
+    corner = str(conditions['corner'])
 
     # --- Collect bit keys and arrays (assumes VQ0..VQ(N-1) exist) ---
     bit_keys = [k for k in results.keys() if k.startswith("VQ")]
@@ -81,9 +82,6 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     print("[DEBUG] Bin widths:", bin_widths)
     print("[DEBUG] DNL:", dnl_list)
 
-    # --- Export debug data to CSV ---
-    csv_filename = "dnl_debug_output.csv"
-
     # Pad arrays to the same length
     max_len = max(len(vins), len(codes), len(transition_voltages), len(code_transitions), len(bin_widths), len(dnl_list))
 
@@ -96,6 +94,9 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     transition_codes_padded = pad(code_transitions, max_len)
     bin_widths_padded = pad(bin_widths, max_len)
     dnl_padded = pad(dnl_list, max_len)
+
+    # --- Export debug data to CSV ---
+    csv_filename = f"dnl_{corner}_pre-layout_{vins_padded[0]:.3f}-to-{vins_padded[-1]:.3f}.csv"
 
     with open(csv_filename, mode='w', newline='') as file:
         writer = csv.writer(file)

@@ -143,33 +143,33 @@ parameters:
   #       step     : linear
   #       stepsize : 0.1
 
-  # SNDR:
-  #   description : SNDR
-  #   display     : SNDR
-  #   unit        : dB
-  #   spec:
-  #     sndr :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : sndr_enob_fom.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, I, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0, Vin]
-  #       script            : sndr_enob_fom.py
-  #       script_variables  : [sndr]
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       typical : tt
+  SNDR:
+    description : SNDR
+    display     : SNDR
+    unit        : dB
+    spec:
+      sndr :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : sndr_enob_fom.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, I, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0, Vin]
+        script            : sndr_enob_fom.py
+        script_variables  : [sndr]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        typical : tt
 
   # offset_error:
   #   description : Offset Error
@@ -240,37 +240,37 @@ parameters:
   #     corner:
   #       enumerate: [tt, ss, fs, sf, ff]
 
-  DNL:
-    description: Differential nonlinearity (DNL) Test
-    display: DNL
-    unit: lsb
-    spec:
-      dnl:
-        minimum:
-          value: -1
-          fail: true
-        typical:
-          value: 0
-        maximum:
-          value: 1
-          fail: true
-    tool:
-      ngspice:
-        template: sar_output_dnl.sch
-        format: ascii
-        suffix: .data
-        variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
-        script: dnl.py
-        script_variables: [code, dnl]
-    conditions:
-      VVDD:
-        typical: 1.8
-      VVbias:
-        typical: -0.9
-      temperature:
-        typical: 27
-      corner:
-        typical: tt
+  # DNL:
+  #   description: Differential nonlinearity (DNL) Test
+  #   display: DNL
+  #   unit: lsb
+  #   spec:
+  #     dnl:
+  #       minimum:
+  #         value: -1
+  #         fail: true
+  #       typical:
+  #         value: 0
+  #       maximum:
+  #         value: 1
+  #         fail: true
+  #   tool:
+  #     ngspice:
+  #       template: sar_output_dnl.sch
+  #       format: ascii
+  #       suffix: .data
+  #       variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
+  #       script: dnl.py
+  #       script_variables: [code, dnl]
+  #   conditions:
+  #     VVDD:
+  #       typical: 1.8
+  #     VVbias:
+  #       typical: -0.9
+  #     temperature:
+  #       typical: 27
+  #     corner:
+  #       enumerate: [tt, ss, ff, fs, sf]
 
   # magic_area:
   #   spec:

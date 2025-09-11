@@ -1,9 +1,8 @@
-v {xschem version=3.4.8RC file_version=1.3}
+v {xschem version=3.4.7 file_version=1.2}
 G {}
 K {}
 V {}
 S {}
-F {}
 E {}
 N -750 -320 -650 -320 {
 lab=VDD}
@@ -19,7 +18,7 @@ N -710 70 -710 120 {
 lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -740 -530 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 0.5u 1.12m uic
+tran 0.5u 272u uic
 set wr_singlescale
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data -I(VVDD) V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0) V(Vin)
 quit

@@ -9,7 +9,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     """
 
     Tconv = 8.5e-6          # conversion period
-    n_codes = 128           # number of codes to collect
+    n_codes = 32           # number of codes to collect
 
     # --- Extract time and Vin ---
     time_arr = np.array(results["time"])
@@ -38,7 +38,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     codes = np.array(codes, dtype=float)
 
     # --- Print codes ---
-    print("Here are the 128 codes:", codes[:128])
+    print("Here are the 32 codes:", codes[:32])
 
     # --- Save to CSV ---
     with open("adc_codes.csv", mode="w", newline="") as f:
