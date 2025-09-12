@@ -5,7 +5,7 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| DNL                  | ngspice              | dnl                  |          -1 lsb | -0.247 lsb |        0 lsb |  0.004 lsb |        1 lsb |  0.004 lsb |   Pass ✅    |
+| SNDR                 | ngspice              | sndr                 |             any |   2.020 dB |          any |   2.020 dB |          any |   2.020 dB |   Pass ✅    |
 
 
 ## Plots

@@ -169,7 +169,7 @@ parameters:
       temperature:
         typical : 27
       corner:
-        typical : tt
+        typical : ss
 
   # offset_error:
   #   description : Offset Error

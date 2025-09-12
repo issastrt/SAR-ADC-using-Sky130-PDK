@@ -57,7 +57,7 @@ C {devices/lab_pin.sym} -60 -190 0 1 {name=p7 sig_type=std_logic lab=EN}
 C {gnd.sym} -160 -70 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -710 -30 0 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -710 -10 0 0 {name=p9 sig_type=std_logic lab=EN}
-C {devices/vsource.sym} -750 -160 0 0 {name=VVin value="SIN(0.9 0.85 229.7794 0 0 90)" savecurrent=false}
+C {devices/vsource.sym} -750 -160 0 0 {name=VVin value="SIN(0.9 0.85 229.7794 0 0 112.5)" savecurrent=false}
 C {devices/lab_pin.sym} -650 -190 0 1 {name=p10 sig_type=std_logic lab=Vin}
 C {gnd.sym} -750 -130 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -710 70 0 0 {name=p11 sig_type=std_logic lab=Vin}
