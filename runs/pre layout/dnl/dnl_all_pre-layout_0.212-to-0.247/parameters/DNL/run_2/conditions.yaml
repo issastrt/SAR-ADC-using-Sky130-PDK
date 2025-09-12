@@ -1,0 +1,12 @@
+DUT_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/netlist/schematic/SAR-ADC-using-Sky130-PDK.spice
+N: 2
+PDK: sky130A
+PDK_ROOT: /usr/local/share/pdk
+Rout: '100000000.0'
+VVDD: '1.8'
+VVGND: '0'
+VVbias: '-0.9'
+corner: ff
+filename: sar_output_dnl
+simpath: /home/ece/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-09-13_00-53-04/parameters/DNL/run_2
+temperature: '27'
