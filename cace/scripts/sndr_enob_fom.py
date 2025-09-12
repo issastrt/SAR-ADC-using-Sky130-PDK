@@ -11,6 +11,8 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     Tconv = 8.5e-6          # conversion period
     n_codes = 32           # number of codes to collect
 
+    corner = str(conditions['corner'])
+
     # --- Extract time and Vin ---
     time_arr = np.array(results["time"])
     vin_arr = np.array(results["Vin"])   # make sure results has "Vin"
@@ -40,8 +42,10 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     # --- Print codes ---
     print("Here are the 32 codes:", codes[:32])
 
+    csv_filename = f"sndr_{corner}_pre-layout.csv"
+
     # --- Save to CSV ---
-    with open("adc_codes.csv", mode="w", newline="") as f:
+    with open(csv_filename, mode="w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Index", "Vin", "Code"])
         for idx, (vin, code) in enumerate(zip(vin_samples, codes)):
