@@ -1,0 +1,92 @@
+Running parameters: DNL
+Generating simulation netlist from schematic…
+Parameter DNL: Generating simulation files…
+Parameter DNL: Running simulations…
+Parameter DNL: Collecting results…
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.51764706 1.51941176 1.52117647 1.52294118 1.52470588 1.52647059
+ 1.52823529 1.53       1.53176471 1.53352941 1.53529412 1.53705882
+ 1.53882353 1.54058824 1.54235294 1.54411765 1.54588235 1.54764706
+ 1.54941176 1.55117647 1.55294118]
+[DEBUG] Code samples:
+[215 215 215 215 216 216 216 217 217 217 217 218 218 218 218 218 219 219
+ 219 219 220]
+[DEBUG] Transition voltages:
+[1.51764706 1.52470588 1.53       1.53705882 1.54588235 1.55294118]
+[DEBUG] Code transitions:
+[  1 216 217 218 219 220]
+[DEBUG] Bin widths:
+[0.00705882 0.00529412 0.00705882 0.00882353 0.00705883]
+[DEBUG] DNL:
+[ 0.00392107 -0.24705849  0.00392107  0.25490204  0.00392249]
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.51764706 1.51941176 1.52117647 1.52294118 1.52470588 1.52647059
+ 1.52823529 1.53       1.53176471 1.53352941 1.53529412 1.53705882
+ 1.53882353 1.54058824 1.54235294 1.54411765 1.54588235 1.54764706
+ 1.54941176 1.55117647 1.55294118]
+[DEBUG] Code samples:
+[215 215 215 215 216 216 216 217 217 217 217 218 218 218 218 218 219 219
+ 219 219 220]
+[DEBUG] Transition voltages:
+[1.51764706 1.52470588 1.53       1.53705882 1.54588235 1.55294118]
+[DEBUG] Code transitions:
+[  1 216 217 218 219 220]
+[DEBUG] Bin widths:
+[0.00705882 0.00529412 0.00705882 0.00882353 0.00705883]
+[DEBUG] DNL:
+[ 0.00392107 -0.24705849  0.00392107  0.25490204  0.00392249]
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.51764706 1.51941176 1.52117647 1.52294118 1.52470588 1.52647059
+ 1.52823529 1.53       1.53176471 1.53352941 1.53529412 1.53705882
+ 1.53882353 1.54058824 1.54235294 1.54411765 1.54588235 1.54764706
+ 1.54941176 1.55117647 1.55294118]
+[DEBUG] Code samples:
+[215 215 215 215 216 216 216 217 217 217 217 218 218 218 218 218 219 219
+ 219 219 220]
+[DEBUG] Transition voltages:
+[1.51764706 1.52470588 1.53       1.53705882 1.54588235 1.55294118]
+[DEBUG] Code transitions:
+[  1 216 217 218 219 220]
+[DEBUG] Bin widths:
+[0.00705882 0.00529412 0.00705882 0.00882353 0.00705883]
+[DEBUG] DNL:
+[ 0.00392107 -0.24705849  0.00392107  0.25490204  0.00392249]
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.51764706 1.51941176 1.52117647 1.52294118 1.52470588 1.52647059
+ 1.52823529 1.53       1.53176471 1.53352941 1.53529412 1.53705882
+ 1.53882353 1.54058824 1.54235294 1.54411765 1.54588235 1.54764706
+ 1.54941176 1.55117647 1.55294118]
+[DEBUG] Code samples:
+[215 215 215 215 216 216 216 217 217 217 217 218 218 218 218 218 219 219
+ 219 219 220]
+[DEBUG] Transition voltages:
+[1.51764706 1.52470588 1.53       1.53705882 1.54588235 1.55294118]
+[DEBUG] Code transitions:
+[  1 216 217 218 219 220]
+[DEBUG] Bin widths:
+[0.00705882 0.00529412 0.00705882 0.00882353 0.00705883]
+[DEBUG] DNL:
+[ 0.00392107 -0.24705849  0.00392107  0.25490204  0.00392249]
+Running user-defined script '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/dnl.py]cace/scripts/dnl.py[/link][/repr.filename]'…
+[DEBUG] VIN samples:
+[1.51764706 1.51941176 1.52117647 1.52294118 1.52470588 1.52647059
+ 1.52823529 1.53       1.53176471 1.53352941 1.53529412 1.53705882
+ 1.53882353 1.54058824 1.54235294 1.54411765 1.54588235 1.54764706
+ 1.54941176 1.55117647 1.55294118]
+[DEBUG] Code samples:
+[215 215 215 215 216 216 216 217 217 217 217 218 218 218 218 219 219 219
+ 219 220 220]
+[DEBUG] Transition voltages:
+[1.51764706 1.52470588 1.53       1.53705882 1.54411765 1.55117647]
+[DEBUG] Code transitions:
+[  1 216 217 218 219 220]
+[DEBUG] Bin widths:
+[0.00705882 0.00529412 0.00705882 0.00705883 0.00705882]
+[DEBUG] DNL:
+[ 0.00392107 -0.24705849  0.00392107  0.00392249  0.00392107]
+Parameter DNL: Saving simulation summary as '[repr.filename][link=file:///home/ece/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-09-13_00-55-30/parameters/DNL/simulation_summary.md]runs/RUN_2025-09-13_00-55-30/parameters/DNL/simulation_summary.md[/link][/repr.filename]'…
+Done with CACE simulations and evaluations in 0:22:45.
