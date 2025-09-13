@@ -171,37 +171,37 @@ parameters:
   #     corner:
   #       enumerate: [tt, ss, ff, fs, sf]
 
-  offset_error:
-    description : Offset Error
-    display     : Offset Error
-    unit        : LSB
-    spec:
-      offset_error :
-        minimum :
-          value : -1.5
-        typical :
-          value : any
-        maximum :
-          value : 1.5
-    tool:
-      ngspice:
-        template          : offset_error.sch
-        format            : ascii
-        suffix            : .data
-        variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-        script            : offset_error.py
-        script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-    plot:
-      offset_error:
-        xaxis: Vin_samples      
-        yaxis: codes_binary    
-    conditions:
-      VVDD:
-        typical : 1.8
-      temperature:
-        typical : 27
-      corner:
-        enumerate : [tt]
+  # offset_error:
+  #   description : Offset Error
+  #   display     : Offset Error
+  #   unit        : LSB
+  #   spec:
+  #     offset_error :
+  #       minimum :
+  #         value : -1.5
+  #       typical :
+  #         value : any
+  #       maximum :
+  #         value : 1.5
+  #   tool:
+  #     ngspice:
+  #       template          : offset_error.sch
+  #       format            : ascii
+  #       suffix            : .data
+  #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+  #       script            : offset_error.py
+  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+  #   plot:
+  #     offset_error:
+  #       xaxis: Vin_samples      
+  #       yaxis: codes_binary    
+  #   conditions:
+  #     VVDD:
+  #       typical : 1.8
+  #     temperature:
+  #       typical : 27
+  #     corner:
+        # enumerate : [tt]
 
   # Power:
   #   description : Current draw through analog supply, ADC enabled
@@ -240,37 +240,37 @@ parameters:
   #     corner:
   #       enumerate: [tt, ss, fs, sf, ff]
 
-  # DNL:
-  #   description: Differential nonlinearity (DNL) Test
-  #   display: DNL
-  #   unit: lsb
-  #   spec:
-  #     dnl:
-  #       minimum:
-  #         value: -1
-  #         fail: true
-  #       typical:
-  #         value: 0
-  #       maximum:
-  #         value: 1
-  #         fail: true
-  #   tool:
-  #     ngspice:
-  #       template: sar_output_dnl.sch
-  #       format: ascii
-  #       suffix: .data
-  #       variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
-  #       script: dnl.py
-  #       script_variables: [code, dnl]
-  #   conditions:
-  #     VVDD:
-  #       typical: 1.8
-  #     VVbias:
-  #       typical: -0.9
-  #     temperature:
-  #       typical: -75
-  #     corner:
-  #       enumerate: [tt]
+  DNL:
+    description: Differential nonlinearity (DNL) Test
+    display: DNL
+    unit: lsb
+    spec:
+      dnl:
+        minimum:
+          value: -1
+          fail: true
+        typical:
+          value: 0
+        maximum:
+          value: 1
+          fail: true
+    tool:
+      ngspice:
+        template: sar_output_dnl.sch
+        format: ascii
+        suffix: .data
+        variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
+        script: dnl.py
+        script_variables: [code, dnl]
+    conditions:
+      VVDD:
+        typical: 1.8
+      VVbias:
+        typical: -0.9
+      temperature:
+        typical: -40
+      corner:
+        enumerate: [tt]
 
   # magic_area:
   #   spec:
