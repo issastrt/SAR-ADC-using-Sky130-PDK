@@ -1,4 +1,4 @@
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/SAR-ADC-using-Sky130-PDK.sch
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/SAR-ADC-using-Sky130-PDK.sch
 .subckt SAR-ADC-using-Sky130-PDK VDD Vin Q0 Vbias EN Q1 CLK Q2 Q3 Q4 Q5 Q6 Q7 GND
 *.PININFO EN:I CLK:I VDD:I Vin:I Q0:O Q2:O Q3:O Q4:O Q5:O Q6:O Q7:O Q1:O Vbias:I GND:I
 x2 net23 Compout Q0 net1 net32 FFCLR GND VDD D_FlipFlop_for_Ring
@@ -40,8 +40,8 @@ x17 net24 CLK net7 GND VDD And_Gate
 .ends
 
 * expanding   symbol:  D_FlipFlop_for_Ring.sym # of pins=8
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/D_FlipFlop_for_Ring.sch
 .subckt D_FlipFlop_for_Ring nPRE D Q CLK Qbar nCLR GND VDD
 *.PININFO D:I CLK:I nPRE:I nCLR:I Q:O Qbar:O VDD:I GND:I
 x1 CLK net6 GND VDD Inverter
@@ -58,8 +58,8 @@ x10 D net5 GND VDD Inverter
 
 
 * expanding   symbol:  Nand_Gate.sym # of pins=5
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/Nand_Gate.sch
 .subckt Nand_Gate A B Vout GND VDD
 *.PININFO A:I B:I VDD:I GND:I Vout:O
 XM1 Vout B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 ad=0.4176 as=0.4176 pd=3.46 ps=3.46 nrd=0.201388888888889
@@ -74,8 +74,8 @@ XM4 net1 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 ad=0.4176 as=
 
 
 * expanding   symbol:  And_Gate.sym # of pins=5
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/And_Gate.sch
 .subckt And_Gate A B Vout GND VDD
 *.PININFO Vout:O A:I B:I VDD:I GND:I
 XM1 net1 B VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 ad=0.4176 as=0.4176 pd=3.46 ps=3.46 nrd=0.201388888888889
@@ -94,8 +94,8 @@ XM6 Vout net1 GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 ad=0.4176 
 
 
 * expanding   symbol:  CDAC8_v2.sym # of pins=11
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/CDAC8_v2.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/CDAC8_v2.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/CDAC8_v2.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/CDAC8_v2.sch
 .subckt CDAC8_v2 OUT b7 b6 b5 b4 b3 b2 b1 b0 GND VDD
 *.PININFO b0:I b1:I b2:I b3:I b4:I b5:I b6:I b7:I VDD:I GND:I OUT:O
 x1 VDD GND net1 b0 VDD GND switch_symbol
@@ -119,8 +119,8 @@ XC8 GND GND sky130_fd_pr__cap_mim_m3_1 W=6.88 L=6.88 MF=68 m=68
 
 
 * expanding   symbol:  comparator.sym # of pins=5
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/comparator.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/comparator.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/comparator.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/comparator.sch
 .subckt comparator Vout Vinm Vinp VDD VSS
 *.PININFO Vout:O Vinp:I Vinm:I VDD:I VSS:I
 XM9 Vout net2 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=1 W=60 nf=1 ad=17.4 as=17.4 pd=120.58 ps=120.58 nrd=0.00483333333333333
@@ -146,8 +146,8 @@ XC1 Vout VSS sky130_fd_pr__cap_mim_m3_2 W=5.35 L=2 MF=1 m=1
 
 
 * expanding   symbol:  RING_COUNTER_FINAL.sym # of pins=20
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/RING_COUNTER_FINAL.sch
 .subckt RING_COUNTER_FINAL VDD Q2 Q15 Q4 Q5 Q6 Q7 Q1 Q9 Q10 Q11 Q12 Q13 Q14 Q0 Q3 Q8 CLK EN GND
 *.PININFO Q0:O Q1:O Q2:O Q3:O Q4:O Q5:O Q6:O Q7:O Q8:O Q9:O Q10:O Q11:O Q12:O Q13:O Q14:O Q15:O CLK:I EN:I VDD:I GND:I
 x1 VDD net1 Q0 CLK net2 EN GND VDD D_FlipFlop_for_Ring
@@ -188,8 +188,8 @@ x17 EN Q15 net1 CLK net18 VDD GND VDD D_FlipFlop_for_Ring
 
 
 * expanding   symbol:  Inverter.sym # of pins=4
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/Inverter.sch
 .subckt Inverter Vin Vout GND VDD
 *.PININFO Vout:O Vin:I VDD:I GND:I
 XM1 Vout Vin VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 ad=0.4176 as=0.4176 pd=3.46 ps=3.46 nrd=0.201388888888889
@@ -200,8 +200,8 @@ XM2 Vout Vin GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 ad=0.4176 a
 
 
 * expanding   symbol:  3-input-nand.sym # of pins=6
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/3-input-nand.sch
 .subckt 3-input-nand C B A Vout GND VDD
 *.PININFO A:I B:I Vout:O C:I VDD:I GND:I
 XM1 Vout C VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.720 W=1.44 nf=1 ad=0.4176 as=0.4176 pd=3.46 ps=3.46 nrd=0.201388888888889
@@ -220,8 +220,8 @@ XM6 net2 A GND GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 ad=0.4176 as=
 
 
 * expanding   symbol:  switch_symbol.sym # of pins=6
-** sym_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/switch_symbol.sym
-** sch_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/xschem/switch_symbol.sch
+** sym_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/switch_symbol.sym
+** sch_path: /home/ece/cace/SAR-ADC-using-Sky130-PDK/xschem/switch_symbol.sch
 .subckt switch_symbol B A Z Vref VDD GND
 *.PININFO Vref:I Z:B A:B B:B VDD:I GND:I
 XM2 Z Vref B GND sky130_fd_pr__nfet_g5v0d10v5 L=1.44 W=1.44 nf=1 ad=0.4176 as=0.4176 pd=3.46 ps=3.46 nrd=0.201388888888889

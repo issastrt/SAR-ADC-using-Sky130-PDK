@@ -7,6 +7,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     vin = np.array(results['VVin'])
     vdd = float(conditions['VVDD'])
     corner = str(conditions['corner'])
+    temperature = str(conditions['temperature'])
 
     # --- Collect bit keys and arrays (assumes VQ0..VQ(N-1) exist) ---
     bit_keys = [k for k in results.keys() if k.startswith("VQ")]
@@ -96,7 +97,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     dnl_padded = pad(dnl_list, max_len)
 
     # --- Export debug data to CSV ---
-    csv_filename = f"dnl_{corner}_pre-layout_{vins_padded[0]:.3f}-to-{vins_padded[-1]:.3f}.csv"
+    csv_filename = f"temp_{temperature}_post-layout_{vins_padded[0]:.3f}-to-{vins_padded[-1]:.3f}.csv"
 
     with open(csv_filename, mode='w', newline='') as file:
         writer = csv.writer(file)
