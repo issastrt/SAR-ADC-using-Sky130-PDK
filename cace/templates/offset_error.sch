@@ -19,7 +19,7 @@ N -710 70 -710 120 {
 lab=Vin}
 C {SAR-ADC-using-Sky130-PDK.sym} -470 130 0 0 {name=x1}
 C {devices/code_shown.sym} -730 -560 0 0 {name=CONTROL only_toplevel=false value=".control
-tran 0.5u 136u uic
+tran 0.5u 178.5u uic
 set wr_singlescale
 wrdata CACE\{simpath\}/CACE\{filename\}_CACE\{N\}.data V(Vin) V(Q7) V(Q6) V(Q5) V(Q4) V(Q3) V(Q2) V(Q1) V(Q0)
 quit
@@ -58,7 +58,7 @@ C {devices/lab_pin.sym} -60 -190 0 1 {name=p7 sig_type=std_logic lab=EN}
 C {gnd.sym} -160 -70 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -710 -30 0 0 {name=p8 sig_type=std_logic lab=CLK}
 C {devices/lab_pin.sym} -710 -10 0 0 {name=p9 sig_type=std_logic lab=EN}
-C {devices/vsource.sym} -1440 -30 0 0 {name=VVin value="PWL(0u 0 8.5u 0 8.500001u 0.001 17u 0.001 17.000001u 0.002 25.5u 0.002 25.500001u 0.003 34u 0.003 34.000001u 0.004 42.5u 0.004 42.500001u 0.005 51u 0.005 51.000001u 0.006 59.5u 0.006 59.500001u 0.007 68u 0.007 68.000001u 0.008 76.5u 0.008 76.500001u 0.009 85u 0.009 85.000001u 0.010 93.5u 0.010 93.500001u 0.011 102u 0.011 102.000001u 0.012 110.5u 0.012 110.500001u 0.013 119u 0.013 119.000001u 0.014 127.5u 0.014 127.500001u 0.015 136u 0.015)" savecurrent=false}
+C {devices/vsource.sym} -1440 -30 0 0 {name=VVin value="PWL(0u 0 8.5u 0 8.500001u 0.001 17u 0.001 17.000001u 0.002 25.5u 0.002 25.500001u 0.003 34u 0.003 34.000001u 0.004 42.5u 0.004 42.500001u 0.005 51u 0.005 51.000001u 0.006 59.5u 0.006 59.500001u 0.007 68u 0.007 68.000001u 0.008 76.5u 0.008 76.500001u 0.009 85u 0.009 85.000001u 0.010 93.5u 0.010 93.500001u 0.011 102u 0.011 102.000001u 0.012 110.5u 0.012 110.500001u 0.013 119u 0.013 119.000001u 0.014 127.5u 0.014 127.500001u 0.015 136u 0.015 136.000001u 0.016 144.5u 0.016 144.500001u 0.017 153u 0.017 153.000001u 0.018 161.5u 0.018 161.500001u 0.019 170u 0.019 170.000001u 0.020 178.5u 0.020)" savecurrent=false}
 C {devices/lab_pin.sym} -1340 -60 0 1 {name=p10 sig_type=std_logic lab=Vin}
 C {gnd.sym} -1440 0 0 0 {name=l6 lab=GND}
 C {devices/lab_pin.sym} -710 70 0 0 {name=p11 sig_type=std_logic lab=Vin}
