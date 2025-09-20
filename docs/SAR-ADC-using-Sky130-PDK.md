@@ -112,8 +112,3 @@
 ## Schematic
 
 ![Schematic of SAR-ADC-using-Sky130-PDK](SAR-ADC-using-Sky130-PDK_schematic.svg)
-
-## Layout
-
-![Layout of SAR-ADC-using-Sky130-PDK with white background](SAR-ADC-using-Sky130-PDK_w.png)
-![Layout of SAR-ADC-using-Sky130-PDK with black background](SAR-ADC-using-Sky130-PDK_b.png)

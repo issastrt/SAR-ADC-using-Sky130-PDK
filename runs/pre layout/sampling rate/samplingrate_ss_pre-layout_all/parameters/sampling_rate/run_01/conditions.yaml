@@ -1,0 +1,13 @@
+DUT_path: /home/issa/cace/SAR-ADC-using-Sky130-PDK/netlist/schematic/SAR-ADC-using-Sky130-PDK.spice
+N: 1
+PDK: sky130A
+PDK_ROOT: /usr/local/share/pdk
+Rout: '100000000.0'
+VVDD: '1.8'
+VVGND: '0'
+VVbias: '-0.9'
+VVin: '0.1'
+corner: ss
+filename: sampling_rate
+simpath: /home/issa/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-09-20_12-15-47/parameters/sampling_rate/run_01
+temperature: '27'

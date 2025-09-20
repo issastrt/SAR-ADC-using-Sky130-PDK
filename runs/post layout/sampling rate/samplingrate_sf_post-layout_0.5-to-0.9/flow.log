@@ -1,0 +1,45 @@
+Running parameters: sampling_rate
+Generating simulation netlist from schematic…
+Skipping extraction of rcx netlist. Up to date.
+Skipping extraction of layout netlist. Up to date.
+Not regenerating GDSII from magic layout. Up to date.
+Parameter sampling_rate: Generating simulation files…
+Parameter sampling_rate: Running simulations…
+Parameter sampling_rate: Collecting results…
+Running user-defined script '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/sampling_rate.py]cace/scripts/sampling_rate.py[/link][/repr.filename]'…
+[DEBUG] Falling edge detected at index 1351, time = 8.527969e-06 s
+[DEBUG] Falling edge detected at index 2620, time = 1.703340e-05 s
+[DEBUG] Falling edge times: [8.52796861e-06, 1.70333989e-05]
+[DEBUG] Periods between edges: [8.50543029e-06]
+[DEBUG] Average period = 8.505430e-06 s
+[DEBUG] Computed sampling rate = 117571.947086 Hz
+Running user-defined script '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/sampling_rate.py]cace/scripts/sampling_rate.py[/link][/repr.filename]'…
+[DEBUG] Falling edge detected at index 1366, time = 8.528006e-06 s
+[DEBUG] Falling edge detected at index 2668, time = 1.703049e-05 s
+[DEBUG] Falling edge times: [8.52800578e-06, 1.70304907e-05]
+[DEBUG] Periods between edges: [8.50248492e-06]
+[DEBUG] Average period = 8.502485e-06 s
+[DEBUG] Computed sampling rate = 117612.675519 Hz
+Running user-defined script '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/sampling_rate.py]cace/scripts/sampling_rate.py[/link][/repr.filename]'…
+[DEBUG] Falling edge detected at index 1366, time = 8.527978e-06 s
+[DEBUG] Falling edge detected at index 2689, time = 1.702785e-05 s
+[DEBUG] Falling edge times: [8.52797788e-06, 1.70278467e-05]
+[DEBUG] Periods between edges: [8.49986882e-06]
+[DEBUG] Average period = 8.499869e-06 s
+[DEBUG] Computed sampling rate = 117648.874492 Hz
+Running user-defined script '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/sampling_rate.py]cace/scripts/sampling_rate.py[/link][/repr.filename]'…
+[DEBUG] Falling edge detected at index 1361, time = 8.527969e-06 s
+[DEBUG] Falling edge detected at index 2653, time = 1.702855e-05 s
+[DEBUG] Falling edge times: [8.52796904e-06, 1.70285545e-05]
+[DEBUG] Periods between edges: [8.50058546e-06]
+[DEBUG] Average period = 8.500585e-06 s
+[DEBUG] Computed sampling rate = 117638.956129 Hz
+Running user-defined script '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/cace/scripts/sampling_rate.py]cace/scripts/sampling_rate.py[/link][/repr.filename]'…
+[DEBUG] Falling edge detected at index 1356, time = 8.527882e-06 s
+[DEBUG] Falling edge detected at index 2637, time = 1.703324e-05 s
+[DEBUG] Falling edge times: [8.52788213e-06, 1.7033236e-05]
+[DEBUG] Periods between edges: [8.50535387e-06]
+[DEBUG] Average period = 8.505354e-06 s
+[DEBUG] Computed sampling rate = 117573.003462 Hz
+Parameter sampling_rate: Saving simulation summary as '[repr.filename][link=file:///home/issa/cace/SAR-ADC-using-Sky130-PDK/runs/RUN_2025-09-19_22-14-56/parameters/sampling_rate/simulation_summary.md]runs/RUN_2025-09-19_22-14-56/parameters/sampling_rate/simulation_summary.md[/link][/repr.filename]'…
+Done with CACE simulations and evaluations in 0:37:11.

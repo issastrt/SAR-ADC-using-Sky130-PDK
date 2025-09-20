@@ -5,7 +5,7 @@
 
 |      Parameter       |         Tool         |     Result      | Min Limit  |  Min Value   | Typ Target |  Typ Value   | Max Limit  |  Max Value   |  Status  |
 | :------------------- | :------------------- | :-------------- | ---------: | -----------: | ---------: | -----------: | ---------: | -----------: | :------: |
-| DNL                  | ngspice              | dnl                  |          -1 lsb | -0.749 lsb |        0 lsb | -0.749 lsb |        1 lsb | -0.749 lsb |   Pass ✅    |
+| sampling rate        | ngspice              | sampling_rate        |             any | 117.310 kS/s |          any | 117.321 kS/s |          any | 117.324 kS/s |   Pass ✅    |
 
 
 ## Plots
