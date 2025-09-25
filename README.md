@@ -23,6 +23,9 @@ This project focuses on the design and implementation  Successive Approximation 
 ## Schematic
 
 The schematic files for this project are available in the [`xschem/`](xschem/) folder.  
+The generated schematic netlist can be found here: [`SAR-ADC-using-Sky130-PDK.spice`](netlist/schematic/SAR-ADC-using-Sky130-PDK.spice)
+
+
 You can also view the main schematic online: [Open in Xschem Viewer](https://xschem-viewer.com/?file=https://raw.githubusercontent.com/issastrt/SAR-ADC-using-Sky130-PDK/main/xschem/SAR-ADC-using-Sky130-PDK.sch)
 
 <p align="center">
@@ -32,8 +35,8 @@ You can also view the main schematic online: [Open in Xschem Viewer](https://xsc
 ## Layout
 
 The layout files for this project are available in the [`mag/`](mag/) folder.  
-The extracted parasitic netlist from the layout can be found here: [`SAR-ADC-using-Sky130-PDK.pex.spice`](mag/SAR-ADC-using-Sky130-PDK.pex.spice)
-
+The extracted parasitic netlist from the layout can be found here: [`netlist/rcx/SAR-ADC-using-Sky130-PDK.spice`](netlist/rcx/SAR-ADC-using-Sky130-PDK.spice) <br>
+The extracted GDSII can also be found in: [`gds/SAR-ADC-using-Sky130-PDK.gds.gz`](gds/SAR-ADC-using-Sky130-PDK.gds.gz)  
 <p align="center">
   <img src="docs/SAR-ADC-using-Sky130-PDK_w.png" alt="Overall Layout" width="1200"/>
 </p>
