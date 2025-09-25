@@ -5,8 +5,8 @@ import matplotlib.ticker as ticker
 
 #DATASET
 df = pd.read_csv('C:/Users/madra/Desktop/Thesis Things/ADC_DATASET_ALL.csv')
-vin = df['Vin_fs_pre'].to_numpy()
-codes = df['codes_fs_pre'].to_numpy()
+vin = df['Vin_tt'].to_numpy()
+codes = df['codes_tt'].to_numpy()
 
 #SAR ADC PARAMETERS
 N = 8
@@ -65,7 +65,7 @@ output_df = pd.DataFrame({
 })
 
 #CSV OUTPUT FOR DEBUGGING
-output_df.to_csv('INL&DNL_fs_pre-layout_results.csv', index=False)
+# output_df.to_csv('INL&DNL_fs_pre-layout_results.csv', index=False)
 
 # Generate Vin: one value per LSB
 vin_ramp = np.arange(0, 2**N) * LSB + Vmin
@@ -78,6 +78,7 @@ codes_ideal = np.arange(2**N)
 #DNL PLOT
 plt.figure(figsize=(10, 6))
 plt.plot(dnl, label='DNL')
+plt.xlabel('SAR ADC Digital Output Code (LSB)')
 plt.ylabel('DNL (LSB)')
 plt.grid(True)
 plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(16))
@@ -85,48 +86,49 @@ plt.gca().yaxis.set_major_locator(ticker.MultipleLocator(0.25))
 plt.legend()
 plt.title('Differential Non-Linearity (DNL)')
 plt.text(0.02, 0.95, 
-         f"Min={dnl_min:.2f}, Max={dnl_max:.2f}, RMS={dnl_rms:.2f}", 
+         f"Min={dnl_min:.3f}, Typ={dnl_typ:.3f}, Max={dnl_max:.3f}, RMS={dnl_rms:.3f}", 
          transform=plt.gca().transAxes, fontsize=9,
          verticalalignment='top', bbox=dict(boxstyle="round", fc="w"))
 
 #INL PLOT
 plt.figure(figsize=(10, 6))
-plt.plot(inl_bestfit_codes, label='Best-Fit Straight line Method INL')
+plt.plot(inl_bestfit_codes, label='Best-Fit Straight line INL')
+plt.xlabel('SAR ADC Digital Output Code (LSB)')
 plt.ylabel('INL (LSB)')
 plt.grid(True)
-plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(1))
+plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(16))
 plt.gca().yaxis.set_major_locator(ticker.MultipleLocator(0.25))
 plt.legend()
 plt.title('Best-Fit Straight Line INL')
 plt.text(0.02, 0.95, 
-         f"Min={inlbf_min:.2f}, Max={inlbf_max:.2f}, RMS={inlbf_rms:.2f}", 
+         f"Min={inlbf_min:.3f}, Typ={inlbf_typ:.3f}, Max={inlbf_max:.3f}, RMS={inlbf_rms:.3f}", 
          transform=plt.gca().transAxes, fontsize=9,
          verticalalignment='top', bbox=dict(boxstyle="round", fc="w"))
 
 #STAIRCASE PLOT
 plt.figure(figsize=(15, 12))
-plt.step(vin_ramp, codes_ideal, where='post', color='grey', alpha=0.6, label='Ideal ADC')
-plt.step(vin, codes, where='post', label='Measured ADC')
+plt.step(vin_ramp, codes_ideal, where='post', color='grey', alpha=0.6, label='Ideal ADC Transfer Characteristic')
+plt.step(vin, codes, where='post', label='Measured SAR ADC Transfer Characteristic')
 plt.xlabel('Analog Input (V)')
-plt.ylabel('Digital Output Code')
+plt.ylabel('SAR ADC Digital Output Code (LSB)')
 plt.grid(True)
 plt.xlim(Vmin, Vmax)
 plt.ylim(0, 2**N)
 plt.gca().xaxis.set_major_locator(ticker.MultipleLocator(0.1))
 plt.gca().yaxis.set_major_locator(ticker.MultipleLocator(16))
 plt.legend()
-plt.title('ADC Transfer Characteristic: Measured vs Ideal (Ramp per LSB)')
+plt.title('8-Bit SAR ADC Transfer Characteristic')
 plt.show()
 
 #TRANSFER FUNCTION AND BEST-FIT LINE PLOT
 plt.figure(figsize=(10, 6))
-plt.plot(transition_voltages, k_vals, label='Transition Voltages', color='blue', linestyle='-')
 vin_fit = np.linspace(Vmin, Vmax, 500)
 code_fit = (vin_fit - c) / m
-plt.plot(vin_fit, code_fit, label='Best-Fit Line', color='red', linestyle='--')
+plt.plot(vin_fit, code_fit, label='Best-Fit Straight Line', color='grey', linestyle='-')
+plt.plot(transition_voltages, k_vals, label='Measured SAR ADC Transfer Curve', linestyle='-')
 plt.xlabel('Analog Input Voltage (V)')
-plt.ylabel('Digital Output Code')
-plt.title('ADC Transfer Curve: Actual Transfer Function vs Best-Fit Line')
+plt.ylabel('SAR ADC Digital Output Code (LSB)')
+plt.title('Best-Fit Straight Line vs. 8-Bit SAR ADC Transfer Curve')
 plt.grid(True)
 plt.xlim(Vmin, Vmax)
 plt.ylim(0, 2**N)

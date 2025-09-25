@@ -1,8 +1,7 @@
 # SAR-ADC-using-Sky130-PDK (MICRO-1-2425-2)
 
 ## Overview
-This project focuses on the design and implementation  Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) using the SkyWater 130nm (Sky130) PDK.  
-The repository contains design files, simulation results, documentation, and other materials related to our thesis.
+This project focuses on the design and implementation  Successive Approximation Register (SAR) Analog-to-Digital Converter (ADC) using the SkyWater 130nm (Sky130) PDK. The repository contains design files, simulation results, documentation, and other materials related to our thesis.
 
 ## Table of Contents
 - [Overview](#overview)
@@ -14,10 +13,12 @@ The repository contains design files, simulation results, documentation, and oth
   - [Fast-Slow (fs)](#fast-slow-fs)
   - [Slow-Fast (sf)](#slow-fast-sf)
   - [Fast-Fast (ff)](#fast-fast-ff)
-  - [INL Graphs](#inl-graphs)
-  - [DNL Graphs](#dnl-graphs)
+  - [INL Graphs (Typical-Typical Corner)](#inl-graphs-typical-typical-corner)
+  - [DNL Graphs (Typical-Typical Corner)](#dnl-graphs-typical-typical-corner)
+  - [Best-Fit Straight Line vs. SAR ADC Transfer Curve (Typical-Typical Corner)](#best-fit-straight-line-vs-sar-adc-transfer-curve-typical-typical-corner)
 - [Data](#data)
 - [Python/MATLAB Codes Used for Computation](#pythonmatlab-codes-used-for-computation)
+- [Contributors](#contributors)
 
 ## Schematic
 
@@ -33,7 +34,7 @@ The repository contains design files, simulation results, documentation, and oth
   <img src="docs/SAR-ADC-using-Sky130-PDK_w.png" alt="Overall Layout" width="1200"/>
 </p>
 
-- [Parasitic Netlist](netlist/SAR-ADC-using-Sky130-PDK_postlayout.spice) — extracted netlist from the layout including parasitics, used for post-layout simulations.
+- [Parasitic Netlist](netlist/rcx/SAR-ADC-using-Sky130-PDK.spice) — extracted netlist from the layout including parasitics, used for post-layout simulations.
 
 ## Results Summary
 
@@ -115,9 +116,47 @@ The repository contains design files, simulation results, documentation, and oth
 | Walden FOM (fJ/conv-step) | –   | 19251  | –      | –       | 33439  | –      |
 | Schreier FOM (dB)      | –      | 129.2255 | –    | –       | 124.9376 | –    |
 
-### INL Graph
+### INL Graphs (Typical-Typical Corner)
 
-### DNL Graph
+**Pre-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/INL/pre-layout/tt_pre-layout_INL.png" alt="INL Pre-layout TT" width="1200"/>
+</p>
+
+**Post-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/INL/post-layout/tt_post-layout_INL.png" alt="INL Post-layout TT" width="1200"/>
+</p>
+
+Additional INL graphs for the other corners (SS, FS, SF, FF) are available in the [`data/dnl_&_inl/Graphs/INL/`](data/dnl_&_inl/Graphs/INL/) folder.
+
+### DNL Graphs (Typical-Typical Corner)
+
+**Pre-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/DNL/pre-layout/tt_pre-layout_DNL.png" alt="DNL Pre-layout TT" width="1200"/>
+</p>
+
+**Post-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/DNL/post-layout/tt_post-layout_DNL.png" alt="DNL Post-layout TT" width="1200"/>
+</p>
+
+Additional DNL graphs for the other corners (SS, FS, SF, FF) are available in the [`data/dnl_&_inl/Graphs/DNL/`](data/dnl_&_inl/Graphs/DNL/) folder.
+
+### Best-Fit Straight Line vs. SAR ADC Transfer Curve (Typical-Typical Corner)
+
+**Pre-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/TransferCurve/pre-layout/tt_pre-layout_BFSLvsTransferCurve.png" alt="BFSL vs SAR ADC Transfer Curve TT Pre-layout" width="1200"/>
+</p>
+
+**Post-layout**  
+<p align="center">
+  <img src="data/dnl_&_inl/Graphs/TransferCurve/post-layout/tt_post-layout_BFSLvsTransferCurve.png" alt="BFSL vs SAR ADC Transfer Curve TT Post-layout" width="1200"/>
+</p>
+
+Additional transfer curve graphs for the other corners (SS, FS, SF, FF) are available in the [`data/dnl_&_inl/Graphs/TransferCurve/`](data/dnl_&_inl/Graphs/TransferCurve/) folder.
 
 ## Data
 
