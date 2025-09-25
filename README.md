@@ -22,11 +22,13 @@ This project focuses on the design and implementation  Successive Approximation 
 
 ## Schematic
 
+The schematic files for this project are available in the [`xschem/`](xschem/) folder.  
+You can also view the main schematic online:  
+[Open in Xschem Viewer](https://xschem-viewer.com/?file=https://raw.githubusercontent.com/issastrt/SAR-ADC-using-Sky130-PDK/main/xschem/SAR-ADC-using-Sky130-PDK.sch)
+
 <p align="center">
   <img src="docs/SAR-ADC-using-Sky130-PDK.png" alt="Overall Layout" width="1200"/>
 </p>
-
-- [Open in Xschem Viewer](https://xschem-viewer.com/?file=https://raw.githubusercontent.com/issastrt/SAR-ADC-using-Sky130-PDK/main/xschem/SAR-ADC-using-Sky130-PDK.sch)
 
 ## Layout
 
