@@ -121,6 +121,8 @@ The extracted GDSII can also be found in: [`gds/SAR-ADC-using-Sky130-PDK.gds.gz`
 | Walden FOM (fJ/conv-step) | –   | 19251  | –      | –       | 33439  | –      |
 | Schreier FOM (dB)      | –      | 129.2255 | –    | –       | 124.9376 | –    |
 
+---
+
 ### INL Graphs (Typical-Typical Corner)
 
 **Pre-layout**  
@@ -135,6 +137,8 @@ The extracted GDSII can also be found in: [`gds/SAR-ADC-using-Sky130-PDK.gds.gz`
 
 Additional INL graphs for the other corners (SS, FS, SF, FF) are available in the [`data/dnl_&_inl/Graphs/INL/`](data/dnl_&_inl/Graphs/INL/) folder.
 
+---
+
 ### DNL Graphs (Typical-Typical Corner)
 
 **Pre-layout**  
@@ -148,6 +152,8 @@ Additional INL graphs for the other corners (SS, FS, SF, FF) are available in th
 </p>
 
 Additional DNL graphs for the other corners (SS, FS, SF, FF) are available in the [`data/dnl_&_inl/Graphs/DNL/`](data/dnl_&_inl/Graphs/DNL/) folder.
+
+---
 
 ### Best-Fit Straight Line vs. SAR ADC Transfer Curve (Typical-Typical Corner)
 
