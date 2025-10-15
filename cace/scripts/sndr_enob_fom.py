@@ -4,8 +4,11 @@ import csv
 
 def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[str, list]:
     """
-    Extract digital codes from ADC simulation results and compute SNDR.
-    Saves codes with corresponding Vin values to a CSV file.
+    Extract digital output codes from transient SAR ADC simulation data.
+
+    The script samples the output bits (Q0–Q7) once every conversion period (Tconv),
+    reconstructs the corresponding 8-bit digital code for each conversion, and saves
+    the input voltage-code pairs to a CSV file for MATLAB post-processing. 
     """
 
     Tconv = 8.5e-6          # conversion period
@@ -39,12 +42,8 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
 
     codes = np.array(codes, dtype=float)
 
-    # --- Print codes ---
-    print("Here are the 32 codes:", codes[:32])
-
-    csv_filename = f"sndr_{corner}_pre-layout.csv"
-
     # --- Save to CSV ---
+    csv_filename = f"sndr_{corner}_pre-layout.csv"
     with open(csv_filename, mode="w", newline="") as f:
         writer = csv.writer(f)
         writer.writerow(["Index", "Vin", "Code"])

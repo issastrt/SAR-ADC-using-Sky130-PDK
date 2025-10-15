@@ -6,13 +6,13 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     Calculate Offset Error (in LSB) for an 8-bit SAR ADC.
     Defined as the difference between the actual and ideal
     zero-scale (0 -> 1 code) transition.
-    Samples exactly once every conversion period (34 µs).
+    Samples exactly once every conversion period (8.5 µs).
     Thresholds Q7..Q0 at VDD/2 to reconstruct digital code.
     Also outputs binary string for each code.
     """
 
     nbits = 8
-    Tconv = 8.5e-6               # 34 microseconds per conversion
+    Tconv = 8.5e-6               # 8.5 microseconds per conversion
 
     # --- Supply voltage and threshold ---
     VDD = float(conditions.get("VVDD", 1.8))
@@ -24,7 +24,7 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
 
     # --- Step 1: sample only at conversion boundaries ---
     t_end = time_arr[-1]
-    sample_times = np.arange(Tconv, t_end, Tconv)  # 34 µs, 68 µs, ...
+    sample_times = np.arange(Tconv, t_end, Tconv)  # 8.5  µs, 17 µs, ...
 
     codes = []
     binary_codes = []

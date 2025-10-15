@@ -3,6 +3,13 @@ import numpy as np
 import csv
 
 def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[str, list]:
+    """
+    The function samples the input voltage (Vin) and digital output bits (VQ0–VQ(N-1))
+    once every conversion period (8.5 µs), reconstructs each N-bit output code.
+    VIN samples and code transitions are exported to a CSV file for debugging and 
+    post-processing to calculate INL and DNL
+    """
+    
     time = np.array(results['time'])
     vin = np.array(results['VVin'])
     vdd = float(conditions['VVDD'])
@@ -57,12 +64,6 @@ def postprocess(results: dict[str, list], conditions: dict[str, Any]) -> dict[st
     if len(code_transitions) > 0 and code_transitions[0] != 1:
         transition_voltages = np.insert(transition_voltages, 0, vins[0])
         code_transitions = np.insert(code_transitions, 0, 1)
-
-    # --- Append last transition if missing (DISABLED for partial simulations) ---
-    # fullscale_code = 2**N - 1
-    # if len(code_transitions) > 0 and code_transitions[-1] != fullscale_code:
-    #     transition_voltages = np.append(transition_voltages, vins[-1])
-    #     code_transitions = np.append(code_transitions, fullscale_code)
 
     # --- Compute ideal LSB ---
     vlsb_ideal = vdd / (2**N)

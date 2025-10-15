@@ -3,6 +3,15 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib.ticker as ticker
 
+"""
+Performs static linearity analysis of the 8-bit SAR ADC based on CACE
+simulation data. The script reads Vin–code pairs from a CSV file, computes
+Differential Nonlinearity (DNL) and Integral Nonlinearity (INL) using
+transition-voltage and best-fit straight-line methods, and reports statistical
+metrics (min, typ, max, RMS). It also generates plots for DNL, INL, transfer
+characteristics, and best-fit comparison for visualization and verification.
+"""
+
 #DATASET
 df = pd.read_csv('C:/Users/madra/Desktop/Thesis Things/ADC_DATASET_ALL.csv')
 vin = df['Vin_tt'].to_numpy()

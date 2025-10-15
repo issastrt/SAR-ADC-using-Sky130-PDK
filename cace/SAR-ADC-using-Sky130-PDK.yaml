@@ -110,210 +110,206 @@ default_conditions:
     maximum     : ff
 
 parameters:
-  # sampling_rate:
-  #   description : sampling rate
-  #   display     : sampling rate
-  #   unit        : kS/s
-  #   spec:
-  #     sampling_rate :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : sampling_rate.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, Clk, FFCLR]
-  #       script            : sampling_rate.py
-  #       script_variables  : [sampling_rate]
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       typical : sf
-  #     VVin:
-  #       minimum  : 0
-  #       maximum  : 1.8
-  #       step     : linear
-  #       stepsize : 0.1
+  sampling_rate:
+    description : sampling rate
+    display     : sampling rate
+    unit        : kS/s
+    spec:
+      sampling_rate :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : sampling_rate.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Clk, FFCLR]
+        script            : sampling_rate.py
+        script_variables  : [sampling_rate]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        enumerate : [tt, ff, ss, sf, fs]
+      VVin:
+        minimum  : 0
+        maximum  : 1.8
+        step     : linear
+        stepsize : 0.1
 
-  # SNDR:
-  #   description : SNDR
-  #   display     : SNDR
-  #   unit        : dB
-  #   spec:
-  #     sndr :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : sndr_enob_fom.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, I, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0, Vin]
-  #       script            : sndr_enob_fom.py
-  #       script_variables  : [sndr]
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       enumerate: [tt, ss, ff, fs, sf]
+  SNDR_ENOB_FOM:
+    description : SNDR, ENOB, & FOM
+    display     : SNDR_ENOB_FOM
+    unit        : dB
+    spec:
+      SNDR_ENOB_FOM :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : sndr_enob_fom.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, I, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0, Vin]
+        script            : sndr_enob_fom.py
+        script_variables  : [sndr]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        enumerate: [tt, ss, ff, fs, sf]
 
-  # offset_error:
-  #   description : Offset Error
-  #   display     : Offset Error
-  #   unit        : LSB
-  #   spec:
-  #     offset_error :
-  #       minimum :
-  #         value : -1.5
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : 1.5
-  #   tool:
-  #     ngspice:
-  #       template          : offset_error.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
-  #       script            : offset_error.py
-  #       script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
-  #   plot:
-  #     offset_error:
-  #       xaxis: Vin_samples      
-  #       yaxis: codes_binary    
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     temperature:
-  #       typical : 27
-  #     corner:
-        # enumerate : [tt]
+  offset_error:
+    description : Offset Error
+    display     : Offset Error
+    unit        : LSB
+    spec:
+      offset_error :
+        minimum :
+          value : -1.5
+        typical :
+          value : any
+        maximum :
+          value : 1.5
+    tool:
+      ngspice:
+        template          : offset_error.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [time, Vin, Q7, Q6, Q5, Q4, Q3, Q2, Q1, Q0]
+        script            : offset_error.py
+        script_variables  : [offset_error, codes_decimal, codes_binary, Vin_samples]
+    conditions:
+      VVDD:
+        typical : 1.8
+      temperature:
+        typical : 27
+      corner:
+        enumerate: [tt, ss, ff, fs, sf]
 
-  # Power:
-  #   description : Current draw through analog supply, ADC enabled
-  #   display     : Average Power
-  #   unit        : mW
-  #   spec:
-  #     avg_power :
-  #       minimum :
-  #         value : any
-  #       typical :
-  #         value : any
-  #       maximum :
-  #         value : any
-  #   tool:
-  #     ngspice:
-  #       template          : power_consumption.sch
-  #       format            : ascii
-  #       suffix            : .data
-  #       variables         : [null, idd]
-  #       script            : power_consumption.py
-  #       script_variables  : [power, avg_power]
-  #   plot:
-  #     power:
-  #       xaxis : VVin
-  #       yaxis : avg_power
-  #   conditions:
-  #     VVDD:
-  #       typical : 1.8
-  #     VVin:
-  #       minimum: 0
-  #       maximum: 1.8
-  #       step: linear
-  #       stepsize: 0.1
-  #     temperature:
-  #       typical : 27
-  #     corner:
-  #       enumerate: [tt, ss, fs, sf, ff]
+  Power:
+    description : Avergae power consumption per conversion
+    display     : Average Power
+    unit        : mW
+    spec:
+      avg_power :
+        minimum :
+          value : any
+        typical :
+          value : any
+        maximum :
+          value : any
+    tool:
+      ngspice:
+        template          : power_consumption.sch
+        format            : ascii
+        suffix            : .data
+        variables         : [null, idd]
+        script            : power_consumption.py
+        script_variables  : [power, avg_power]
+    plot:
+      power:
+        xaxis : VVin
+        yaxis : avg_power
+    conditions:
+      VVDD:
+        typical : 1.8
+      VVin:
+        minimum: 0
+        maximum: 1.8
+        step: linear
+        stepsize: 0.1
+      temperature:
+        typical : 27
+      corner:
+        enumerate: [tt, ss, fs, sf, ff]
 
-  # DNL:
-  #   description: Differential nonlinearity (DNL) Test
-  #   display: DNL
-  #   unit: lsb
-  #   spec:
-  #     dnl:
-  #       minimum:
-  #         value: -1
-  #         fail: true
-  #       typical:
-  #         value: 0
-  #       maximum:
-  #         value: 1
-  #         fail: true
-  #   tool:
-  #     ngspice:
-  #       template: sar_output_dnl.sch
-  #       format: ascii
-  #       suffix: .data
-  #       variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
-  #       script: dnl.py
-  #       script_variables: [code, dnl]
-  #   conditions:
-  #     VVDD:
-  #       typical: 1.8
-  #     VVbias:
-  #       typical: -0.9
-  #     temperature:
-  #       typical: -40
-  #     corner:
-  #       enumerate: [tt]
+  DNL_INL:
+    description: Differential nonlinearity (DNL) and Integral nonlinearity (INL) Test
+    display: DNL_INL
+    unit: LSB
+    spec:
+      DNL_INL:
+        minimum:
+          value: -1
+          fail: true
+        typical:
+          value: 0
+        maximum:
+          value: 1
+          fail: true
+    tool:
+      ngspice:
+        template: sar_output_dnl.sch
+        format: ascii
+        suffix: .data
+        variables: [time, VVin, VQ7, VQ6, VQ5, VQ4, VQ3, VQ2, VQ1, VQ0]
+        script: dnl.py
+        script_variables: [code, dnl]
+    conditions:
+      VVDD:
+        typical: 1.8
+      VVbias:
+        typical: -0.9
+      temperature:
+        typical: 27
+      corner:
+        enumerate: [tt, ss, fs, sf, ff]
 
-  # magic_area:
-  #   spec:
-  #     area:
-  #       display: Area
-  #       description: Total circuit layout area
-  #       unit: mm²
-  #       maximum:
-  #         value: any
-  #     width:
-  #       display: Width
-  #       description: Total circuit layout width
-  #       unit: µm
-  #       maximum:
-  #         value: any
-  #     height:
-  #       display: Height
-  #       description: Total circuit layout height
-  #       unit: µm
-  #       maximum:
-  #         value: any
-  #   tool:
-  #     magic_area
+  magic_area:
+    spec:
+      area:
+        display: Area
+        description: Total circuit layout area
+        unit: mm²
+        maximum:
+          value: any
+      width:
+        display: Width
+        description: Total circuit layout width
+        unit: µm
+        maximum:
+          value: any
+      height:
+        display: Height
+        description: Total circuit layout height
+        unit: µm
+        maximum:
+          value: any
+    tool:
+      magic_area
 
-  # magic_drc:
-  #   description: Magic DRC
-  #   display: Magic DRC
-  #   spec:
-  #     drc_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #     magic_drc:
-  #       gds_flatten: true
+  magic_drc:
+    description: Magic DRC
+    display: Magic DRC
+    spec:
+      drc_errors:
+        maximum:
+          value: 0
+    tool:
+      magic_drc:
+        gds_flatten: true
 
-  # netgen_lvs:
-  #   description: Netgen LVS
-  #   display: Netgen LVS
-  #   spec:
-  #     lvs_errors:
-  #       maximum:
-  #         value: 0
-  #   tool:
-  #     netgen_lvs:
-  #       script: run_project_lvs.tcl
+  netgen_lvs:
+    description: Netgen LVS
+    display: Netgen LVS
+    spec:
+      lvs_errors:
+        maximum:
+          value: 0
+    tool:
+      netgen_lvs:
+        script: run_project_lvs.tcl
 
