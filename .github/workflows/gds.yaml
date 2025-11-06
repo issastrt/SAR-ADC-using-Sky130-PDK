@@ -11,9 +11,6 @@ jobs:
       pages: write
       id-token: write
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v4
-
       - name: Deploy GDS Viewer
         uses: TinyTapeout/tt-gds-action/viewer@tt10
         with:
