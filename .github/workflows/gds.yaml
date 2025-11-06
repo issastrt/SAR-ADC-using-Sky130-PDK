@@ -15,6 +15,6 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Deploy GDS Viewer
-        uses: TinyTapeout/tt-gds-action/viewer@tt10
+        uses: TinyTapeout/tt-gds-action/static_viewer@tt10
         with:
           gds_path: gds/SAR-ADC-using-Sky130-PDK.gds.gz
