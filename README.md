@@ -37,6 +37,7 @@ You can also view the main schematic online: [Open in Xschem Viewer](https://xsc
 The layout files for this project are available in the [`mag/`](mag/) folder.  
 The extracted parasitic netlist from the layout can be found here: [`netlist/rcx/SAR-ADC-using-Sky130-PDK.spice`](netlist/rcx/SAR-ADC-using-Sky130-PDK.spice) <br>
 The extracted GDSII can also be found in: [`gds/SAR-ADC-using-Sky130-PDK.gds.gz`](gds/SAR-ADC-using-Sky130-PDK.gds.gz)  
+You may also use the 3D viewer of Tiny Tapeout [TinyTapeout GDS Viewer](https://gds-viewer.tinytapeout.com/)
 <p align="center">
   <img src="docs/SAR-ADC-using-Sky130-PDK_w.png" alt="Overall Layout" width="1200"/>
 </p>
